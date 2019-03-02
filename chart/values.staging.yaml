@@ -1,0 +1,6 @@
+ingress:
+  hosts:
+    - dev.avptp.org
+  annotations:
+    ingress.kubernetes.io/auth-type: basic
+    ingress.kubernetes.io/auth-secret: http-auth

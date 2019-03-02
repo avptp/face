@@ -1,0 +1,110 @@
+@import '~styles/colors';
+@import '~styles/mixins';
+
+section.team {
+  flex-direction: column;
+
+  @include responsive-padding(40px, 20px);
+  background-color: $grey-lighter;
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include vertical-margin(15px);
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      color: $secondary;
+    }
+
+    .tags {
+      .tag {
+        margin: 10px 10px 0 0;
+        padding: 5px 8px;
+        background-color: $dark-grey-1;
+        border-radius: 8px;
+        font-size: 12px;
+        color: white;
+      }
+    }
+
+    .description {
+      max-width: 700px;
+      font-size: 18px;
+    }
+
+    .title, .tags, .description {
+      @include vertical-margin(10px);
+      text-align: center;
+    }
+
+    .persons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 260px;
+        margin: 15px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px 0 rgba(36, 37, 38, .08);
+
+        > * {
+          @include vertical-margin(4px);
+        }
+
+        .avatar, .social, .co-founder {
+          @include vertical-margin(12px);
+        }
+
+        .avatar {
+          width: 100px;
+          border-radius: 50%;
+        }
+
+        .name {
+          font-size: 18px;
+          font-weight: bold;
+          color: $secondary;
+        }
+
+        .name, .position {
+          text-align: center;
+        }
+
+        .co-founder {
+          padding: 5px 8px;
+          background-color: $primary;
+          border-radius: 8px;
+          font-size: 12px;
+          color: white;
+        }
+
+        .social {
+          .icon {
+            height: 20px;
+            margin: 0 5px;
+
+            &:hover {
+              opacity: .75;
+            }
+          }
+        }
+      }
+    }
+  }
+}

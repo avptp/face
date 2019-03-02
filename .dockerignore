@@ -1,0 +1,13 @@
+.dockerignore
+.DS_Store
+.editorconfig
+.env.example
+.git
+.gitignore
+.idea
+docker-compose.yml
+Dockerfile
+Jenkinsfile
+license.md
+node_modules
+readme.md

@@ -1,0 +1,46 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Release.Name }}
+  annotations:
+    kubernetes.io/change-cause: '{{ .Values.image.tag }}'
+
+spec:
+  replicas: {{ .Values.deployment.replicas.min }}
+  revisionHistoryLimit: {{ .Values.deployment.revisionHistoryLimit }}
+
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 1
+
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+
+    spec:
+      containers:
+        - name: app
+          image: {{ template "image" . }}
+          ports:
+            - name: http
+              containerPort: 3000
+          resources: {{ toYaml .Values.deployment.resources | nindent 12 }}
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 2
+
+      imagePullSecrets:
+        - name: {{ .Release.Name }}-registry

@@ -1,0 +1,24 @@
+{
+  "name": "Equipo",
+
+  "representativeBody": {
+    "name": "Junta Directiva",
+    "mandate": "Primer mandato",
+    "period": "10 de mayo de 2018 — actualidad",
+    "description": "La Junta Directiva es el órgano de representación de la Asociación y se encarga de regirla, administrarla y representarla. Cualquier persona asociada puede ser elegida como miembro por la Asamblea General por sufragio universal, libre, directo y secreto.",
+
+    "positions": {
+      "president": "Presidente",
+      "vicePresidentAndSpokesperson": "Vicepresidente y portavoz",
+      "secretary": "Secretario",
+      "treasurer": "Tesorero"
+    },
+
+    "co-founder": "cofundador"
+  },
+
+  "collaborators": {
+    "name": "Colaboradores",
+    "description": "Las personas colaboradoras son aquellas que cooperan activamente con la Junta Directiva para el desarrollo de sus tareas."
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "introduction": {
+    "title": "El transporte del futuro se construye hoy",
+    "subtitle": "Nacemos para afrontar un problema que afecta gravemente a la sociedad valenciana: la ausencia del transporte público que esta merece. Además, lo hacemos empezando por el principio (y por los principios)."
+  },
+
+  "purposes": {
+    "right": {
+      "name": "Derecho fundamental",
+      "description": "El transporte público debe ser un derecho fundamental garantizado de forma efectiva por el Estado."
+    },
+
+    "vertebration": {
+      "name": "Vertebración del territorio",
+      "description": "Debe ser posible realizar cualquier desplazamiento sin necesidad de disponer de vehículo en propiedad."
+    },
+
+    "universality": {
+      "name": "Al alcance de todos",
+      "description": "Es indispensable que el transporte público sea equitativo y sencillo para que ninguna persona quede excluida."
+    },
+
+    "planning": {
+      "name": "Planificación y eficiencia",
+      "description": "Se debe construir y gestionar en base a una planificación a largo plazo y con el interés general como protagonista."
+    },
+
+    "integration": {
+      "name": "Integración e intermodalidad",
+      "description": "La integración entre los diferentes medios de transporte y su funcionamiento como un solo sistema deben ser pilares fundamentales."
+    },
+
+    "sustainability": {
+      "name": "Sostenibilidad",
+      "description": "Hay que fomentar el uso de métodos de transporte público y sostenible para minimizar el impacto medioambiental y urbanístico."
+    },
+
+    "generalInterest": {
+      "name": "Defensa de los intereses generales",
+      "description": "Tanto la sociedad como las personas que utilizan el transporte público deben tener voz y ser escuchadas."
+    }
+  },
+
+  "context": {
+    "moreThan": "más de",
+
+    "figures": {
+      "population": "de habitantes",
+      "municipalities": "municipios",
+      "travelers": "de viajeros anuales",
+      "lines": "líneas de transporte",
+      "railwayNetwork": "de red ferroviaria",
+      "roadNetwork": "de red por carretera"
+    },
+
+    "types": {
+      "walking": "a pie",
+      "bicycle": "bicicleta",
+      "bus": "autobús",
+      "tram": "tranvía",
+      "metro": "metro",
+      "train": "tren"
+    }
+  },
+
+  "claims": {
+    "title": "Reivindicaciones",
+    "subtitle": "¿Qué pedimos? ¿Y a quién?",
+    "description": "Tenemos una serie de reivindicaciones fundamentales que, de hacerse realidad, convertirían el transporte público en lo que creemos que debe ser. Nos dirigimos a los diferentes organismos públicos con las competencias necesarias para hacerlas realidad.",
+
+    "didYouKnow": "¿Sabías esto?",
+
+    "organizations": {
+      "cityCouncils": "Ayuntamientos",
+      "spanishGovernment": "Gobierno de España",
+      "spanishParliament": "Congreso de los Diputados"
+    },
+
+    "financing": {
+      "title": "Ley de financiación",
+      "description": "El transporte público debe estar garantizado mediante una financiación regulada. Es necesaria una ley de financiación del transporte con la que el Estado otorgue el dinero necesario de acuerdo con la población de cada territorio.",
+      "extra": "España es el único país europeo sin una ley estatal de financiación del transporte público, la cual es actualmente desigual, irregular e imprevisible."
+    },
+
+    "everyday": {
+      "title": "Primero el día a día",
+      "description": "El transporte público masivo y cotidiano debe ser prioritario frente al de larga distancia, porque es el que se utiliza diariamente para desplazarse al lugar de trabajo o de estudio, entre otros.",
+      "extra": "El abandono y la dejadez del servicio de Cercanías del núcleo de Valencia y Castellón han hecho que la cantidad viajeros se haya desplomado un 40 % en diez años."
+    },
+
+    "paymentSystem": {
+      "title": "Sistema de pago único",
+      "description": "Se debe conseguir una unificación de los soportes, de los títulos y de las tarifas entre todas las empresas de transporte público para lograr una intermodalidad y una integración tarifaria reales y efectivas.",
+      "extra": "En la actualidad, la Generalitat coordina un sistema de pago llamado Móbilis. A pesar de que teóricamente es un sistema de soporte único, en la práctica hay más de 20 soportes Móbilis diferentes e incompatibles entre sí. El precio de los soportes varía desde 1 € hasta 5 —dependiendo del material, emisor y tipo— y son diferentes para cada área metropolitana."
+    },
+
+    "priority": {
+      "title": "Prioridad total",
+      "description": "El transporte público debe tener prioridad total respecto al resto, tanto en la regulación de tráfico, a través de la prioridad semafórica; como en el espacio que utiliza, mediante plataformas reservadas."
+    },
+
+    "supplyAndDemand": {
+      "title": "Ajustar la oferta a la demanda",
+      "description": "Los servicios de transporte deben adaptarse a las necesidades de la sociedad y no al contrario. Las masificaciones diarias son inadmisibles. Los datos y previsiones de uso deben utilizarse a la hora de definir los horarios."
+    },
+
+    "technology": {
+      "title": "Tecnología del siglo XXI",
+      "description": "Los sistemas informáticos deben tener un funcionamiento correcto, intuitivo y seguro: aplicaciones (para móviles y web), validadoras, máquinas de venta, pantallas de información y megafonías.",
+      "extra": "En diciembre de 2018 se hizo público que FGV había estado exponiendo por internet durante casi un año los datos personales de casi 60.000 usuarios de TRAM de Alicante y Metrovalencia. La respuesta de la empresa fue negar los hechos, probados y reconocidos por la propia Generalitat, quien desactivó los sistemas afectados."
+    },
+
+    "information": {
+      "title": "Información abierta",
+      "description": "Actualmente se utilizan sistemas de información obsoletos y aislados, lo que en algunos casos implica que los usuarios ni siquiera puedan conocer los horarios (sean en tiempo real o planificados). Los datos deben estar abiertos para poder ser consumidos por cualquier ciudadano o servicio. Además, los organismos correspondientes deben ofrecer integraciones con los servicios más utilizados, como Google Maps, por ejemplo."
+    },
+
+    "branding": {
+      "title": "Marca única",
+      "description": "Hay que desarrollar una marca única de cara al usuario para toda la red de transporte, independientemente de que internamente siga estando dividida en las diversas empresas que puedan existir. Esto implica una política única de comunicación e información. Los autobuses interurbanos de la Generalitat son un claro caso de aplicación urgente, ya que son totalmente desconocidos para los ciudadanos."
+    },
+
+    "frequency": {
+      "title": "Más líneas y más frecuencia",
+      "description": "El transporte público no puede ser competitivo ni atractivo si no es posible utilizarlo para desplazarse a cualquier lugar. Hay que hacer llegar el transporte allí donde no llega y aumentar las frecuencias de paso donde ya lo hace para cubrir la demanda real y potencial. Además, el tiempo de funcionamiento debe alargarse para cubrir parte de la noche, especialmente los fines de semana.",
+      "extra": "El servicio nocturno de Metrovalencia fue utilizado por cerca de 20.000 usuarios el primer fin de semana de funcionamiento. Es decir, el uso pasó de 0 a 20.000 en dos días. Esto significa que hay demanda. Hay que extender esto al resto de los servicios que lo necesitan, por ejemplo, el servicio de cercanías de Renfe."
+    },
+
+    "punctuality": {
+      "title": "Compromiso de puntualidad",
+      "description": "La fiabilidad y la seriedad deben ser características fundamentales del transporte en una sociedad organizada. Los ciudadanos deben poder confiar en los servicios y estos no deben causarles ningún perjuicio. Cuando no sea posible ofrecer un servicio digno es fundamental ofrecer alternativas inmediatas y compensar a los usuarios afectados."
+    },
+
+    "accessibility": {
+      "title": "Accesibilidad",
+      "description": "Todas las instalaciones deben ofrecer las mismas posibilidades a todas las personas. Es habitual que las escaleras mecánicas y los ascensores dejan de funcionar y estén así durante semanas. Las instalaciones deben contar con equipamiento de accesibilidad suplementario para garantizar la equidad. Además, deben diseñarse protocolos que eviten perjudicar a los usuarios cuando la accesibilidad de las instalaciones se vea mermada.",
+      "extra": "En septiembre de 2018 ocurrió un conflicto en las instalaciones de FGV cuando una persona no pudo acceder a ellas porque el único ascensor que había no funcionaba. La existencia de protocolos para casos extremos habría permitido a la empresa ofrecer una solución al problema en vez de abandonar al usuario. Por ejemplo, podría haber un acuerdo con el servicio de autobús o taxi de la ciudad para que cubriera el desplazamiento hasta la siguiente estación operativa o incluso hasta el destino."
+    },
+
+    "staff": {
+      "title": "Personal suficiente y formado",
+      "description": "El personal debe ser suficiente y tener los recursos necesarios para hacer su trabajo, dar información y solucionar los problemas de los usuarios."
+    }
+  },
+
+  "join": {
+    "support": {
+      "title": "Simpatiza",
+      "description": "Pueden ser simpatizantes todas aquellas personas que compartan los fines de la asociación.",
+
+      "advantages": {
+        "stickTogether": "Haz piña para defender los fines y hacer realidad las reivindicaciones.",
+        "stayTuned": "Mantente al día de las actividades y participa en ellas.",
+        "involve": "Involúcrate en los grupos de trabajo."
+      },
+
+      "comingSoon": "Disponible próximamente a través de la aplicación web."
+    },
+
+    "associate": {
+      "title": "Asóciate",
+      "description": "Las personas asociadas gozan de una serie de beneficios y derechos adicionales.",
+
+      "advantages": {
+        "supporterOnes": "Disfruta de los beneficios de ser simpatizante.",
+        "financialSupport": "Apoya económicamente los fines y las actividades que se llevan a cabo.",
+        "associationBodies": "Participa en los órganos de gobierno y representación.",
+        "attendAndVote": "Asiste a la Asamblea General y vota."
+      },
+
+      "action": "Asóciate por 15 € al año"
+    },
+
+    "email": {
+      "subject": "Solicitud de asociación",
+      "body": "Hola. \n\nMe pongo en contacto porque me gustaría unirme a la Associació Valenciana pel Transport Públic como persona associada. A continuación adjunto los datos necesarios:\n\n- Nombre: \n- Apellidos: \n- NIF (DNI o NIE): \n- Fecha de nacimiento: \n- Dirección: \n- Código postal: \n- Municipio: \n- Número de teléfono: \n- Dirección de correo electrónico (si es diferente): \n\nManifiesto que los datos proporcionados son verídicos y que cumplo las condiciones que establecen los Estatutos y el Reglamento de Régimen Interno de la Asociación.\n\nGracias por vuestra atención.\n\nSaludos."
+    }
+  }
+}

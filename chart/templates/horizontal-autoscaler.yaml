@@ -1,0 +1,27 @@
+kind: HorizontalPodAutoscaler
+apiVersion: autoscaling/v2beta1
+
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Release.Name }}
+
+spec:
+  scaleTargetRef:
+    kind: Deployment
+    apiVersion: apps/v1
+    name: {{ .Release.Name }}
+
+  minReplicas: {{ .Values.deployment.replicas.min }}
+  maxReplicas: {{ .Values.deployment.replicas.max }}
+
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        targetAverageUtilization: 80
+    - type: Resource
+      resource:
+        name: memory
+        targetAverageUtilization: 80

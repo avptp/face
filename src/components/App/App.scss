@@ -1,0 +1,52 @@
+@import '~normalize.css/normalize';
+
+/** Base **/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 14px;
+  color: black;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  outline-style: none;
+
+  img {
+    border: none;
+  }
+}
+
+p a, li a, .a {
+  transition: color .3s ease;
+  text-decoration: underline;
+
+  &:hover {
+    color: black;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/** Sections **/
+header, section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+}

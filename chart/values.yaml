@@ -1,0 +1,38 @@
+image:
+  name: face
+  tag: nil
+
+registry:
+  name: registry.avptp.org
+  credentials:
+    username: nil
+    password: nil
+
+deployment:
+  replicas:
+    min: 2
+    max: 10
+  revisionHistoryLimit: 2
+  resources:
+    requests:
+      cpu: 100m
+      memory: 32Mi
+    limits:
+      cpu: 150m
+      memory: 64Mi
+
+service:
+  port: 80
+
+ingress:
+  hosts: []
+  annotations:
+    ingress.kubernetes.io/hsts-max-age: '31536000'
+    ingress.kubernetes.io/hsts-include-subdomains: 'true'
+    ingress.kubernetes.io/hsts-preload: 'true'
+    ingress.kubernetes.io/force-hsts: 'true'
+    #ingress.kubernetes.io/content-security-policy: "default-src 'self' 'unsafe-inline' https:"
+    #ingress.kubernetes.io/frame-deny: 'true'
+    ingress.kubernetes.io/browser-xss-filter: 'true'
+    ingress.kubernetes.io/content-type-nosniff: 'true'
+    ingress.kubernetes.io/referrer-policy: strict-origin-when-cross-origin

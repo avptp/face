@@ -1,0 +1,184 @@
+{
+  "introduction": {
+    "title": "El transport del futur es construïx hui",
+    "subtitle": "Naixem per a afrontar un problema que afecta greument a la societat valenciana: l'absència del transport públic que esta mereix. A més, ho fem començant pel principi (i pels principis)."
+  },
+
+  "purposes": {
+    "right": {
+      "name": "Dret fonamental",
+      "description": "El transport públic ha de ser un dret fonamental garantit de forma efectiva per l'Estat."
+    },
+
+    "vertebration": {
+      "name": "Vertebració del territori",
+      "description": "Ha de ser possible realitzar qualsevol desplaçament sense necessitat de disposar de vehicle en propietat."
+    },
+
+    "universality": {
+      "name": "A l'abast de qualsevol",
+      "description": "És indispensable que el transport públic siga equitatiu i senzill perquè cap persona en quede exclosa."
+    },
+
+    "planning": {
+      "name": "Planificació i eficiència",
+      "description": "S'ha de construir i gestionar d'acord amb una planificació a llarg termini i amb l'interés general com a protagonista."
+    },
+
+    "integration": {
+      "name": "Integració i intermodalitat",
+      "description": "La integració entre els diferents mitjans de transport i el seu funcionament com un sol sistema han de ser pilars fonamentals."
+    },
+
+    "sustainability": {
+      "name": "Sostenibilitat",
+      "description": "Cal fomentar l'ús de mètodes de transport públic i sostenible per a minimitzar l'impacte mediambiental i urbanístic."
+    },
+
+    "generalInterest": {
+      "name": "Defensa dels interessos generals",
+      "description": "Tant la societat com les persones que utilitzen el transport públic han de tindre veu i ser escoltades."
+    }
+  },
+
+  "context": {
+    "moreThan": "més de",
+
+    "figures": {
+      "population": "d'habitants",
+      "municipalities": "municipis",
+      "travelers": "de viatgers anuals",
+      "lines": "línies de transport",
+      "railwayNetwork": "de xarxa ferroviària",
+      "roadNetwork": "de xarxa per carretera"
+    },
+
+    "types": {
+      "walking": "a peu",
+      "bicycle": "bicicleta",
+      "bus": "bus",
+      "tram": "tramvia",
+      "metro": "metro",
+      "train": "tren"
+    }
+  },
+
+  "claims": {
+    "title": "Reivindicacions",
+    "subtitle": "Què demanem? I a qui?",
+    "description": "Tenim una sèrie de reivindicacions fonamentals que, en cas de fer-se realitat, convertirien el transport públic en allò que creiem que ha de ser. Ens adrecem als diferents organismes públics amb les competències necessàries per a fer-les realitat.",
+
+    "didYouKnow": "Sabies açò?",
+
+    "organizations": {
+      "adif": "Adif",
+      "atmv": "ATMV",
+      "cityCouncils": "Ajuntaments",
+      "fgv": "FGV",
+      "renfe": "Renfe",
+      "spanishGovernment": "Govern d'Espanya",
+      "spanishParliament": "Congrés dels Diputats",
+      "valencianGovernment": "Generalitat"
+    },
+
+    "financing": {
+      "title": "Llei de finançament",
+      "description": "El transport públic ha d'estar garantit mitjançant un finançament regulat. Cal una llei del finançament del transport amb la qual l'Estat atorgue els diners necessaris d'acord amb la població de cada territori.",
+      "extra": "Espanya és l'únic país europeu sense una llei estatal de finançament del transport públic, el qual actualment és desigual, irregular i imprevisible."
+    },
+
+    "everyday": {
+      "title": "Primer el dia a dia",
+      "description": "El transport públic massiu i quotidià ha de ser prioritari enfront del de llarga distància, perquè és el que s’utilitza diàriament per a desplaçar-se al lloc de treball o d’estudi, entre d’altres.",
+      "extra": "L'abandonament i la deixadesa del servei de Rodalia del nucli de València i Castelló han fet que la quantitat viatgers s'haja desplomat un 40 % en deu anys."
+    },
+
+    "paymentSystem": {
+      "title": "Sistema de pagament únic",
+      "description": "S’ha d’aconseguir una unificació dels suports, dels títols i de les tarifes entre totes les empreses de transport públic per a assolir una intermodalitat i una integració tarifària reals i efectives.",
+      "extra": "En l’actualitat, la Generalitat coordina un sistema de pagament anomenat Móbilis. Malgrat que teòricament és un sistema de suport únic, en la pràctica hi ha més de 20 suports Móbilis diferents i incompatibles entre si. El preu dels suports varia des d’1 € fins a 5 —depenent del material, emissor i tipus— i són diferents per a cada àrea metropolitana."
+    },
+
+    "priority": {
+      "title": "Prioritat total",
+      "description": "El transport públic ha de tindre prioritat total respecte a la resta, tant en la regulació de trànsit, a través de la prioritat semafòrica; com en l’espai que utilitza, mitjançant plataformes reservades."
+    },
+
+    "supplyAndDemand": {
+      "title": "Ajustar l'oferta a la demanda",
+      "description": "Els serveis de transport han d'adaptar-se a les necessitats de la societat i no al contrari. Les massificacions diàries són inadmissibles. Les dades i previsions d'ús han d'utilitzar-se a l'hora de definir els horaris."
+    },
+
+    "technology": {
+      "title": "Tecnologia del segle XXI",
+      "description": "Els sistemes informàtics han de tindre un funcionament correcte, intuïtiu i segur: aplicacions (per a mòbils i web), validadores, màquines de venda, pantalles d'informació i megafonies.",
+      "extra": "En desembre de 2018 es va fer públic que FGV havia estat exposant per internet durant quasi un any les dades personals de vora 60.000 usuaris de TRAM d'Alacant i Metrovalència. La resposta de l'empresa va ser negar els fets, provats i reconeguts per la mateixa Generalitat, qui va desactivar els sistemes afectats."
+    },
+
+    "information": {
+      "title": "Informació oberta",
+      "description": "Actualment s'utilitzen sistemes d'informació obsolets i aïllats, cosa que en alguns casos implica que els usuaris ni tan sols puguen conéixer els horaris (siguen en temps real o planificats). Les dades han de ser obertes per a poder ser consumides per qualsevol ciutadà o servei. A més, els organismes corresponents han d'oferir integracions amb els serveis més utilitzats, com Google Maps, per exemple."
+    },
+
+    "branding": {
+      "title": "Marca única",
+      "description": "Cal desenvolupar una marca única de cara a l'usuari per a tota la xarxa de transport, independentment que internament seguisca estant dividida en les diverses empreses que hi puguen haver. Això implica una política única de comunicació i informació. Els autobusos interurbans de la Generalitat són un clar cas d'aplicació urgent, ja que són totalment desconeguts per als ciutadans."
+    },
+
+    "frequency": {
+      "title": "Més línies i més freqüència",
+      "description": "El transport públic no pot ser competitiu ni atractiu si no és possible utilitzar-lo per a desplaçar-se a qualsevol lloc. Cal fer arribar el transport allà on no arriba i augmentar les freqüències de pas on ja ho fa per a cobrir la demanda real i potencial. A més, el temps de funcionament ha d'allargar-se per cobrir part de la nit, especialment els caps de setmana.",
+      "extra": "El servei nocturn de Metrovalència va ser utilitzat per vora 20.000 usuaris el primer cap de setmana de funcionament. És a dir, l'ús passà de 0 a 20.000 en dos dies. Això significa que hi ha demanda. Cal estendre això a la resta dels serveis que ho necessiten, per exemple, el servei de rodalia de Renfe."
+    },
+
+    "punctuality": {
+      "title": "Compromís de puntualitat",
+      "description": "La fiabilitat i la serietat han de ser característiques fonamentals del transport en una societat organitzada. Els ciutadans han de poder confiar en els serveis i estos no han de causar-los cap perjuí. Quan no siga possible oferir un servei digne és fonamental oferir alternatives immediates i compensar als usuaris afectats."
+    },
+
+    "accessibility": {
+      "title": "Accessibilitat",
+      "description": "Totes les instal·lacions han d'oferir les mateixes possibilitats a totes les persones. És habitual que les escales mecàniques i els ascensors deixen de funcionar i estiguen així durant setmanes. Les instal·lacions han de comptar amb equipament d'accessibilitat suplementari per a garantir l'equitat. A més, s'han de dissenyar protocols que eviten perjudicar els usuaris quan l'accessibilitat de les instal·lacions es veja minvada.",
+      "extra": "En setembre de 2018 va ocórrer un conflicte a les instal·lacions de FGV quan una persona no va poder accedir a elles perquè l'únic ascensor que hi havia no funcionava. L'existència de protocols per a casos extrems hauria permés a l'empresa oferir una solució al problema en vegada d'abandonar a l'usuari. Per exemple, podria haver-hi un acord amb el servei d'autobús o taxi de la ciutat perquè cobrira el desplaçament fins a la següent estació operativa o fins i tot fins al destí."
+    },
+
+    "staff": {
+      "title": "Personal suficient i format",
+      "description": "El personal ha de ser suficient i tindre els recursos necessaris per a fer el seu treball, donar informació i solucionar els problemes dels usuaris."
+    }
+  },
+
+  "join": {
+    "support": {
+      "title": "Simpatitza",
+      "description": "Poden ser simpatitzants totes aquelles persones que compartisquen els fins de l'associació.",
+
+      "advantages": {
+        "stickTogether": "Fes comboi per defensar els fins i fer realitat les reivindicacions.",
+        "stayTuned": "Estigues al dia de les activitats i participa en elles.",
+        "involve": "Involucra't en els grups de treball."
+      },
+
+      "comingSoon": "Disponible pròximament a través de l'aplicació web."
+    },
+
+    "associate": {
+      "title": "Associa't",
+      "description": "Les persones associades gaudixen d'una sèrie de beneficis i drets addicionals.",
+
+      "advantages": {
+        "supporterOnes": "Disfruta dels beneficis de ser simpatitzant.",
+        "financialSupport": "Dóna suport econòmic als fins i les activitats que es porten a terme.",
+        "associationBodies": "Participa en els òrgans de govern i representació.",
+        "attendAndVote": "Assistix a l'Assemblea General i vota."
+      },
+
+      "action": "Associa't per 15 € a l'any"
+    },
+
+    "email": {
+      "subject": "Sol·licitud d'associació",
+      "body": "Hola. \n\nEm pose en contacte perquè m'agradaria unir-me a l'Associació Valenciana pel Transport Públic com a persona associada. A continuació adjunte les dades necessàries:\n\n- Nom: \n- Cognoms: \n- NIF (DNI o NIE): \n- Data de naixement: \n- Adreça: \n- Codi postal: \n- Municipi: \n- Número de telèfon: \n- Adreça de correu electrònic (si és diferent): \n\nManifeste que les dades proporcionades són verídiques i que complisc les condicions que establixen els Estatuts i el Reglament de Règim Intern de l'Associació.\n\nGràcies per la vostra atenció.\n\nSalutacions."
+    }
+  }
+}

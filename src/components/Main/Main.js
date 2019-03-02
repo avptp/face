@@ -1,0 +1,545 @@
+import {ResponsiveLine} from '@nivo/line'
+import associateIcon from 'images/icons/associate.svg';
+import generalInterestIcon from 'images/icons/general-interest.svg';
+import integrationIcon from 'images/icons/integration.svg';
+import planningIcon from 'images/icons/planning.svg';
+import rightIcon from 'images/icons/right.svg';
+import supportIcon from 'images/icons/support.svg';
+import sustainabilityIcon from 'images/icons/sustainability.svg';
+import universalityIcon from 'images/icons/universality.svg';
+import vertebrationIcon from 'images/icons/vertebration.svg';
+import imagotypeWhite from 'images/imagotype_white.svg';
+import React, {Component} from 'react';
+import {withTranslation} from 'react-i18next';
+import './Main.scss'
+
+class Main extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.fixed = false;
+
+    this.introduction = React.createRef();
+    this.wrapper = React.createRef();
+    this.join = React.createRef();
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    this.handleScroll();
+
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    const introduction = this.introduction.current;
+    const wrapper = this.wrapper.current;
+
+    const
+      scrollTop = document.scrollingElement.scrollTop,
+      limit = introduction.clientHeight - wrapper.clientHeight;
+
+    if (limit === 0) {
+      return;
+    }
+
+    if (scrollTop > limit) {
+      if (this.fixed) {
+        this.fixed = false;
+
+        wrapper.classList.remove('fixed');
+      }
+
+      wrapper.style.marginTop = `${limit}px`;
+    } else if (!this.fixed) {
+      this.fixed = true;
+
+      wrapper.classList.add('fixed');
+      wrapper.style.marginTop = 'initial';
+    }
+  }
+
+  render() {
+    const {i18n, t} = this.props;
+    const language = i18n.language.split('-')[0];
+
+    return (
+      <React.Fragment>
+        <header>
+          <div ref={this.introduction} className="introduction">
+            <div ref={this.wrapper} className="wrapper">
+              <img className='imagotype' src={imagotypeWhite} alt=""/>
+              <p className="title">{t('main:introduction.title')}</p>
+              <p className="subtitle">{t('main:introduction.subtitle')}</p>
+              <div className="buttons">
+                <a href={`/documents/statutes/${language}.pdf`} target="_blank" rel="noopener noreferrer" className="button light">{t('app:statutes')}</a>
+                <a href={`/documents/regulations/${language}.pdf`} target="_blank" rel="noopener noreferrer" className="button light">{t('app:regulations')}</a>
+                <button className="light reverse" onClick={() => {
+                  this.join.current.scrollIntoView({behavior: 'smooth'});
+                }}>
+                  {t('app:join')} ↓
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="purposes">
+            <div className="purpose">
+              <div className="icon"><img src={rightIcon} alt=""/></div>
+              <div className="text">
+                <div className="title">{t('main:purposes.right.name')}</div>
+                <div className="description">{t('main:purposes.right.description')}</div>
+              </div>
+            </div>
+            <div className="purpose">
+              <div className="icon"><img src={vertebrationIcon} alt=""/></div>
+              <div className="text">
+                <div className="title">{t('main:purposes.vertebration.name')}</div>
+                <div className="description">{t('main:purposes.vertebration.description')}</div>
+              </div>
+            </div>
+            <div className="purpose">
+              <div className="icon"><img src={universalityIcon} alt=""/></div>
+              <div className="text">
+                <div className="title">{t('main:purposes.universality.name')}</div>
+                <div className="description">{t('main:purposes.universality.description')}</div>
+              </div>
+            </div>
+            <div className="purpose">
+              <div className="icon"><img src={planningIcon} alt=""/></div>
+              <div className="text">
+                <div className="title">{t('main:purposes.planning.name')}</div>
+                <div className="description">{t('main:purposes.planning.description')}</div>
+              </div>
+            </div>
+            <div className="purpose">
+              <div className="icon"><img src={integrationIcon} alt=""/></div>
+              <div className="text">
+                <div className="title">{t('main:purposes.integration.name')}</div>
+                <div className="description">{t('main:purposes.integration.description')}</div>
+              </div>
+            </div>
+            <div className="purpose">
+              <div className="icon"><img src={sustainabilityIcon} alt=""/></div>
+              <div className="text">
+                <div className="title">{t('main:purposes.sustainability.name')}</div>
+                <div className="description">{t('main:purposes.sustainability.description')}</div>
+              </div>
+            </div>
+            <div className="purpose">
+              <div className="icon"><img src={generalInterestIcon} alt=""/></div>
+              <div className="text">
+                <div className="title">{t('main:purposes.generalInterest.name')}</div>
+                <div className="description">{t('main:purposes.generalInterest.description')}</div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section className="context">
+          <div className="container">
+            <div className="grid">
+              <div className="item">
+                <div className="number">
+                  5 <span className="multiplier">M</span>
+                </div>
+                <div>{t('main:context.figures.population')}</div>
+              </div>
+              <div className="item">
+                <div className="number">
+                  542
+                </div>
+                <div>{t('main:context.figures.municipalities')}</div>
+              </div>
+              <div className="item">
+                <div>{t('main:context.moreThan')}</div>
+                <div className="number">
+                  230 <span className="multiplier">M</span>
+                </div>
+                <div>{t('main:context.figures.travelers')}</div>
+              </div>
+              <div className="item">
+                <div>{t('main:context.moreThan')}</div>
+                <div className="number">
+                  100
+                </div>
+                <div>{t('main:context.figures.lines')}</div>
+              </div>
+              <div className="item">
+                <div>{t('main:context.moreThan')}</div>
+                <div className="number">
+                  700 <span className="multiplier">km</span>
+                </div>
+                <div>{t('main:context.figures.railwayNetwork')}</div>
+              </div>
+              <div className="item">
+                <div>{t('main:context.moreThan')}</div>
+                <div className="number">
+                  2.300 <span className="multiplier">km</span>
+                </div>
+                <div>{t('main:context.figures.roadNetwork')}</div>
+              </div>
+            </div>
+
+            <div className="community-kingdom-of-the-valencian-country"/>
+
+            <div className="grid">
+              <div className="item">
+                <div className="icon walking"/>
+                <div>{t('main:context.types.walking')}</div>
+              </div>
+              <div className="item">
+                <div className="icon bicycle"/>
+                <div>{t('main:context.types.bicycle')}</div>
+              </div>
+              <div className="item">
+                <div className="icon bus"/>
+                <div>{t('main:context.types.bus')}</div>
+              </div>
+              <div className="item">
+                <div className="icon tram"/>
+                <div>{t('main:context.types.tram')}</div>
+              </div>
+              <div className="item">
+                <div className="icon metro"/>
+                <div>{t('main:context.types.metro')}</div>
+              </div>
+              <div className="item">
+                <div className="icon train"/>
+                <div>{t('main:context.types.train')}</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="photos">
+            <div className="photo"/>
+            <div className="photo"/>
+            <div className="photo"/>
+            <div className="photo"/>
+            <div className="photo"/>
+            <div className="photo"/>
+          </div>
+        </section>
+
+        <section className="claims">
+          <div className="introduction">
+            <div className="title">{t('main:claims.title')}</div>
+            <div className="subtitle">{t('main:claims.subtitle')}</div>
+            <div className="description">{t('main:claims.description')}</div>
+          </div>
+
+          <div className="cards">
+            <div className="column">
+              <div className="claim">
+                <div className="title">{t('main:claims.financing.title')}</div>
+                <div className="description">{t('main:claims.financing.description')}</div>
+                <div className="info">
+                  <div className="title">{t('main:claims.didYouKnow')}</div>
+                  <div className="description">{t('main:claims.financing.extra')}</div>
+                </div>
+                <div className="tags">
+                  <span className="congreso">{t('main:claims.organizations.spanishParliament')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.everyday.title')}</div>
+                <div className="description">{t('main:claims.everyday.description')}</div>
+                <div className="info">
+                  <div className="title">{t('main:claims.didYouKnow')}</div>
+                  <div className="description">{t('main:claims.everyday.extra')}</div>
+                  <div className="chart">
+                    <ResponsiveLine
+                      data={
+                        [
+                          {
+                            id: 'travelers',
+                            data: [
+                              {
+                                x: 2006,
+                                y: 25.439,
+                              },
+                              {
+                                x: 2007,
+                                y: 25.124,
+                              },
+                              {
+                                x: 2008,
+                                y: 23.856,
+                              },
+                              {
+                                x: 2009,
+                                y: 20.83,
+                              },
+                              {
+                                x: 2010,
+                                y: 19.291,
+                              },
+                              {
+                                x: 2011,
+                                y: 19.521,
+                              },
+                              {
+                                x: 2012,
+                                y: 19.226,
+                              },
+                              {
+                                x: 2013,
+                                y: 18.161,
+                              },
+                              {
+                                x: 2014,
+                                y: 17.083,
+                              },
+                              {
+                                x: 2015,
+                                y: 15.86,
+                              },
+                              {
+                                x: 2016,
+                                y: 14.707,
+                              },
+                              {
+                                x: 2017,
+                                y: 15.166,
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                      margin={{
+                        "top": 50,
+                        "right": 25,
+                        "bottom": 25,
+                        "left": 25
+                      }}
+                      xScale={{
+                        "type": "point"
+                      }}
+                      yScale={{
+                        "type": "linear",
+                        "stacked": true,
+                        "min": "auto",
+                        "max": "auto"
+                      }}
+                      axisTop={null}
+                      axisRight={null}
+                      axisBottom={{
+                        "orient": "bottom",
+                        "tickSize": 5,
+                        "tickPadding": 5,
+                        "tickRotation": 0,
+                        "legend": "transportation",
+                        "legendOffset": 36,
+                        "legendPosition": "middle"
+                      }}
+                      axisLeft={{
+                        "orient": "left",
+                        "tickSize": 5,
+                        "tickPadding": 5,
+                        "tickRotation": 0,
+                        "legend": "count",
+                        "legendOffset": -40,
+                        "legendPosition": "middle"
+                      }}
+                      dotSize={10}
+                      dotColor="inherit:darker(0.3)"
+                      dotBorderWidth={2}
+                      dotBorderColor="#ffffff"
+                      enableDotLabel={true}
+                      dotLabel="y"
+                      dotLabelYOffset={-12}
+                      animate={true}
+                      motionStiffness={90}
+                      motionDamping={15}
+                      isInteractive={false}
+                      curve="natural"
+                      colors={[
+                        '#5fc1c8',
+                      ]}
+                    />
+                  </div>
+                </div>
+                <div className="tags">
+                  <span className="renfe">{t('main:claims.organizations.renfe')}</span>
+                  <span className="adif">{t('main:claims.organizations.adif')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.paymentSystem.title')}</div>
+                <div className="description">{t('main:claims.paymentSystem.description')}</div>
+                <div className="info">
+                  <div className="title">{t('main:claims.didYouKnow')}</div>
+                  <div className="description">{t('main:claims.paymentSystem.extra')}</div>
+                </div>
+                <div className="tags">
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="generalitat">{t('main:claims.organizations.valencianGovernment')}</span>
+                  <span className="spanish-government">{t('main:claims.organizations.spanishGovernment')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.priority.title')}</div>
+                <div className="description">
+                  {t('main:claims.priority.description')}
+                </div>
+                <div className="tags">
+                  <span className="city-councils">{t('main:claims.organizations.cityCouncils')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.supplyAndDemand.title')}</div>
+                <div className="description">{t('main:claims.supplyAndDemand.description')}</div>
+                <div className="tags">
+                  <span className="city-councils">{t('main:claims.organizations.cityCouncils')}</span>
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="fgv">{t('main:claims.organizations.fgv')}</span>
+                  <span className="generalitat">{t('main:claims.organizations.valencianGovernment')}</span>
+                  <span className="renfe">{t('main:claims.organizations.renfe')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.technology.title')}</div>
+                <div className="description">{t('main:claims.technology.description')}</div>
+                <div className="info">
+                  <div className="title">{t('main:claims.didYouKnow')}</div>
+                  <div className="description">{t('main:claims.technology.extra')}</div>
+                </div>
+                <div className="tags">
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="generalitat">{t('main:claims.organizations.valencianGovernment')}</span>
+                  <span className="spanish-government">{t('main:claims.organizations.spanishGovernment')}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="column">
+              <div className="claim">
+                <div className="title">{t('main:claims.information.title')}</div>
+                <div className="description">{t('main:claims.information.description')}</div>
+                <div className="tags">
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="fgv">{t('main:claims.organizations.fgv')}</span>
+                  <span className="generalitat">{t('main:claims.organizations.valencianGovernment')}</span>
+                  <span className="renfe">{t('main:claims.organizations.renfe')}</span>
+                  <span className="adif">{t('main:claims.organizations.adif')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.branding.title')}</div>
+                <div className="description">{t('main:claims.branding.description')}</div>
+                <div className="tags">
+                  <span className="generalitat">{t('main:claims.organizations.valencianGovernment')}</span>
+                  <span className="spanish-government">{t('main:claims.organizations.spanishGovernment')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.frequency.title')}</div>
+                <div className="description">{t('main:claims.frequency.description')}</div>
+                <div className="info">
+                  <div className="title">{t('main:claims.didYouKnow')}</div>
+                  <div className="description">{t('main:claims.frequency.extra')}</div>
+                </div>
+                <div className="tags">
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="generalitat">{t('main:claims.organizations.valencianGovernment')}</span>
+                  <span className="spanish-government">{t('main:claims.organizations.spanishGovernment')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.punctuality.title')}</div>
+                <div className="description">{t('main:claims.punctuality.description')}</div>
+                <div className="tags">
+                  <span className="city-councils">{t('main:claims.organizations.cityCouncils')}</span>
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="fgv">{t('main:claims.organizations.fgv')}</span>
+                  <span className="renfe">{t('main:claims.organizations.renfe')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.accessibility.title')}</div>
+                <div className="description">{t('main:claims.accessibility.description')}</div>
+                <div className="info">
+                  <div className="title">{t('main:claims.didYouKnow')}</div>
+                  <div className="description">{t('main:claims.accessibility.extra')}</div>
+                </div>
+                <div className="tags">
+                  <span className="city-councils">{t('main:claims.organizations.cityCouncils')}</span>
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="fgv">{t('main:claims.organizations.fgv')}</span>
+                  <span className="adif">{t('main:claims.organizations.adif')}</span>
+                </div>
+              </div>
+
+              <div className="claim">
+                <div className="title">{t('main:claims.staff.title')}</div>
+                <div className="description">{t('main:claims.staff.description')}</div>
+                <div className="tags">
+                  <span className="city-councils">{t('main:claims.organizations.cityCouncils')}</span>
+                  <span className="atmv">{t('main:claims.organizations.atmv')}</span>
+                  <span className="fgv">{t('main:claims.organizations.fgv')}</span>
+                  <span className="renfe">{t('main:claims.organizations.renfe')}</span>
+                  <span className="adif">{t('main:claims.organizations.adif')}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="join" ref={this.join}>
+          <div className="support">
+            <div className="box">
+              <div className="icon">
+                <img src={supportIcon} alt=""/>
+              </div>
+              <div className="title">{t('main:join.support.title')}</div>
+              <p>{t('main:join.support.description')}</p>
+              <hr/>
+              <ul>
+                <li>{t('main:join.support.advantages.stickTogether')}</li>
+                <li>{t('main:join.support.advantages.stayTuned')}</li>
+                <li>{t('main:join.support.advantages.involve')}</li>
+              </ul>
+              <p className="notice">{t('main:join.support.comingSoon')}</p>
+            </div>
+          </div>
+          <div className="associate">
+            <div className="box">
+              <div className="icon">
+                <img src={associateIcon} alt=""/>
+              </div>
+              <div className="title">{t('main:join.associate.title')}</div>
+              <p>{t('main:join.associate.description')}</p>
+              <hr/>
+              <ul>
+                <li>{t('main:join.associate.advantages.supporterOnes')}</li>
+                <li>{t('main:join.associate.advantages.financialSupport')}</li>
+                <li>{t('main:join.associate.advantages.associationBodies')}</li>
+                <li>{t('main:join.associate.advantages.attendAndVote')}</li>
+              </ul>
+              <a href={`mailto:socis@avptp.org?subject=${encodeURI(t('main:join.email.subject'))}&body=${encodeURI(t('main:join.email.body'))}`} className="button reverse">
+                {t('main:join.associate.action')}
+              </a>
+            </div>
+          </div>
+        </section>
+      </React.Fragment>
+    );
+  }
+
+}
+
+export default withTranslation()(Main);

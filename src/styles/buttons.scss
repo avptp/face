@@ -1,0 +1,30 @@
+@import './colors';
+
+/** Buttons **/
+button,
+a.button {
+  background: transparent;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  font-size: 20px !important;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  outline-style: none;
+
+  &.reverse {
+    background-color: $secondary;
+    color: white;
+  }
+
+  &.light {
+    color: white;
+    border-color: white;
+
+    &.reverse {
+      background-color: white;
+      color: #5fc1c8;
+    }
+  }
+}

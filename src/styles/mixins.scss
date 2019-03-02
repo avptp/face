@@ -1,0 +1,39 @@
+@mixin horizontal-margin($property) {
+  margin: 0 $property;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin vertical-margin($property) {
+  margin: $property 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin responsive-min-width($property) {
+  min-width: $property;
+
+  @media (max-width: $property) {
+    min-width: 100%;
+  }
+}
+
+@mixin responsive-padding($big, $small) {
+  padding: $big;
+
+  @media (max-width: 500px) {
+    padding: $small;
+  }
+}
