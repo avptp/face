@@ -31,7 +31,7 @@ class CookieNotice extends Component {
                 <span>{t('message')}</span>
               </div>
               <div className="actions">
-                <a href={t('link')}>{t('information')}</a>
+                <a href={t('link')} target="_blank" rel="noopener noreferrer">{t('information')}</a>
                 <button onClick={() => this.accept()}>{t('accept')}</button>
               </div>
             </div>

@@ -30,7 +30,7 @@ class Team extends Component {
                       <div className="position">{t('representativeBody.positions.president')}</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://www.linkedin.com/in/jaime-paricio-garcia">
+                        <a href="https://www.linkedin.com/in/jaime-paricio-garcia" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
                         </a>
                       </div>
@@ -41,16 +41,16 @@ class Team extends Component {
                       <div className="position">{t('representativeBody.positions.vicePresidentAndSpokesperson')}</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://victordiaz.me">
+                        <a href="https://victordiaz.me" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={webLogo} alt="Web"/>
                         </a>
-                        <a href="https://linkedin.com/in/victordm">
+                        <a href="https://linkedin.com/in/victordm" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
                         </a>
-                        <a href="https://twitter.com/victordzmr">
+                        <a href="https://twitter.com/victordzmr" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
-                        <a href="https://github.com/v0ctor">
+                        <a href="https://github.com/v0ctor" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={githubLogo} alt="GitHub"/>
                         </a>
                       </div>
@@ -61,16 +61,16 @@ class Team extends Component {
                       <div className="position">{t('representativeBody.positions.secretary')}</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://frantorregrosa.me">
+                        <a href="https://frantorregrosa.me" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={webLogo} alt="Web"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/frantorreg">
+                        <a href="https://www.linkedin.com/in/frantorreg" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
                         </a>
-                        <a href="https://twitter.com/frantorreg">
+                        <a href="https://twitter.com/frantorreg" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
-                        <a href="https://github.com/frantorreg">
+                        <a href="https://github.com/frantorreg" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={githubLogo} alt="GitHub"/>
                         </a>
                       </div>
@@ -81,7 +81,7 @@ class Team extends Component {
                       <div className="position">{t('representativeBody.positions.treasurer')}</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://www.linkedin.com/in/rafa-bayona">
+                        <a href="https://www.linkedin.com/in/rafa-bayona" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
                         </a>
                       </div>
@@ -97,7 +97,7 @@ class Team extends Component {
                       <div className="name">Martín Montón Sanchis</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://twitter.com/MartnMontn">
+                        <a href="https://twitter.com/MartnMontn" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                       </div>
@@ -106,10 +106,10 @@ class Team extends Component {
                       <img className="avatar" src="https://secure.gravatar.com/avatar/a4adeaa7ab008361255f9d093bf901ac?d=retro&s=300" alt=""/>
                       <div className="name">Domingo Rodríguez León</div>
                       <div className="social">
-                        <a href="https://www.linkedin.com/in/domi">
+                        <a href="https://www.linkedin.com/in/domi" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
                         </a>
-                        <a href="https://twitter.com/Domirole">
+                        <a href="https://twitter.com/Domirole" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                       </div>

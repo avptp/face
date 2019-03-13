@@ -35,22 +35,22 @@ class Footer extends Component {
                   </div>
                   <div className="social">
                     <div className="title">{t('followUs')}</div>
-                    <a href="https://twitter.com/avptp">
+                    <a href="https://twitter.com/avptp" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={twitterLogo} alt="Twitter"/>
                     </a>
-                    <a href="https://www.facebook.com/avptp.org">
+                    <a href="https://www.facebook.com/avptp.org" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={facebookLogo} alt="Facebook"/>
                     </a>
-                    <a href="https://www.instagram.com/avptp">
+                    <a href="https://www.instagram.com/avptp" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={instagramLogo} alt="Instagram"/>
                     </a>
-                    <a href="https://www.youtube.com/channel/UCG-AS9LUPEZK3NagPhXy4Tw">
+                    <a href="https://www.youtube.com/channel/UCG-AS9LUPEZK3NagPhXy4Tw" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={youtubeLogo} alt="YouTube"/>
                     </a>
-                    <a href="https://www.linkedin.com/company/avptp">
+                    <a href="https://www.linkedin.com/company/avptp" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
                     </a>
-                    <a href="https://github.com/avptp">
+                    <a href="https://github.com/avptp" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={githubLogo} alt="GitHub"/>
                     </a>
                   </div>
