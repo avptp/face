@@ -80,7 +80,7 @@ class Main extends Component {
               <div className="buttons">
                 <a href={`/documents/statutes/${language}.pdf`} target="_blank" rel="noopener noreferrer" className="button light">{t('app:statutes')}</a>
                 <a href={`/documents/regulations/${language}.pdf`} target="_blank" rel="noopener noreferrer" className="button light">{t('app:regulations')}</a>
-                <button className="light reverse" onClick={() => {
+                <button className="button light reverse" onClick={() => {
                   this.join.current.scrollIntoView({behavior: 'smooth'});
                 }}>
                   {t('app:join')} ↓

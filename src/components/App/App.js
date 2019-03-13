@@ -1,6 +1,7 @@
 import Footer from 'components/Footer/Footer';
 import Main from 'components/Main/Main';
 import NotFound from 'components/NotFound/NotFound';
+import CookieNotice from 'components/CookieNotice/CookieNotice';
 import Team from 'components/Team/Team';
 import ScrollToTop from 'hooks/ScrollToTop';
 import GoogleAnalytics from 'listeners/GoogleAnalytics';
@@ -39,6 +40,7 @@ class App extends Component {
           <Route path="*" component={NotFound}/>
         </Switch>
         <Footer/>
+        <CookieNotice/>
       </GoogleAnalytics>
     );
   }

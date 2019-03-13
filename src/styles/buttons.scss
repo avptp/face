@@ -1,8 +1,13 @@
 @import './colors';
 
 /** Buttons **/
-button,
-a.button {
+button {
+  border: none;
+  cursor: pointer;
+  outline-style: none;
+}
+
+.button {
   background: transparent;
   border: 1px solid $secondary;
   border-radius: 5px;
@@ -11,7 +16,6 @@ a.button {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  outline-style: none;
 
   &.reverse {
     background-color: $secondary;
