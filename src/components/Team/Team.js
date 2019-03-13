@@ -26,7 +26,7 @@ class Team extends Component {
                   <div className="persons">
                     <div className="person">
                       <img className="avatar" src="https://secure.gravatar.com/avatar/b2c1e221fd0a5a52d01a01278e285742.jpg?d=retro&s=300" alt=""/>
-                      <div className="name">Jaime Paricio García</div>
+                      <div className="name">Jaime Paricio</div>
                       <div className="position">{t('representativeBody.positions.president')}</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
