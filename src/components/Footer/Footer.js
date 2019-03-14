@@ -54,7 +54,7 @@ class Footer extends Component {
                       <img className="icon" src={githubLogo} alt="GitHub"/>
                     </a>
                   </div>
-                  <select className="language" value={i18n.language} onChange={(event) => i18n.changeLanguage(event.target.value)}>
+                  <select className="language" value={i18n.language.split('-')[0]} onChange={(event) => i18n.changeLanguage(event.target.value)}>
                     {
                       i18n.options.safeWhitelist.map(language => {
                         return <option key={language} value={language}>{t(`languages:${language}`)}</option>
