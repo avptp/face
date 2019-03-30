@@ -32,6 +32,7 @@ class Footer extends Component {
                     <a href={`/documents/statutes/${language}.pdf`} target="_blank" rel="noopener noreferrer">{t('app:statutes')}</a>
                     <a href={`/documents/regulations/${language}.pdf`} target="_blank" rel="noopener noreferrer">{t('app:regulations')}</a>
                     <Link to="/team">{t('team:name')}</Link>
+                    <a href="https://blog.avptp.org">{t('app:blog')}</a>
                   </div>
                   <div className="social">
                     <div className="title">{t('followUs')}</div>
