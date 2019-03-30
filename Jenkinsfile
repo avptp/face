@@ -81,7 +81,7 @@ baseTemplate() {
           sh """
             helm template chart \
               --name ${project} \
-              --namespace=${namespace} \
+              --namespace ${namespace} \
               -f chart/values.${environment}.yaml \
               --set-string image.tag=${build} \
               --set-string registry.credentials.username=${registryUsername} \

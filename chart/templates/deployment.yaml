@@ -10,16 +10,15 @@ metadata:
     kubernetes.io/change-cause: '{{ .Values.image.tag }}'
 
 spec:
-  replicas: {{ .Values.deployment.replicas.min }}
   revisionHistoryLimit: {{ .Values.deployment.revisionHistoryLimit }}
-
-  selector:
-    matchLabels:
-      app: {{ .Release.Name }}
 
   strategy:
     rollingUpdate:
       maxUnavailable: 1
+
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
 
   template:
     metadata:
@@ -38,8 +37,7 @@ spec:
             httpGet:
               path: /
               port: http
-            initialDelaySeconds: 15
-            periodSeconds: 10
+            initialDelaySeconds: 10
             timeoutSeconds: 2
 
       imagePullSecrets:

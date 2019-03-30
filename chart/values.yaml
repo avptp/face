@@ -1,5 +1,5 @@
 image:
-  name: face
+  name: avptp/face
   tag: nil
 
 registry:
@@ -15,11 +15,11 @@ deployment:
   revisionHistoryLimit: 2
   resources:
     requests:
-      cpu: 100m
-      memory: 32Mi
+      cpu: 10m
+      memory: 20Mi
     limits:
-      cpu: 150m
-      memory: 64Mi
+      cpu: 20m
+      memory: 30Mi
 
 service:
   port: 80
