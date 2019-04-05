@@ -16,19 +16,19 @@ def baseTemplate(body) {
   podTemplate(label: label, serviceAccount: 'jenkins', containers: [
     containerTemplate(
       name: 'docker',
-      image: "docker:18.09.3",
+      image: "docker:18.09.4",
       command: 'cat',
       ttyEnabled: true,
     ),
     containerTemplate(
       name: 'helm',
-      image: "lachlanevenson/k8s-helm:v2.13.0",
+      image: "lachlanevenson/k8s-helm:v2.13.1",
       command: 'cat',
       ttyEnabled: true
     ),
     containerTemplate(
       name: 'kubectl',
-      image: "lachlanevenson/k8s-kubectl:v1.13.4",
+      image: "lachlanevenson/k8s-kubectl:v1.14.0",
       command: 'cat',
       ttyEnabled: true
     )
