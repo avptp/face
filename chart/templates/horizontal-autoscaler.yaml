@@ -16,4 +16,4 @@ spec:
   minReplicas: {{ .Values.deployment.replicas.min }}
   maxReplicas: {{ .Values.deployment.replicas.max }}
 
-  targetCPUUtilizationPercentage: 80
+  targetCPUUtilizationPercentage: 90
