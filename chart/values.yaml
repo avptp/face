@@ -3,10 +3,8 @@ image:
   tag: nil
 
 registry:
-  name: registry.avptp.org
-  credentials:
-    username: nil
-    password: nil
+  name: nil
+  credentials: nil
 
 deployment:
   replicas:

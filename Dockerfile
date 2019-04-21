@@ -24,6 +24,8 @@ FROM node:10.15.3-alpine AS builder
 WORKDIR /app
 
 ENV NODE_ENV production
+ENV NODE_PATH=src
+ENV SASS_PATH=node_modules:src
 
 COPY . .
 
