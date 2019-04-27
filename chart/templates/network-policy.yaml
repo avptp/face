@@ -19,3 +19,12 @@ spec:
               namespace: networking
       ports:
         - port: http
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              namespace: default
+        - podSelector:
+            matchLabels:
+              app: mask
+      ports:
+        - port: http
