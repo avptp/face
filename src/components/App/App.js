@@ -32,7 +32,11 @@ class App extends Component {
         <ScrollToTop/>
         <Helmet>
           <title>{t('app:name')}</title>
+          <meta name="description" content={t('app:description')}/>
+          <meta name="robots" content="index,follow"/>
           {this.getAlternateLanguages()}
+          {this.getOpenGraphTags()}
+          {this.getTwitterCardTags()}
         </Helmet>
         <Switch>
           <Route exact path='/' component={Main}/>
@@ -49,8 +53,33 @@ class App extends Component {
     const {i18n, location} = this.props;
 
     return i18n.options.safeWhitelist.map(language =>
-      <link rel="alternate" hrefLang={language} href={`${location.pathname}?hl=${language}`} key={`language-${language}`}/>
+      <link key={language} rel="alternate" hrefLang={language} href={`${location.pathname}?hl=${language}`}/>
     );
+  }
+
+  getOpenGraphTags() {
+    const {t} = this.props;
+
+    return ([
+      <meta key="type" property="og:type" content="website"/>,
+      <meta key="site_name" property="og:site_name" content={t('app:name')}/>,
+      <meta key="title" property="og:title" content={t('app:name')}/>,
+      <meta key="description" property="og:description" content={t('app:description')}/>,
+      <meta key="image" property="og:image" content="/favicon/opengraph.png"/>,
+    ]);
+  }
+
+  getTwitterCardTags() {
+    const {t} = this.props;
+
+    return ([
+      <meta key="card" property="twitter:card" content="summary"/>,
+      <meta key="site" property="twitter:site" content="avptp"/>,
+      <meta key="creator" property="twitter:creator" content="avptp"/>,
+      <meta key="title" property="twitter:title" content={t('app:name')}/>,
+      <meta key="description" property="twitter:description" content={t('app:description')}/>,
+      <meta key="image" property="twitter:image" content="/favicon/opengraph.png"/>,
+    ]);
   }
 
 }
