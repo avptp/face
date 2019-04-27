@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {withRouter} from 'react-router-dom';
 
 function ScrollToTop({history}) {
-  React.useEffect(() => {
+  useEffect(() => {
     const unlisten = history.listen(() => {
-      document.getElementById('top').scrollIntoView({behavior: 'smooth'});
+      document.getElementById('top').scrollIntoView({
+        behavior: 'smooth'
+      });
     });
 
     return () => {
       unlisten();
     }
-  }, []);
+  }, [history]);
 
   return <div id="top"/>;
 }

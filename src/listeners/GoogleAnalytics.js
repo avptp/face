@@ -1,11 +1,12 @@
-import {PropTypes} from 'prop-types';
+import PropTypes from 'prop-types';
 import {Component} from 'react';
 import ReactGA from 'react-ga';
+import {withRouter} from 'react-router-dom';
 
 class GoogleAnalytics extends Component {
 
-  static contextTypes = {
-    router: PropTypes.object
+  static propTypes = {
+    history: PropTypes.object.isRequired
   };
 
   constructor(props) {
@@ -17,8 +18,10 @@ class GoogleAnalytics extends Component {
   }
 
   componentDidMount() {
-    this.constructor.sendPageView(this.context.router.history.location);
-    this.context.router.history.listen(this.constructor.sendPageView);
+    const {history} = this.props;
+
+    this.constructor.sendPageView(history.location);
+    history.listen(this.constructor.sendPageView);
   }
 
   static sendPageView(location) {
@@ -32,4 +35,4 @@ class GoogleAnalytics extends Component {
 
 }
 
-export default GoogleAnalytics;
+export default withRouter(GoogleAnalytics);
