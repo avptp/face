@@ -313,10 +313,10 @@ class Main extends Component {
                         ]
                       }
                       margin={{
-                        "top": 50,
-                        "right": 25,
-                        "bottom": 25,
-                        "left": 25
+                        "top": 45,
+                        "right": 15,
+                        "bottom": 60,
+                        "left": 45,
                       }}
                       xScale={{
                         "type": "point"
@@ -327,14 +327,12 @@ class Main extends Component {
                         "min": "auto",
                         "max": "auto"
                       }}
-                      axisTop={null}
-                      axisRight={null}
                       axisBottom={{
                         "orient": "bottom",
                         "tickSize": 5,
                         "tickPadding": 5,
                         "tickRotation": 0,
-                        "legend": "transportation",
+                        "legend": t('main:claims.everyday.chart.bottomLegend'),
                         "legendOffset": 36,
                         "legendPosition": "middle"
                       }}
@@ -343,26 +341,27 @@ class Main extends Component {
                         "tickSize": 5,
                         "tickPadding": 5,
                         "tickRotation": 0,
-                        "legend": "count",
+                        "legend": t('main:claims.everyday.chart.leftLegend'),
                         "legendOffset": -40,
                         "legendPosition": "middle"
                       }}
-                      dotSize={10}
-                      dotColor="inherit:darker(0.3)"
+                      dotSize={8}
+                      dotColor="#ffffff"
                       dotBorderWidth={2}
-                      dotBorderColor="#ffffff"
+                      dotBorderColor="#5fc1c8"
                       enableDotLabel={true}
-                      dotLabel="y"
+                      dotLabel={(dot) => Number(dot.y.toFixed(1)).toLocaleString()}
                       dotLabelYOffset={-12}
-                      animate={true}
-                      motionStiffness={90}
-                      motionDamping={15}
                       isInteractive={false}
                       curve="natural"
                       colors={[
                         '#5fc1c8',
                       ]}
                     />
+                  </div>
+                  <div className="source">
+                    <span className="title">{t('main:claims.everyday.source.title')}: </span>
+                    <a href="http://www.renfe.com/empresa/LeyTransparencia/renfeviajeros/CuentasAnuales.html" target="_blank" rel="noopener noreferrer">{t('main:claims.everyday.source.name')}</a>.
                   </div>
                 </div>
                 <div className="tags">

@@ -90,7 +90,17 @@
     "everyday": {
       "title": "Primer el dia a dia",
       "description": "El transport públic massiu i quotidià ha de ser prioritari enfront del de llarga distància, perquè és el que s’utilitza diàriament per a desplaçar-se al lloc de treball o d’estudi, entre d’altres.",
-      "extra": "L'abandonament i la deixadesa del servei de Rodalia del nucli de València i Castelló han fet que la quantitat viatgers s'haja desplomat un 40 % en deu anys."
+      "extra": "L'abandonament i la deixadesa del servei de Rodalia del nucli de València i Castelló han fet que la quantitat viatgers s'haja desplomat un 40 % en deu anys.",
+
+      "chart": {
+        "leftLegend": "Viatgers (milions)",
+        "bottomLegend": "Any"
+      },
+
+      "source": {
+        "title": "Font",
+        "name": "memòries anuals d'activitats de Renfe Viajeros"
+      }
     },
 
     "paymentSystem": {

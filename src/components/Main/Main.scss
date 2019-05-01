@@ -356,7 +356,20 @@ section {
             }
 
             > .chart {
-              height: 250px;
+              height: 260px;
+            }
+  
+            > .source {
+              font-size: 13px;
+              text-align: center;
+              
+              > .title {
+                font-weight: 500;
+              }
+              
+              a:hover {
+                text-decoration: underline;
+              }
             }
           }
 
