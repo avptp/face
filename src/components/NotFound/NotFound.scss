@@ -1,0 +1,46 @@
+@import '~styles/colors';
+@import '~styles/mixins';
+@import '~styles/buttons';
+
+section.not-found {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $grey-lighter;
+
+  > * {
+    @include responsive-min-width(500px);
+    min-height: calc(100vh - 80px);
+    padding: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    flex-grow: 1;
+    flex-basis: 50vw;
+  }
+
+  .message {
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .button {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  }
+
+  .illustration {
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @each $type in bus, metro, train, tram {
+      &.#{$type} {
+        background-image: url('~images/illustrations/#{$type}.png');
+      }
+    }
+  }
+}

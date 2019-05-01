@@ -2,7 +2,6 @@
 @import '~styles/mixins';
 @import '~styles/buttons';
 
-
 header {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +84,6 @@ header {
       border-radius: 10px;
       box-shadow: 4px 4px 15px 0 rgba(36, 37, 38, .08);
       overflow: hidden;
-      //color: white;
 
       display: flex;
 
@@ -358,15 +356,15 @@ section {
             > .chart {
               height: 260px;
             }
-  
+
             > .source {
               font-size: 13px;
               text-align: center;
-              
+
               > .title {
                 font-weight: 500;
               }
-              
+
               a:hover {
                 text-decoration: underline;
               }
