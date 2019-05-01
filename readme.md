@@ -6,7 +6,7 @@
 
 ## About
 
-Face is the main web application of *[Associació Valenciana pel Transport Públic](https://avptp.org)* (Valencian Association for Public Transport), a non-profit organization whose goal is to achieve the public transport that the [Valencian society](https://en.wikipedia.org/wiki/Valencian_Community) deserves.
+Face is the main web application of [Associació Valenciana pel Transport Públic](https://avptp.org) (Valencian Association for Public Transport), a non-profit organization whose goal is to achieve the public transport that the [Valencian society](https://en.wikipedia.org/wiki/Valencian_Community) deserves.
 
 It is made with [React](https://reactjs.org) and love. ❤
 
@@ -27,7 +27,7 @@ The project follows the [default Create React App application structure](https:/
 
 ### License
 
-This software is distributed under the MIT license. Please read [license.md](license.md) for more information on the software availability and distribution.
+This software is distributed under the MIT license. Please read [the software license](license.md) and [the graphic resources license](src/images/license.md) for more information on the availability and distribution.
 
 ## First steps
 
