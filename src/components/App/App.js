@@ -1,4 +1,5 @@
 import CookieNotice from 'components/CookieNotice/CookieNotice';
+import ErrorBoundary from 'components/Error/ErrorBoundary';
 import Footer from 'components/Footer/Footer';
 import Main from 'components/Main/Main';
 import NotFound from 'components/NotFound/NotFound';
@@ -28,24 +29,26 @@ class App extends Component {
     const {t} = this.props;
 
     return (
-      <GoogleAnalytics>
-        <ScrollToTop/>
-        <Helmet>
-          <title>{t('app:name')}</title>
-          <meta name="description" content={t('app:description')}/>
-          <meta name="robots" content="index,follow"/>
-          {this.getAlternateLanguages()}
-          {this.getOpenGraphTags()}
-          {this.getTwitterCardTags()}
-        </Helmet>
-        <Switch>
-          <Route exact path='/' component={Main}/>
-          <Route exact path='/team' component={Team}/>
-          <Route path="*" component={NotFound}/>
-        </Switch>
-        <Footer/>
-        <CookieNotice/>
-      </GoogleAnalytics>
+      <ErrorBoundary>
+        <GoogleAnalytics>
+          <ScrollToTop/>
+          <Helmet>
+            <title>{t('app:name')}</title>
+            <meta name="description" content={t('app:description')}/>
+            <meta name="robots" content="index,follow"/>
+            {this.getAlternateLanguages()}
+            {this.getOpenGraphTags()}
+            {this.getTwitterCardTags()}
+          </Helmet>
+          <Switch>
+            <Route exact path='/' component={Main}/>
+            <Route exact path='/team' component={Team}/>
+            <Route path="*" component={NotFound}/>
+          </Switch>
+          <Footer/>
+          <CookieNotice/>
+        </GoogleAnalytics>
+      </ErrorBoundary>
     );
   }
 

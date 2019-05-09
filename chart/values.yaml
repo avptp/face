@@ -19,6 +19,9 @@ deployment:
       cpu: 20m
       memory: 30Mi
 
+config:
+  REACT_APP_SENTRY_DSN: https://048b9bd45e464631bdeee6026559d3c1@sentry.io/1456276
+
 service:
   port: 80
 

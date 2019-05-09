@@ -2,7 +2,7 @@
 @import '~styles/mixins';
 @import '~styles/buttons';
 
-section.not-found {
+section.error {
   display: flex;
   flex-wrap: wrap;
   background-color: $grey-lighter;
@@ -22,13 +22,23 @@ section.not-found {
 
   .message {
     .title {
-      font-size: 30px;
+      font-size: 35px;
       font-weight: 500;
     }
 
-    .button {
-      margin-top: 30px;
-      font-size: 20px;
+    .subtitle {
+      @include vertical-margin(20px);
+      font-size: 22px;
+      color: $grey-light;
+    }
+
+    .actions {
+      @include vertical-margin(15px);
+
+      .button {
+        @include horizontal-margin(6px);
+        font-size: 18px !important;
+      }
     }
   }
 

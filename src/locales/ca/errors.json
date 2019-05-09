@@ -1,0 +1,14 @@
+{
+  "default": {
+    "title": "Vaja! Ha ocorregut un error",
+    "subtitle": "L'equip ja ha sigut informat, però pots explicar-nos el que estaves fent per a posar-nos-ho un poc més fàcil.",
+
+    "report": "Dona'ns més informació",
+    "startOver": "Anar a l'inici"
+  },
+
+  "notFound": {
+    "title": "Vaja! Ací no hi ha res",
+    "subtitle": "No hem pogut trobar «eixa cosa de la que vosté em parla»."
+  }
+}

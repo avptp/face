@@ -70,8 +70,8 @@ class Main extends Component {
     const language = i18n.language.split('-')[0];
 
     return (
-      <React.Fragment>
-        <header>
+      <>
+        <header className="main">
           <div ref={this.introduction} className="introduction">
             <div ref={this.wrapper} className="wrapper">
               <img className='imagotype' src={imagotypeWhite} alt=""/>
@@ -535,7 +535,7 @@ class Main extends Component {
             </div>
           </div>
         </section>
-      </React.Fragment>
+      </>
     );
   }
 

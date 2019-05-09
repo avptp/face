@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import './Navigation.scss'
 
 class Navigation extends Component {
+
   render() {
     return (
       <Translation>
@@ -13,9 +14,7 @@ class Navigation extends Component {
           t =>
             <nav>
               <div className="control">
-                <Link to="/">
-                  <img src={arrowLeft} alt=""/>
-                </Link>
+                {this.renderControls()}
               </div>
               <Link to="/" className="imagotype">
                 <img src={imagotypeWhite} alt={t('app:name')}/>
@@ -26,6 +25,19 @@ class Navigation extends Component {
       </Translation>
     );
   }
+
+  renderControls() {
+    if (this.props.disableControls) {
+      return;
+    }
+
+    return (
+      <Link to="/">
+        <img src={arrowLeft} alt=""/>
+      </Link>
+    );
+  }
+
 }
 
 export default Navigation;
