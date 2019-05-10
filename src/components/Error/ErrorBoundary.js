@@ -1,5 +1,6 @@
 import * as Sentry from '@sentry/browser';
 import Error from 'components/Error/Error';
+import config from 'config';
 import React, {Component} from 'react';
 import {Helmet} from 'react-helmet';
 import {Translation} from 'react-i18next';
@@ -17,7 +18,7 @@ class ErrorBoundary extends Component {
 
     if (process.env.NODE_ENV === 'production') {
       Sentry.init({
-        dsn: process.env.REACT_APP_SENTRY_DSN,
+        dsn: config.sentryDsn,
       });
     }
   }
