@@ -35,7 +35,6 @@ class App extends Component {
           <Helmet>
             <title>{t('app:name')}</title>
             <meta name="description" content={t('app:description')}/>
-            <meta name="robots" content="index,follow"/>
             {this.getAlternateLanguages()}
             {this.getOpenGraphTags()}
             {this.getTwitterCardTags()}
