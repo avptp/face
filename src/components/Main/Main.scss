@@ -271,6 +271,10 @@ section {
     flex-direction: column;
     align-items: center;
 
+    p {
+      @include vertical-margin(12px);
+    }
+
     .introduction {
       max-width: 850px;
       text-align: center;

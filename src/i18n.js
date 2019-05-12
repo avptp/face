@@ -13,6 +13,7 @@ i18n
     nonExplicitWhitelist: true,
     load: 'languageOnly',
     defaultNS: 'app',
+    returnObjects: true,
 
     interpolation: {
       escapeValue: false
