@@ -1,5 +1,5 @@
 ## Development image
-FROM node:10.15.3-alpine AS development
+FROM node:10.16.0-alpine AS development
 
 WORKDIR /app
 
@@ -19,7 +19,7 @@ RUN apk add --no-cache \
 
 
 ## Builder image
-FROM node:10.15.3-alpine AS builder
+FROM node:10.16.0-alpine AS builder
 
 WORKDIR /app
 
