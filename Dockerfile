@@ -33,7 +33,7 @@ RUN npm ci \
 
 
 ## Runtime image
-FROM nginx:1.16.0-alpine AS runtime
+FROM nginx:1.17.0-alpine AS runtime
 
 WORKDIR /app
 
