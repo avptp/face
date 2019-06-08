@@ -49,3 +49,8 @@ header, section {
   padding: 0;
   display: flex;
 }
+
+/** Sentry **/
+.sentry-error-embed-wrapper header {
+  display: block;
+}

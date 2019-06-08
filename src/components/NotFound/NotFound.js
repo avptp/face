@@ -1,33 +1,32 @@
-import Navigation from 'components/Navigation/Navigation';
+import Error from 'components/Error/Error';
+import 'components/Error/Error.scss';
 import React, {Component} from 'react';
+import {Helmet} from 'react-helmet';
 import {Translation} from 'react-i18next';
-import {Link} from 'react-router-dom'
-import './NotFound.scss'
+import {Link} from 'react-router-dom';
 
 class NotFound extends Component {
 
   render() {
     return (
-      <Translation ns="notFound">
-        {
-          t =>
-            <>
-              <Navigation/>
-              <section className="not-found">
-                <div className="message">
-                  <div className="title">{t('message')}</div>
-                  <Link to="/" className="button">{t('action')}</Link>
+      <>
+        <Helmet>
+          <meta httpEquiv="status" content="404"/>
+        </Helmet>
+        <Translation ns="errors">
+          {
+            t =>
+              <Error>
+                <div className="title">{t('notFound.title')}</div>
+                <div className="subtitle">{t('notFound.subtitle')}</div>
+                <div className="actions">
+                  <Link to="/" className="button">{t('default.startOver')}</Link>
                 </div>
-                <div className={`illustration ${this.constructor.randomItem(['bus', 'metro', 'train', 'tram'])}`}/>
-              </section>
-            </>
-        }
-      </Translation>
+              </Error>
+          }
+        </Translation>
+      </>
     );
-  }
-
-  static randomItem(array) {
-    return array[Math.floor((Math.random() * array.length))];
   }
 
 }

@@ -70,8 +70,8 @@ class Main extends Component {
     const language = i18n.language.split('-')[0];
 
     return (
-      <React.Fragment>
-        <header>
+      <>
+        <header className="main">
           <div ref={this.introduction} className="introduction">
             <div ref={this.wrapper} className="wrapper">
               <img className='imagotype' src={imagotypeWhite} alt=""/>
@@ -375,7 +375,11 @@ class Main extends Component {
                 <div className="description">{t('main:claims.paymentSystem.description')}</div>
                 <div className="info">
                   <div className="title">{t('main:claims.didYouKnow')}</div>
-                  <div className="description">{t('main:claims.paymentSystem.extra')}</div>
+                  <div className="description">
+                    {t('main:claims.paymentSystem.extra').map(
+                      (value, key) => <p key={key}>{value}</p>
+                    )}
+                  </div>
                 </div>
                 <div className="tags">
                   <span className="atmv">{t('main:claims.organizations.atmv')}</span>
@@ -424,7 +428,11 @@ class Main extends Component {
             <div className="column">
               <div className="claim">
                 <div className="title">{t('main:claims.information.title')}</div>
-                <div className="description">{t('main:claims.information.description')}</div>
+                <div className="description">
+                  {t('main:claims.information.description').map(
+                    (value, key) => <p key={key}>{value}</p>
+                  )}
+                </div>
                 <div className="tags">
                   <span className="atmv">{t('main:claims.organizations.atmv')}</span>
                   <span className="fgv">{t('main:claims.organizations.fgv')}</span>
@@ -436,7 +444,11 @@ class Main extends Component {
 
               <div className="claim">
                 <div className="title">{t('main:claims.branding.title')}</div>
-                <div className="description">{t('main:claims.branding.description')}</div>
+                <div className="description">
+                  {t('main:claims.branding.description').map(
+                    (value, key) => <p key={key}>{value}</p>
+                  )}
+                </div>
                 <div className="tags">
                   <span className="generalitat">{t('main:claims.organizations.valencianGovernment')}</span>
                   <span className="spanish-government">{t('main:claims.organizations.spanishGovernment')}</span>
@@ -470,10 +482,18 @@ class Main extends Component {
 
               <div className="claim">
                 <div className="title">{t('main:claims.accessibility.title')}</div>
-                <div className="description">{t('main:claims.accessibility.description')}</div>
+                <div className="description">
+                  {t('main:claims.accessibility.description').map(
+                    (value, key) => <p key={key}>{value}</p>
+                  )}
+                </div>
                 <div className="info">
                   <div className="title">{t('main:claims.didYouKnow')}</div>
-                  <div className="description">{t('main:claims.accessibility.extra')}</div>
+                  <div className="description">
+                    {t('main:claims.accessibility.extra').map(
+                      (value, key) => <p key={key}>{value}</p>
+                    )}
+                  </div>
                 </div>
                 <div className="tags">
                   <span className="city-councils">{t('main:claims.organizations.cityCouncils')}</span>
@@ -535,7 +555,7 @@ class Main extends Component {
             </div>
           </div>
         </section>
-      </React.Fragment>
+      </>
     );
   }
 

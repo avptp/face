@@ -91,7 +91,7 @@ Run the following command to start the development server:
 npm run start
 ```
 
-> Note that Git is not available in the container, so you should use it from the host machine. It is strongly recommended to use [Fork](https://git-fork.com), a desktop Git client.
+> Note that Git is not available in the container, so you should use it from the host machine. It is strongly recommended to use a desktop client like [Fork](https://git-fork.com) or [GitKraken](https://www.gitkraken.com).
 
 ### Deployment
 

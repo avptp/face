@@ -1,6 +1,7 @@
 import imagotype from 'images/imagotype.svg';
 import facebookLogo from 'images/social/facebook.svg';
 import githubLogo from 'images/social/github.svg';
+import telegramLogo from 'images/social/telegram.svg';
 import instagramLogo from 'images/social/instagram.svg';
 import linkedinLogo from 'images/social/linkedin.svg';
 import twitterLogo from 'images/social/twitter.svg';
@@ -41,6 +42,9 @@ class Footer extends Component {
                     </a>
                     <a href="https://www.facebook.com/avptp.org" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={facebookLogo} alt="Facebook"/>
+                    </a>
+                    <a href="https://t.me/avptp" target="_blank" rel="noopener noreferrer">
+                      <img className="icon" src={telegramLogo} alt="Telegram"/>
                     </a>
                     <a href="https://www.instagram.com/avptp" target="_blank" rel="noopener noreferrer">
                       <img className="icon" src={instagramLogo} alt="Instagram"/>

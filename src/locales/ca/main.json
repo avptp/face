@@ -106,7 +106,11 @@
     "paymentSystem": {
       "title": "Sistema de pagament únic",
       "description": "S’ha d’aconseguir una unificació dels suports, dels títols i de les tarifes entre totes les empreses de transport públic per a assolir una intermodalitat i una integració tarifària reals i efectives.",
-      "extra": "En l’actualitat, la Generalitat coordina un sistema de pagament anomenat Móbilis. Malgrat que teòricament és un sistema de suport únic, en la pràctica hi ha més de 20 suports Móbilis diferents i incompatibles entre si. El preu dels suports varia des d’1 € fins a 5 —depenent del material, emissor i tipus— i són diferents per a cada àrea metropolitana."
+
+      "extra": [
+        "En l’actualitat, la Generalitat coordina un sistema de pagament anomenat Móbilis. Malgrat que teòricament és un sistema de suport únic, en la pràctica hi ha més de 20 suports Móbilis diferents i incompatibles entre si.",
+        "El preu dels suports varia des d’1 € fins a 5 —depenent del material, emissor i tipus— i són diferents per a cada àrea metropolitana."
+      ]
     },
 
     "priority": {
@@ -127,12 +131,20 @@
 
     "information": {
       "title": "Informació oberta",
-      "description": "Actualment s'utilitzen sistemes d'informació obsolets i aïllats, cosa que en alguns casos implica que els usuaris ni tan sols puguen conéixer els horaris (siguen en temps real o planificats). Les dades han de ser obertes per a poder ser consumides per qualsevol ciutadà o servei. A més, els organismes corresponents han d'oferir integracions amb els serveis més utilitzats, com Google Maps, per exemple."
+
+      "description": [
+        "Actualment s'utilitzen sistemes d'informació obsolets i aïllats, cosa que en alguns casos implica que els usuaris ni tan sols puguen conéixer els horaris (siguen en temps real o planificats).",
+        "Les dades han de ser obertes per a poder ser consumides per qualsevol ciutadà o servei. A més, els organismes corresponents han d'oferir integracions amb els serveis més utilitzats, com Google Maps, per exemple."
+      ]
     },
 
     "branding": {
       "title": "Marca única",
-      "description": "Cal desenvolupar una marca única de cara a l'usuari per a tota la xarxa de transport, independentment que internament seguisca estant dividida en les diverses empreses que hi puguen haver. Això implica una política única de comunicació i informació. Els autobusos interurbans de la Generalitat són un clar cas d'aplicació urgent, ja que són totalment desconeguts per als ciutadans."
+
+      "description": [
+        "Cal desenvolupar una marca única de cara a l'usuari per a tota la xarxa de transport, independentment que internament seguisca estant dividida en les diverses empreses que hi puguen haver. Això implica una política única de comunicació i informació.",
+        "Els autobusos interurbans de la Generalitat són un clar cas d'aplicació urgent, ja que són totalment desconeguts per als ciutadans."
+      ]
     },
 
     "frequency": {
@@ -148,8 +160,16 @@
 
     "accessibility": {
       "title": "Accessibilitat",
-      "description": "Totes les instal·lacions han d'oferir les mateixes possibilitats a totes les persones. És habitual que les escales mecàniques i els ascensors deixen de funcionar i estiguen així durant setmanes. Les instal·lacions han de comptar amb equipament d'accessibilitat suplementari per a garantir l'equitat. A més, s'han de dissenyar protocols que eviten perjudicar els usuaris quan l'accessibilitat de les instal·lacions es veja minvada.",
-      "extra": "En setembre de 2018 va ocórrer un conflicte a les instal·lacions de FGV quan una persona no va poder accedir a elles perquè l'únic ascensor que hi havia no funcionava. L'existència de protocols per a casos extrems hauria permés a l'empresa oferir una solució al problema en vegada d'abandonar a l'usuari. Per exemple, podria haver-hi un acord amb el servei d'autobús o taxi de la ciutat perquè cobrira el desplaçament fins a la següent estació operativa o fins i tot fins al destí."
+
+      "description": [
+        "Totes les instal·lacions han d'oferir les mateixes possibilitats a totes les persones. És habitual que les escales mecàniques i els ascensors deixen de funcionar i estiguen així durant setmanes.",
+        "Les instal·lacions han de comptar amb equipament d'accessibilitat suplementari per a garantir l'equitat. A més, s'han de dissenyar protocols que eviten perjudicar els usuaris quan l'accessibilitat de les instal·lacions es veja minvada."
+      ],
+
+      "extra": [
+        "En setembre de 2018 va ocórrer un conflicte a les instal·lacions de FGV quan una persona no va poder accedir a elles perquè l'únic ascensor que hi havia no funcionava. L'existència de protocols per a casos extrems hauria permés a l'empresa oferir una solució al problema en vegada d'abandonar a l'usuari.",
+        "Per exemple, podria haver-hi un acord amb el servei d'autobús o taxi de la ciutat perquè cobrira el desplaçament fins a la següent estació operativa o fins i tot fins al destí."
+      ]
     },
 
     "staff": {

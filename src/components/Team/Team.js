@@ -41,13 +41,13 @@ class Team extends Component {
                       <div className="position">{t('representativeBody.positions.vicePresidentAndSpokesperson')}</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://victordiaz.me" target="_blank" rel="noopener noreferrer">
+                        <a href="https://v0ctor.me" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={webLogo} alt="Web"/>
                         </a>
-                        <a href="https://linkedin.com/in/victordm" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/v0ctor" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
                         </a>
-                        <a href="https://twitter.com/victordzmr" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/v0ctor" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                         <a href="https://github.com/v0ctor" target="_blank" rel="noopener noreferrer">
