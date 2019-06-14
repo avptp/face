@@ -66,13 +66,13 @@ docker-compose up -d
 Then, enter to the `app` container.
 
 ```Shell
-docker-compose exec -u $(id -u) app bash
+docker-compose exec -u $(id -u) app sh
 ```
 
 To easily access the container on subsequent occasions, you can add the following alias to your `.bashrc` or `.zshrc` file.
 
 ```Shell
-alias app="docker-compose exec -u $(id -u) app bash"
+alias app="docker-compose exec -u $(id -u) app sh"
 ```
 
 ### Initialization
