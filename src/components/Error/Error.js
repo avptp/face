@@ -7,7 +7,7 @@ class Error extends Component {
   render() {
     return (
       <>
-        <Navigation disableControls={true} />
+        <Navigation disableControls={true}/>
         <section className="error">
           <div className="message">
             {this.props.children}

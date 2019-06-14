@@ -11,6 +11,7 @@ import vertebrationIcon from 'images/icons/vertebration.svg';
 import imagotypeWhite from 'images/imagotype_white.svg';
 import React, {Component} from 'react';
 import {withTranslation} from 'react-i18next';
+import {Link} from 'react-router-dom';
 import './Main.scss'
 
 class Main extends Component {
@@ -66,8 +67,7 @@ class Main extends Component {
   }
 
   render() {
-    const {i18n, t} = this.props;
-    const language = i18n.language.split('-')[0];
+    const {t} = this.props;
 
     return (
       <>
@@ -78,8 +78,8 @@ class Main extends Component {
               <p className="title">{t('main:introduction.title')}</p>
               <p className="subtitle">{t('main:introduction.subtitle')}</p>
               <div className="buttons">
-                <a href={`/documents/statutes/${language}.pdf`} target="_blank" rel="noopener noreferrer" className="button light">{t('app:statutes')}</a>
-                <a href={`/documents/regulations/${language}.pdf`} target="_blank" rel="noopener noreferrer" className="button light">{t('app:regulations')}</a>
+                <Link className="button light" to="/legal/statutes">{t('app:statutes')}</Link>
+                <Link className="button light" to="/legal/regulations">{t('app:regulations')}</Link>
                 <button className="button light reverse" onClick={() => {
                   this.join.current.scrollIntoView({behavior: 'smooth'});
                 }}>

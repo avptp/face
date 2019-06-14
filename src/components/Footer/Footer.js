@@ -1,9 +1,9 @@
 import imagotype from 'images/imagotype.svg';
 import facebookLogo from 'images/social/facebook.svg';
 import githubLogo from 'images/social/github.svg';
-import telegramLogo from 'images/social/telegram.svg';
 import instagramLogo from 'images/social/instagram.svg';
 import linkedinLogo from 'images/social/linkedin.svg';
+import telegramLogo from 'images/social/telegram.svg';
 import twitterLogo from 'images/social/twitter.svg';
 import youtubeLogo from 'images/social/youtube.svg';
 import React, {Component} from 'react';
@@ -17,8 +17,6 @@ class Footer extends Component {
       <Translation ns="footer">
         {
           (t, {i18n}) => {
-            const language = i18n.language.split('-')[0];
-
             return (
               <footer>
                 <div className="legal">
@@ -30,8 +28,8 @@ class Footer extends Component {
                 </div>
                 <div className="extra">
                   <div className="links">
-                    <a href={`/documents/statutes/${language}.pdf`} target="_blank" rel="noopener noreferrer">{t('app:statutes')}</a>
-                    <a href={`/documents/regulations/${language}.pdf`} target="_blank" rel="noopener noreferrer">{t('app:regulations')}</a>
+                    <Link to="/legal/statutes">{t('app:statutes')}</Link>
+                    <Link to="/legal/regulations">{t('app:regulations')}</Link>
                     <Link to="/team">{t('team:name')}</Link>
                     <a href="https://blog.avptp.org">{t('app:blog')}</a>
                   </div>

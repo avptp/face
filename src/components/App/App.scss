@@ -28,10 +28,12 @@ a:visited {
 
 p a, li a, .a {
   transition: color .3s ease;
-  text-decoration: underline;
+  text-decoration: underline !important;
+  opacity: .6;
+  cursor: pointer;
 
   &:hover {
-    color: black;
+    opacity: 1;
   }
 }
 
@@ -47,10 +49,5 @@ p {
 header, section {
   width: 100%;
   padding: 0;
-  display: flex;
 }
 
-/** Sentry **/
-.sentry-error-embed-wrapper header {
-  display: block;
-}
