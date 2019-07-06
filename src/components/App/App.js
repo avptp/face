@@ -3,6 +3,8 @@ import ErrorBoundary from 'components/Error/ErrorBoundary';
 import Footer from 'components/Footer/Footer';
 import Main from 'components/Main/Main';
 import NotFound from 'components/NotFound/NotFound';
+import Regulations from 'components/Regulations/Regulations';
+import Statutes from 'components/Statutes/Statutes';
 import Team from 'components/Team/Team';
 import ScrollToTop from 'hooks/ScrollToTop';
 import GoogleAnalytics from 'listeners/GoogleAnalytics';
@@ -41,6 +43,8 @@ class App extends Component {
           </Helmet>
           <Switch>
             <Route exact path='/' component={Main}/>
+            <Route exact path='/legal/statutes' component={Statutes}/>
+            <Route exact path='/legal/regulations' component={Regulations}/>
             <Route exact path='/team' component={Team}/>
             <Route path="*" component={NotFound}/>
           </Switch>

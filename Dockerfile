@@ -8,9 +8,7 @@ ENV PATH="${PATH}:/app/node_modules/.bin"
 
 ARG USER_ID=1000
 
-RUN apk add --no-cache \
-        bash \
- && if [ $USER_ID -ne 1000 ]; then \
+RUN if [ $USER_ID -ne 1000 ]; then \
         apk add --no-cache -t tmp shadow \
      && groupmod -g $USER_ID node \
      && usermod -u $USER_ID -g $USER_ID node \
@@ -33,7 +31,7 @@ RUN npm ci \
 
 
 ## Runtime image
-FROM nginx:1.17.0-alpine AS runtime
+FROM nginx:1.17.1-alpine AS runtime
 
 WORKDIR /app
 

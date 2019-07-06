@@ -2,6 +2,7 @@
 @import '~styles/mixins';
 
 section.team {
+  display: flex;
   flex-direction: column;
 
   @include responsive-padding(40px, 20px);
