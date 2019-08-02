@@ -34,12 +34,16 @@ spec:
             - name: http
               containerPort: 3000
           resources: {{ toYaml .Values.deployment.resources | nindent 12 }}
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 10
           livenessProbe:
             httpGet:
               path: /
               port: http
             initialDelaySeconds: 10
-            timeoutSeconds: 2
 
       imagePullSecrets:
         - name: {{ .Release.Name }}-registry
