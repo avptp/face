@@ -1,5 +1,5 @@
 ## Development image
-FROM node:10.16.0-alpine AS development
+FROM node:10.16.1-alpine AS development
 
 WORKDIR /app
 
@@ -17,7 +17,7 @@ RUN if [ $USER_ID -ne 1000 ]; then \
 
 
 ## Builder image
-FROM node:10.16.0-alpine AS builder
+FROM node:10.16.1-alpine AS builder
 
 WORKDIR /app
 
@@ -31,7 +31,7 @@ RUN npm ci \
 
 
 ## Runtime image
-FROM nginx:1.17.1-alpine AS runtime
+FROM nginx:1.17.2-alpine AS runtime
 
 WORKDIR /app
 
