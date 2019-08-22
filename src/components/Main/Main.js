@@ -305,6 +305,10 @@ class Main extends Component {
                           {
                             x: 2017,
                             y: 15.166,
+                          },
+                          {
+                            x: 2018,
+                            y: 15.485,
                           }
                         ]
                       }]}
