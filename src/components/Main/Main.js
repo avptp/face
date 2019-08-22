@@ -255,108 +255,110 @@ class Main extends Component {
                   <div className="description">{t('main:claims.everyday.extra')}</div>
                   <div className="chart">
                     <ResponsiveLine
-                      data={
-                        [
+                      data={[{
+                        id: 'travelers',
+                        data: [
                           {
-                            id: 'travelers',
-                            data: [
-                              {
-                                x: 2006,
-                                y: 25.439,
-                              },
-                              {
-                                x: 2007,
-                                y: 25.124,
-                              },
-                              {
-                                x: 2008,
-                                y: 23.856,
-                              },
-                              {
-                                x: 2009,
-                                y: 20.83,
-                              },
-                              {
-                                x: 2010,
-                                y: 19.291,
-                              },
-                              {
-                                x: 2011,
-                                y: 19.521,
-                              },
-                              {
-                                x: 2012,
-                                y: 19.226,
-                              },
-                              {
-                                x: 2013,
-                                y: 18.161,
-                              },
-                              {
-                                x: 2014,
-                                y: 17.083,
-                              },
-                              {
-                                x: 2015,
-                                y: 15.86,
-                              },
-                              {
-                                x: 2016,
-                                y: 14.707,
-                              },
-                              {
-                                x: 2017,
-                                y: 15.166,
-                              }
-                            ]
+                            x: 2006,
+                            y: 25.439,
+                          },
+                          {
+                            x: 2007,
+                            y: 25.124,
+                          },
+                          {
+                            x: 2008,
+                            y: 23.856,
+                          },
+                          {
+                            x: 2009,
+                            y: 20.83,
+                          },
+                          {
+                            x: 2010,
+                            y: 19.291,
+                          },
+                          {
+                            x: 2011,
+                            y: 19.521,
+                          },
+                          {
+                            x: 2012,
+                            y: 19.226,
+                          },
+                          {
+                            x: 2013,
+                            y: 18.161,
+                          },
+                          {
+                            x: 2014,
+                            y: 17.083,
+                          },
+                          {
+                            x: 2015,
+                            y: 15.86,
+                          },
+                          {
+                            x: 2016,
+                            y: 14.707,
+                          },
+                          {
+                            x: 2017,
+                            y: 15.166,
+                          },
+                          {
+                            x: 2018,
+                            y: 15.485,
                           }
                         ]
-                      }
+                      }]}
                       margin={{
-                        "top": 45,
-                        "right": 15,
-                        "bottom": 60,
-                        "left": 45,
+                        top: 45,
+                        right: 15,
+                        bottom: 60,
+                        left: 45,
                       }}
                       xScale={{
-                        "type": "point"
+                        type: 'point'
                       }}
                       yScale={{
-                        "type": "linear",
-                        "stacked": true,
-                        "min": "auto",
-                        "max": "auto"
+                        type: 'linear',
+                        stacked: true,
+                        min: 'auto',
+                        max: 'auto'
                       }}
                       axisBottom={{
-                        "orient": "bottom",
-                        "tickSize": 5,
-                        "tickPadding": 5,
-                        "tickRotation": 0,
-                        "legend": t('main:claims.everyday.chart.bottomLegend'),
-                        "legendOffset": 36,
-                        "legendPosition": "middle"
+                        orient: 'bottom',
+                        tickSize: 5,
+                        tickPadding: 5,
+                        tickRotation: 0,
+                        legend: t('main:claims.everyday.chart.bottomLegend'),
+                        legendOffset: 36,
+                        legendPosition: 'middle'
                       }}
                       axisLeft={{
-                        "orient": "left",
-                        "tickSize": 5,
-                        "tickPadding": 5,
-                        "tickRotation": 0,
-                        "legend": t('main:claims.everyday.chart.leftLegend'),
-                        "legendOffset": -40,
-                        "legendPosition": "middle"
+                        orient: 'left',
+                        tickSize: 5,
+                        tickPadding: 5,
+                        tickRotation: 0,
+                        legend: t('main:claims.everyday.chart.leftLegend'),
+                        legendOffset: -40,
+                        legendPosition: 'middle'
                       }}
-                      dotSize={8}
-                      dotColor="#ffffff"
-                      dotBorderWidth={2}
-                      dotBorderColor="#5fc1c8"
-                      enableDotLabel={true}
-                      dotLabel={(dot) => Number(dot.y.toFixed(1)).toLocaleString()}
-                      dotLabelYOffset={-12}
-                      isInteractive={false}
-                      curve="natural"
                       colors={[
                         '#5fc1c8',
                       ]}
+                      pointSize={8}
+                      pointColor="#ffffff"
+                      pointBorderWidth={2}
+                      pointBorderColor="#5fc1c8"
+                      enablePointLabel={true}
+                      pointLabel={(point) => Number(point.y.toFixed(1)).toLocaleString()}
+                      pointLabelYOffset={-12}
+                      useMesh={true}
+                      isInteractive={false}
+                      curve="natural"
+
                     />
                   </div>
                   <div className="source">
