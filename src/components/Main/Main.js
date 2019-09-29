@@ -534,7 +534,12 @@ class Main extends Component {
                 <li>{t('main:join.support.advantages.stayTuned')}</li>
                 <li>{t('main:join.support.advantages.involve')}</li>
               </ul>
-              <p className="notice">{t('main:join.support.comingSoon')}</p>
+              <a
+                href={`mailto:socis@avptp.org?subject=${encodeURI(t('main:join.support.email.subject'))}&body=${encodeURI(t('main:join.support.email.body'))}`}
+                className="button reverse"
+              >
+                {t('main:join.support.action')}
+              </a>
             </div>
           </div>
           <div className="associate">
@@ -551,7 +556,10 @@ class Main extends Component {
                 <li>{t('main:join.associate.advantages.associationBodies')}</li>
                 <li>{t('main:join.associate.advantages.attendAndVote')}</li>
               </ul>
-              <a href={`mailto:socis@avptp.org?subject=${encodeURI(t('main:join.email.subject'))}&body=${encodeURI(t('main:join.email.body'))}`} className="button reverse">
+              <a
+                href={`mailto:socis@avptp.org?subject=${encodeURI(t('main:join.associate.email.subject'))}&body=${encodeURI(t('main:join.associate.email.body'))}`}
+                className="button reverse"
+              >
                 {t('main:join.associate.action')}
               </a>
             </div>
