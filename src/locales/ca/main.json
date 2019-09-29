@@ -1,7 +1,7 @@
 {
   "introduction": {
     "title": "El transport del futur es construïx hui",
-    "subtitle": "Naixem per a afrontar un problema que afecta greument a la societat valenciana: l'absència del transport públic que esta mereix. A més, ho fem començant pel principi (i pels principis)."
+    "subtitle": "Estem ací per a prendre'n part. Volem aconseguir el transport públic que la societat valenciana mereix."
   },
 
   "purposes": {
@@ -189,7 +189,12 @@
         "involve": "Involucra't en els grups de treball."
       },
 
-      "comingSoon": "Disponible pròximament a través de l'aplicació web."
+      "action": "Fes-te simpatitzant debades",
+
+      "email": {
+        "subject": "Sol·licitud de simpatitzant",
+        "body": "Hola. \n\nEm pose en contacte perquè m'agradaria unir-me a l'Associació Valenciana pel Transport Públic com a persona simpatitzant. A continuació adjunte les dades necessàries:\n\n- Nom: \n- Cognoms: \n- NIF (DNI o NIE): \n- Data de naixement: \n- Municipi: \n- Adreça de correu electrònic (si és diferent): \n\nManifeste que les dades proporcionades són verídiques i que complisc les condicions que establixen els Estatuts i el Reglament de Règim Intern de l'Associació.\n\nGràcies per la vostra atenció.\n\nSalutacions."
+      }
     },
 
     "associate": {
@@ -203,12 +208,12 @@
         "attendAndVote": "Assistix a l'Assemblea General i vota."
       },
 
-      "action": "Associa't per 15 € a l'any"
-    },
+      "action": "Associa't per 15 € a l'any",
 
-    "email": {
-      "subject": "Sol·licitud d'associació",
-      "body": "Hola. \n\nEm pose en contacte perquè m'agradaria unir-me a l'Associació Valenciana pel Transport Públic com a persona associada. A continuació adjunte les dades necessàries:\n\n- Nom: \n- Cognoms: \n- NIF (DNI o NIE): \n- Data de naixement: \n- Adreça: \n- Codi postal: \n- Municipi: \n- Número de telèfon: \n- Adreça de correu electrònic (si és diferent): \n\nManifeste que les dades proporcionades són verídiques i que complisc les condicions que establixen els Estatuts i el Reglament de Règim Intern de l'Associació.\n\nGràcies per la vostra atenció.\n\nSalutacions."
+      "email": {
+        "subject": "Sol·licitud d'associació",
+        "body": "Hola. \n\nEm pose en contacte perquè m'agradaria unir-me a l'Associació Valenciana pel Transport Públic com a persona associada. A continuació adjunte les dades necessàries:\n\n- Nom: \n- Cognoms: \n- NIF (DNI o NIE): \n- Data de naixement: \n- Adreça: \n- Codi postal: \n- Municipi: \n- Número de telèfon: \n- Adreça de correu electrònic (si és diferent): \n\nManifeste que les dades proporcionades són verídiques i que complisc les condicions que establixen els Estatuts i el Reglament de Règim Intern de l'Associació.\n\nGràcies per la vostra atenció.\n\nSalutacions."
+      }
     }
   }
 }
