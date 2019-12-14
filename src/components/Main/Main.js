@@ -1,10 +1,9 @@
-import {ResponsiveLine} from '@nivo/line'
-import associateIcon from 'images/icons/associate.svg';
+import {ResponsiveLine} from '@nivo/line';
+import JoinBox from 'components/JoinBox/JoinBox';
 import generalInterestIcon from 'images/icons/general-interest.svg';
 import integrationIcon from 'images/icons/integration.svg';
 import planningIcon from 'images/icons/planning.svg';
 import rightIcon from 'images/icons/right.svg';
-import supportIcon from 'images/icons/support.svg';
 import sustainabilityIcon from 'images/icons/sustainability.svg';
 import universalityIcon from 'images/icons/universality.svg';
 import vertebrationIcon from 'images/icons/vertebration.svg';
@@ -12,7 +11,7 @@ import imagotypeWhite from 'images/imagotype_white.svg';
 import React, {Component} from 'react';
 import {withTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
-import './Main.scss'
+import './Main.scss';
 
 class Main extends Component {
 
@@ -521,49 +520,8 @@ class Main extends Component {
         </section>
 
         <section className="join" ref={this.join}>
-          <div className="support">
-            <div className="box">
-              <div className="icon">
-                <img src={supportIcon} alt=""/>
-              </div>
-              <div className="title">{t('main:join.support.title')}</div>
-              <p>{t('main:join.support.description')}</p>
-              <hr/>
-              <ul>
-                <li>{t('main:join.support.advantages.stickTogether')}</li>
-                <li>{t('main:join.support.advantages.stayTuned')}</li>
-                <li>{t('main:join.support.advantages.involve')}</li>
-              </ul>
-              <a
-                href={`mailto:socis@avptp.org?subject=${encodeURI(t('main:join.support.email.subject'))}&body=${encodeURI(t('main:join.support.email.body'))}`}
-                className="button reverse"
-              >
-                {t('main:join.support.action')}
-              </a>
-            </div>
-          </div>
-          <div className="associate">
-            <div className="box">
-              <div className="icon">
-                <img src={associateIcon} alt=""/>
-              </div>
-              <div className="title">{t('main:join.associate.title')}</div>
-              <p>{t('main:join.associate.description')}</p>
-              <hr/>
-              <ul>
-                <li>{t('main:join.associate.advantages.supporterOnes')}</li>
-                <li>{t('main:join.associate.advantages.financialSupport')}</li>
-                <li>{t('main:join.associate.advantages.associationBodies')}</li>
-                <li>{t('main:join.associate.advantages.attendAndVote')}</li>
-              </ul>
-              <a
-                href={`mailto:socis@avptp.org?subject=${encodeURI(t('main:join.associate.email.subject'))}&body=${encodeURI(t('main:join.associate.email.body'))}`}
-                className="button reverse"
-              >
-                {t('main:join.associate.action')}
-              </a>
-            </div>
-          </div>
+          <JoinBox type='support'/>
+          <JoinBox type='associate'/>
         </section>
       </>
     );
