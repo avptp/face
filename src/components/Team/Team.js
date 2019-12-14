@@ -97,7 +97,17 @@ class Team extends Component {
                       <div className="name">Martín Montón Sanchis</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://twitter.com/MartnMontn" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/MartinMonton_" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={twitterLogo} alt="Twitter"/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="person">
+                      <img className="avatar" src="https://secure.gravatar.com/avatar/0187eb8a7e27551478017eb47776d287?d=retro&s=300" alt=""/>
+                      <div className="name">Marcos Salomón Uroz</div>
+                      <div className="position">{t('representativeBody.positions.delegateInAlacant')}</div>
+                      <div className="social">
+                        <a href="https://twitter.com/enrospv" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                       </div>
@@ -105,6 +115,7 @@ class Team extends Component {
                     <div className="person">
                       <img className="avatar" src="https://secure.gravatar.com/avatar/a4adeaa7ab008361255f9d093bf901ac?d=retro&s=300" alt=""/>
                       <div className="name">Domingo Rodríguez León</div>
+                      <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
                       <div className="social">
                         <a href="https://www.linkedin.com/in/domi" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
