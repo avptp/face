@@ -5,13 +5,15 @@ metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Release.Namespace }}
   labels:
-    app: {{ .Release.Name }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
 
 spec:
-  type: ClusterIP
-  ports:
-    - name: http
-      port: {{ .Values.service.port }}
-      targetPort: http
   selector:
-    app: {{ .Release.Name }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+  ports:
+    - name: h1
+      port: 80
+      targetPort: h1
+    - name: h2
+      port: 81
+      targetPort: h2

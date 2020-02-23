@@ -19,17 +19,11 @@ deployment:
       cpu: 20m
       memory: 30Mi
 
-service:
-  port: 80
-
 ingress:
   hosts: []
-  annotations:
-    ingress.kubernetes.io/hsts-max-age: '31536000'
-    ingress.kubernetes.io/hsts-include-subdomains: 'true'
-    ingress.kubernetes.io/hsts-preload: 'true'
-    ingress.kubernetes.io/force-hsts: 'true'
-    ingress.kubernetes.io/browser-xss-filter: 'true'
-    ingress.kubernetes.io/content-type-nosniff: 'true'
-    ingress.kubernetes.io/referrer-policy: strict-origin-when-cross-origin
-    ingress.kubernetes.io/custom-response-headers: x-frame-options:sameorigin
+  middlewares:
+    - redirectWww@file
+    - setFrontHeaders@file
+
+tls:
+  dnsNames: []

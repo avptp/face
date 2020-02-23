@@ -1,3 +1,9 @@
 ingress:
   hosts:
     - avptp.org
+    - www.avptp.org
+
+tls:
+  dnsNames:
+    - '*.avptp.org'
+    - avptp.org
