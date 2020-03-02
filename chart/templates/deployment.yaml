@@ -5,7 +5,7 @@ metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Release.Namespace }}
   labels:
-    app: {{ .Release.Name }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
   annotations:
     kubernetes.io/change-cause: '{{ .Values.image.tag }}'
 
@@ -14,36 +14,37 @@ spec:
 
   strategy:
     rollingUpdate:
-      maxUnavailable: 0
-      maxSurge: 1
+      maxUnavailable: 1
 
   selector:
     matchLabels:
-      app: {{ .Release.Name }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
 
   template:
     metadata:
       labels:
-        app: {{ .Release.Name }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
 
     spec:
       containers:
-        - name: app
+        - name: default
           image: {{ template "image" . }}
           ports:
-            - name: http
+            - name: h1
               containerPort: 3000
+            - name: h2
+              containerPort: 3001
           resources: {{ toYaml .Values.deployment.resources | nindent 12 }}
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: h1
             initialDelaySeconds: 10
           livenessProbe:
             httpGet:
               path: /
-              port: http
+              port: h1
             initialDelaySeconds: 10
 
       imagePullSecrets:
-        - name: {{ .Release.Name }}-registry
+        - name: registry
