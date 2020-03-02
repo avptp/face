@@ -103,16 +103,6 @@ class Team extends Component {
                       </div>
                     </div>
                     <div className="person">
-                      <img className="avatar" src="https://secure.gravatar.com/avatar/0187eb8a7e27551478017eb47776d287?d=retro&s=300" alt=""/>
-                      <div className="name">Marcos Salomón Uroz</div>
-                      <div className="position">{t('representativeBody.positions.delegateInAlacant')}</div>
-                      <div className="social">
-                        <a href="https://twitter.com/enrospv" target="_blank" rel="noopener noreferrer">
-                          <img className="icon" src={twitterLogo} alt="Twitter"/>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="person">
                       <img className="avatar" src="https://secure.gravatar.com/avatar/a4adeaa7ab008361255f9d093bf901ac?d=retro&s=300" alt=""/>
                       <div className="name">Domingo Rodríguez León</div>
                       <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
@@ -123,6 +113,34 @@ class Team extends Component {
                         <a href="https://twitter.com/Domirole" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="category">
+                  <div className="title">{t('geographicalWorkGroup.name')}</div>
+                  <div className="description">{t('geographicalWorkGroup.description')}</div>
+                  <div className='subcategory'>
+                    <div className='title'>{t('geographicalWorkGroup.alacant')}</div>
+                    <div className="persons">
+                      <div className="person">
+                        <img className="avatar" src="https://secure.gravatar.com/avatar/0187eb8a7e27551478017eb47776d287?d=retro&s=300" alt=""/>
+                        <div className="name">Marcos Salomón Uroz</div>
+                        <div className="position">{t('representativeBody.positions.delegateInAlacant')}</div>
+                        <div className="social">
+                          <a href="https://twitter.com/enrospv" target="_blank" rel="noopener noreferrer">
+                            <img className="icon" src={twitterLogo} alt="Twitter"/>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="person">
+                        <img className="avatar" src="https://secure.gravatar.com/avatar/119f8c4fccd72f03ede8adfb137e4c6d?d=retro&s=300" alt=""/>
+                        <div className="name">Aitor Escorza Ripoll</div>
+                        <div className="social">
+                          <a href="https://www.linkedin.com/in/escorza-ripoll/" target="_blank" rel="noopener noreferrer">
+                            <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

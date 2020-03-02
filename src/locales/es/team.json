@@ -22,5 +22,11 @@
   "collaborators": {
     "name": "Colaboradores",
     "description": "Las personas colaboradoras son aquellas que cooperan activamente con la Junta Directiva para el desarrollo de sus tareas."
+  },
+
+  "geographicalWorkGroup": {
+    "name": "Grupos de trabajo geográficos",
+    "description": "Un grupo de trabajo geográfico desarrolla los fines de la asociación mediante tareas específicas en su área de ámbito y está formado por uno o más socios.",
+    "alacant": "Alicante"
   }
 }
