@@ -63,16 +63,21 @@ To build the environment, run Docker Compose in daemon mode. The first time it m
 docker-compose up -d
 ```
 
-Then, enter to the `app` container.
+Then, run the default shell (or directly Bash) in the `app` container. If you are not sure which one to choose, choose the first option.
 
 ```Shell
 docker-compose exec -u $(id -u) app sh
 ```
 
-To easily access the container on subsequent occasions, you can add the following alias to your `.bashrc` or `.zshrc` file.
+```Shell
+docker-compose exec -u $(id -u) app bash
+```
+
+To easily access the container on subsequent occasions, you can add the following aliases to your `.bashrc` or `.zshrc` file.
 
 ```Shell
-alias app="docker-compose exec -u $(id -u) app sh"
+alias dcsh="docker-compose exec -u $(id -u) app sh"
+alias dcba="docker-compose exec -u $(id -u) app bash"
 ```
 
 ### Initialization

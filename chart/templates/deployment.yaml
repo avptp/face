@@ -12,10 +12,6 @@ metadata:
 spec:
   revisionHistoryLimit: {{ .Values.deployment.revisionHistoryLimit }}
 
-  strategy:
-    rollingUpdate:
-      maxUnavailable: 1
-
   selector:
     matchLabels:
       app.kubernetes.io/instance: {{ .Release.Name }}
@@ -26,6 +22,19 @@ spec:
         app.kubernetes.io/instance: {{ .Release.Name }}
 
     spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: app.kubernetes.io/instance
+                      operator: In
+                      values:
+                        - {{ .Release.Name }}
+                topologyKey: kubernetes.io/hostname
+
       containers:
         - name: default
           image: {{ template "image" . }}
