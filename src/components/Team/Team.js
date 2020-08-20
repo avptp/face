@@ -115,6 +115,26 @@ class Team extends Component {
                         </a>
                       </div>
                     </div>
+                    <div className="person">
+                      <img className="avatar" src="https://secure.gravatar.com/avatar/8d8c1604c5999ddba3ffe0e8dcd5330e?d=retro&s=300" alt=""/>
+                      <div className="name">Rubén</div>
+                      <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
+                      <div className="social">
+                        <a href="https://twitter.com/rubenxdesign" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={twitterLogo} alt="Twitter"/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="person">
+                      <img className="avatar" src="https://secure.gravatar.com/avatar/19f5c23e7d5c453e6a01238a2130748b?d=retro&s=300" alt=""/>
+                      <div className="name">Eloy Sanchis</div>
+                      <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
+                      <div className="social">
+                        <a href="https://twitter.com/EloySanchis" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={twitterLogo} alt="Twitter"/>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="category">
