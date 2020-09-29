@@ -308,6 +308,10 @@ class Main extends Component {
                           {
                             x: 2018,
                             y: 15.485,
+                          },
+                          {
+                            x: 2019,
+                            y: 16.184,
                           }
                         ]
                       }]}
@@ -362,7 +366,7 @@ class Main extends Component {
                   </div>
                   <div className="source">
                     <span className="title">{t('main:claims.everyday.source.title')}: </span>
-                    <a href="http://www.renfe.com/empresa/LeyTransparencia/renfeviajeros/CuentasAnuales.html" target="_blank" rel="noopener noreferrer">{t('main:claims.everyday.source.name')}</a>.
+                    <a href="https://www.renfe.com/es/va/grup-renfe/govern-corporatiu-i-transparencia/transparencia/renfe-viatgers-sme-sa/funcions/comptes" target="_blank" rel="noopener noreferrer">{t('main:claims.everyday.source.name')}</a>.
                   </div>
                 </div>
                 <div className="tags">
