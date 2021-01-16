@@ -68,7 +68,7 @@ Generalment, la condició de soci s'atorga automàticament. No obstant això, la
 
 ### Article 4: quotes de soci
 
-La quota de soci és de **15 € anuals**. La creació de quotes extraordinàries o derrames haurà d'estar motivada i justificar-se prèviament.
+La quota de soci és de **10 € anuals**. La creació de quotes extraordinàries o derrames haurà d'estar motivada i justificar-se prèviament.
 
 Els nous socis han d'abonar esta quota anual en el moment de la seua inscripció a través dels mitjans que pose a disposició l'Associació, en general a través de la seua aplicació web. No obstant això, en casos extraordinaris i degudament justificats, la Junta Directiva pot acceptar l'ingrés per altres mitjans.
 
