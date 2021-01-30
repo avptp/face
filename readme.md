@@ -2,8 +2,6 @@
 
 # Face
 
-![Build status](https://drone.dev.avptp.org/api/badges/avptp/face/status.svg)
-
 ## About
 
 Face is the main web application of [Associació Valenciana pel Transport Públic](https://avptp.org) (Valencian Association for Public Transport), a non-profit organization whose goal is to achieve the public transport that the [Valencian society](https://en.wikipedia.org/wiki/Valencian_Community) deserves.

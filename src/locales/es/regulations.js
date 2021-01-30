@@ -68,7 +68,7 @@ Generalmente, la condición de socio se otorga automáticamente. No obstante, la
 
 ### Artículo 4: cuotas de socio
 
-La cuota de socio es de **15 € anuales**. La creación de cuotas extraordinarias o derramas deberá estar motivada y justificarse previamente.
+La cuota de socio es de **10 € anuales**. La creación de cuotas extraordinarias o derramas deberá estar motivada y justificarse previamente.
 
 Los nuevos socios deben abonar esta cuota anual en el momento de su inscripción a través de los medios que ponga a disposición la Asociación, por lo general a través de su aplicación web. No obstante, en casos extraordinarios y debidamente justificados, la Junta Directiva puede aceptar el ingreso por otros medios.
 
