@@ -120,7 +120,7 @@ class Team extends Component {
                       <div className="name">Rubén</div>
                       <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
                       <div className="social">
-                        <a href="https://twitter.com/rubenxdesign" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/yrubenx" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                       </div>
@@ -131,6 +131,18 @@ class Team extends Component {
                       <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
                       <div className="social">
                         <a href="https://twitter.com/EloySanchis" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={twitterLogo} alt="Twitter"/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="person">
+                      <img className="avatar" src="https://secure.gravatar.com/avatar/eab87f045b2b670a92dd0238522d84bc?d=retro&s=300" alt=""/>
+                      <div className="name">Miguel Sánchez Valdés</div>
+                      <div className="social">
+                        <a href="https://www.linkedin.com/in/miguelsanchezvaldes" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
+                        </a>
+                        <a href="https://twitter.com/miguemito" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                       </div>
@@ -148,7 +160,7 @@ class Team extends Component {
                         <div className="name">Marcos Salomón Uroz</div>
                         <div className="position">{t('representativeBody.positions.delegateInAlacant')}</div>
                         <div className="social">
-                          <a href="https://twitter.com/enrospv" target="_blank" rel="noopener noreferrer">
+                          <a href="https://twitter.com/enros___" target="_blank" rel="noopener noreferrer">
                             <img className="icon" src={twitterLogo} alt="Twitter"/>
                           </a>
                         </div>
