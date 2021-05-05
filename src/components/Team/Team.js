@@ -135,6 +135,18 @@ class Team extends Component {
                         </a>
                       </div>
                     </div>
+                    <div className="person">
+                      <img className="avatar" src="https://secure.gravatar.com/avatar/eab87f045b2b670a92dd0238522d84bc?d=retro&s=300" alt=""/>
+                      <div className="name">Miguel Sánchez Valdés</div>
+                      <div className="social">
+                        <a href="https://www.linkedin.com/in/miguelsanchezvaldes" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
+                        </a>
+                        <a href="https://twitter.com/miguemito" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={twitterLogo} alt="Twitter"/>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="category">
