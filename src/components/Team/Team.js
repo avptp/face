@@ -120,7 +120,7 @@ class Team extends Component {
                       <div className="name">Rubén</div>
                       <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
                       <div className="social">
-                        <a href="https://twitter.com/rubenxdesign" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/yrubenx" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                       </div>
@@ -148,7 +148,7 @@ class Team extends Component {
                         <div className="name">Marcos Salomón Uroz</div>
                         <div className="position">{t('representativeBody.positions.delegateInAlacant')}</div>
                         <div className="social">
-                          <a href="https://twitter.com/enrospv" target="_blank" rel="noopener noreferrer">
+                          <a href="https://twitter.com/enros___" target="_blank" rel="noopener noreferrer">
                             <img className="icon" src={twitterLogo} alt="Twitter"/>
                           </a>
                         </div>
