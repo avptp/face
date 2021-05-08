@@ -127,9 +127,12 @@ class Team extends Component {
                     </div>
                     <div className="person">
                       <img className="avatar" src="https://secure.gravatar.com/avatar/19f5c23e7d5c453e6a01238a2130748b?d=retro&s=300" alt=""/>
-                      <div className="name">Eloy Sanchis</div>
+                      <div className="name">Eloy Sanchis López</div>
                       <div className="position">{t('representativeBody.positions.audiovisualContentCreator')}</div>
                       <div className="social">
+                        <a href="https://www.linkedin.com/in/eloysanchislopez" target="_blank" rel="noopener noreferrer">
+                          <img className="icon" src={linkedinLogo} alt="LinkedIn"/>
+                        </a>
                         <a href="https://twitter.com/EloySanchis" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
