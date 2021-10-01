@@ -311,7 +311,11 @@ class Main extends Component {
                           },
                           {
                             x: 2019,
-                            y: 16.184,
+                            y: 16.1841,
+                          },
+                          {
+                            x: 2020,
+                            y: 8.8722,
                           }
                         ]
                       }]}
@@ -333,10 +337,10 @@ class Main extends Component {
                       axisBottom={{
                         orient: 'bottom',
                         tickSize: 5,
-                        tickPadding: 5,
-                        tickRotation: 0,
+                        tickPadding: 30,
+                        tickRotation: 270,
                         legend: t('main:claims.everyday.chart.bottomLegend'),
-                        legendOffset: 36,
+                        legendOffset: 48,
                         legendPosition: 'middle'
                       }}
                       axisLeft={{
@@ -345,7 +349,7 @@ class Main extends Component {
                         tickPadding: 5,
                         tickRotation: 0,
                         legend: t('main:claims.everyday.chart.leftLegend'),
-                        legendOffset: -40,
+                        legendOffset: -35,
                         legendPosition: 'middle'
                       }}
                       colors={[
@@ -357,11 +361,10 @@ class Main extends Component {
                       pointBorderColor="#5fc1c8"
                       enablePointLabel={true}
                       pointLabel={(point) => Number(point.y.toFixed(1)).toLocaleString()}
-                      pointLabelYOffset={-12}
+                      pointLabelYOffset={-14}
                       useMesh={true}
                       isInteractive={false}
                       curve="natural"
-
                     />
                   </div>
                   <div className="source">

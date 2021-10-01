@@ -2,6 +2,7 @@ import imagotype from 'images/imagotype.svg';
 import smallImagotype from 'images/imagotype_small.svg';
 import isotype from 'images/isotype.svg';
 
+// eslint-disable-next-line
 export default {
   markdown: `
 # Reglamento de Régimen Interno

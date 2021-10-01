@@ -2,6 +2,7 @@ import Legal from 'components/Legal/Legal';
 import React, {Component} from 'react';
 import {Translation} from 'react-i18next';
 import Markdown from 'react-markdown';
+import RehypeRaw from 'rehype-raw';
 
 class Regulations extends Component {
 
@@ -14,7 +15,7 @@ class Regulations extends Component {
               <Legal>
                 <Markdown
                   linkTarget="_blank"
-                  escapeHtml={false}>
+                  rehypePlugins={[RehypeRaw]}>
                   {t('markdown')}
                 </Markdown>
               </Legal>

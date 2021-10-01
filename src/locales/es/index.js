@@ -7,6 +7,7 @@ import regulations from './regulations';
 import statutes from './statutes';
 import team from './team';
 
+// eslint-disable-next-line
 export default {
   app,
   cookies,
