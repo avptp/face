@@ -19,8 +19,6 @@ footer {
   }
 
   .legal {
-    font-weight: lighter;
-
     > * {
       @include vertical-margin(12px);
     }
