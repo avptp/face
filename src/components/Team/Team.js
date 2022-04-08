@@ -97,7 +97,7 @@ class Team extends Component {
                       <div className="name">Martín Montón Sanchis</div>
                       <div className="co-founder">{t('representativeBody.co-founder')}</div>
                       <div className="social">
-                        <a href="https://twitter.com/MartinMonton_" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/martnmontn" target="_blank" rel="noopener noreferrer">
                           <img className="icon" src={twitterLogo} alt="Twitter"/>
                         </a>
                       </div>
