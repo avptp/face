@@ -1,8 +1,0 @@
-ingress:
-  hosts:
-    - dev.avptp.org
-
-tls:
-  dnsNames:
-    - '*.dev.avptp.org'
-    - dev.avptp.org
