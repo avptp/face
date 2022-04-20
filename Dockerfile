@@ -1,11 +1,17 @@
-## Development image
-FROM amd64/node:14.18.0-alpine3.14 AS development
+## Base image
+FROM node:16.14.2-alpine3.15 AS base
 
-ARG USER_ID=1000
-ENV USER_NAME=default
-ENV PATH="${PATH}:/usr/src/app/node_modules/.bin"
+ENV NEXT_TELEMETRY_DISABLED 1
 
 WORKDIR /usr/src/app
+
+
+## Development image
+FROM base AS development
+
+ARG USER_ID=1000
+
+ENV PATH="${PATH}:/usr/src/app/node_modules/.bin"
 
 RUN if [ $USER_ID -ne 1000 ]; then \
         apk add --no-cache -t volatile \
@@ -17,25 +23,32 @@ RUN if [ $USER_ID -ne 1000 ]; then \
 
 
 ## Builder image
-FROM amd64/node:14.18.0-alpine3.14 AS builder
+FROM base AS builder
 
-WORKDIR /usr/src/app
+COPY package.json package-lock.json ./
+
+RUN npm ci
 
 ENV NODE_ENV production
-ENV SASS_PATH=node_modules:src
 
 COPY . .
 
-RUN npm ci \
- && npm run build
+RUN npx prettier --check .
+
+RUN npm run build
 
 
 ## Runtime image
-FROM nginx:1.20.1-alpine AS runtime
+FROM base AS runtime
 
-WORKDIR /usr/src/app
+ENV NODE_ENV production
 
-COPY chart/files/nginx.conf /etc/nginx/nginx.conf
-COPY chart/files/default.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder --chown=node:node /usr/src/app/next.config.js ./next.config.js
+COPY --from=builder --chown=node:node /usr/src/app/public ./public
+COPY --from=builder --chown=node:node /usr/src/app/.next ./.next
+COPY --from=builder --chown=node:node /usr/src/app/node_modules ./node_modules
+COPY --from=builder --chown=node:node /usr/src/app/package.json ./package.json
 
-COPY --from=builder /usr/src/app/build .
+USER node
+
+CMD ["npm", "run", "start"]

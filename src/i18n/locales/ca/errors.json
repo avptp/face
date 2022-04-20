@@ -1,0 +1,13 @@
+{
+  "title": "Vaja! Alguna cosa ha anat malament",
+  "notFound": {
+    "viewTitle": "no trobat",
+    "description": "No hem pogut trobar allò que estàs buscant. Comprova la barra d'adreces per si t'has equivocat o t'han passat malament l'enllaç.",
+    "actions": {
+      "primary": {
+        "text": "Tornar a l'inici",
+        "link": "/"
+      }
+    }
+  }
+}
