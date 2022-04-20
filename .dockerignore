@@ -1,5 +1,4 @@
 .dockerignore
-.drone.yml
 .DS_Store
 .editorconfig
 .env.example

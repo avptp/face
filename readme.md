@@ -6,115 +6,81 @@
 
 Face is the main web application of [Associació Valenciana pel Transport Públic](https://avptp.org) (Valencian Association for Public Transport), a non-profit organization whose goal is to achieve the public transport that the [Valencian society](https://en.wikipedia.org/wiki/Valencian_Community) deserves.
 
-It is made with [React](https://reactjs.org) and love. ❤
-
-### Practices and principles
-
-The development workflow is based on these practices and principles:
-
-* [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
-* [Semantic Versioning](https://semver.org).
+It is made with [Next.js](https://nextjs.org) —a [React](https://reactjs.org) framework— and love. ❤
 
 ### Directory structure
 
-The project follows the [default Create React App application structure](https://facebook.github.io/create-react-app/docs/folder-structure) with the following additions:
+The project follows the default Next.js application structure with the following additions:
 
-* `Dockerfile`, `docker-compose.yml`, and `.dockerignore` have all necessary [Docker](https://www.docker.com) manifests to define the development and runtime environments.
-* `chart` contains a [Helm](https://helm.sh) package with all [Kubernetes](https://kubernetes.io) specifications that define the infrastructure.
-* `.drone.yml` has the [Drone](https://drone.io) CI/CD pipeline.
+- `deployments`, `.dockerignore`, `.env.example`, `docker-compose.yml` and `Dockerfile` contain the configuration and manifests that define the development and runtime environments with [Docker](https://www.docker.com), [Docker Compose](https://docs.docker.com/compose), [Kubernetes](https://kubernetes.io) and [Helm](https://helm.sh).
+- `.github` holds the [GitHub Actions](https://github.com/features/actions) CI/CD pipelines.
 
 ### License
 
 This software is distributed under the MIT license. Please read [the software license](license.md) and [the graphic resources license](src/images/license.md) for more information on the availability and distribution.
 
-## First steps
+## Getting started
 
-The project comes with a fully functional [Docker](https://www.docker.com) environment that has everything necessary to develop on any platform.
+This project comes with a virtualized environment that has everything necessary to develop on any platform.
 
-### Installation
-
-The only software requirements are [Docker Engine](https://docs.docker.com/engine/installation/) (Community Edition) and [Docker Compose](https://docs.docker.com/compose/install/). Follow the previous links to read the installation instructions. It is necessary to install the latest versions before continuing.
-
-#### Environment file
-
-Once installed, copy the example environment file to its default location.
+**TL;TR**
 
 ```Shell
-cp .env.example .env
+./install
+task
 ```
 
-Then, complete the `UID` environment variable with your user ID (`id -u`). Thus, the application container will use your user to interact with shared volumes.
+### Requirements
+
+Before starting using the project, make sure that the following software is installed on your machine:
+
+- [Taskfile](https://taskfile.dev/#/installation), a task runner that makes the project much easier to use.
+- [Docker](https://docs.docker.com/engine/install), a virtualization software that allows to create lightweight virtual environments.
+- [Docker Compose](https://docs.docker.com/compose/install/), a tool for defining and running multi-container Docker applications.
+
+It is necessary to install the latest versions before continuing. You may follow the previous links to read the installation instructions or simply run the following command.
 
 ```Shell
-sed -i "s/UID=.*/UID=$(id -u)/" .env
+./install
 ```
 
-#### Docker environment
+### Initializing
 
-The development environment is made of a single container:
-
-* `app` runs the application itself using the [Node interpreter](https://nodejs.org).
-
-To build the environment, run Docker Compose in daemon mode. The first time it may take a few minutes, since containers must be built.
+First, initialize the project and run the environment.
 
 ```Shell
-docker-compose up -d
+task
 ```
 
-Then, run the default shell (or directly Bash) in the `app` container. If you are not sure which one to choose, choose the first option.
+You can stop the environment by running the following command.
 
 ```Shell
-docker-compose exec -u $(id -u) app sh
+task down
 ```
+
+Finally, install NPM dependencies.
 
 ```Shell
-docker-compose exec -u $(id -u) app bash
+task run -- npm ci
 ```
 
-To easily access the container on subsequent occasions, you can add the following aliases to your `.bashrc` or `.zshrc` file.
+## Usage
 
-```Shell
-alias dcsh="docker-compose exec -u $(id -u) app sh"
-alias dcba="docker-compose exec -u $(id -u) app bash"
-```
+You can run commands inside the virtual environment by prefixim them with a shortcut command (`task run -- <command>`) or by running a shell in the container (`task shell`).
 
-### Initialization
-
-Being inside of the `app` container for the first time, you should install the dependencies.
-
-```Shell
-npm ci
-```
-
-### Usage
+### Running the development server
 
 Run the following command to start the development server:
 
 ```Shell
-npm run start
+task run -- npm run dev
 ```
 
 > Note that Git is not available in the container, so you should use it from the host machine. It is strongly recommended to use a desktop client like [Fork](https://git-fork.com) or [GitKraken](https://www.gitkraken.com).
 
-### Deployment
+## Deployment
 
-The deployment process is automated with [Drone](https://drone.io) and [Kubernetes](https://kubernetes.io). When changes are incorporated into production (`master` branch) or staging (`develop` branch), an automatic deployment is made to the corresponding environment.
-
-## Workflow
-
-When working on a task, its branch should be created if it does not exist. When switching branches it is necessary to install dependencies, as there may be changes respect to the previous branch.
-
-```Shell
-npm ci
-```
-
-When work is finished on a branch, it must be checked that all changes have been **documented**. It must also be checked that **code style** meets the standards and all **tests** pass.
-
-Note that the following conditions must be met before creating a pull request:
-
-* All model and code changes must be documented.
-* Code style must comply the standards.
-* All tests must pass.
+The deployment process is automated with [GitHub Actions](https://github.com/features/actions) and [Kubernetes](https://kubernetes.io). When changes are incorporated into production (`master` branch) or staging (`develop` branch), an automatic deployment is made to the corresponding environment.
 
 ## Troubleshooting
 
@@ -122,16 +88,10 @@ There are several common problems that can be easily solved. Here are their caus
 
 ### Docker
 
-The Docker environment should work properly as it has been exhaustively tested. Otherwise, it is possible to rebuild it by running the following command.
+The Docker environment should work properly. Otherwise, it is possible to rebuild it by running the following command.
 
 ```Shell
-docker-compose build --no-cache
-```
-
-You can also rebuild a single service. For example, if you want to rebuild the `app` service:
-
-```Shell
-docker-compose build --no-cache app
+task rebuild
 ```
 
 To start from scratch, you can remove all containers, images and volumes of your computer by running the following commands.
@@ -139,7 +99,7 @@ To start from scratch, you can remove all containers, images and volumes of your
 > Note that all system containers, images and volumes will be deleted, not only those related to this project.
 
 ```Shell
-docker-compose down
+docker compose down
 docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 docker volume rm $(docker volume ls -f dangling=true -q)

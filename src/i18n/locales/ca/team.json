@@ -1,0 +1,33 @@
+{
+  "viewTitle": "equip",
+  "name": "Equip",
+
+  "representativeBody": {
+    "name": "Junta Directiva",
+    "mandate": "Primer mandat",
+    "period": "10 de maig de 2018 — actualitat",
+    "description": "La Junta Directiva és l'òrgan de representació de l'Associació i s'encarrega de regir-la, administrar-la i representar-la. Qualsevol persona associada pot ser elegida com a membre per l'Assemblea General per sufragi universal, lliure, directe i secret.",
+
+    "positions": {
+      "president": "President",
+      "vicePresidentAndSpokesperson": "Vicepresident i portaveu",
+      "secretary": "Secretari",
+      "treasurer": "Tresorer",
+      "delegateInAlacant": "Representant a Alacant",
+      "audiovisualContentCreator": "Creador de contingut audiovisual"
+    },
+
+    "co-founder": "cofundador"
+  },
+
+  "collaborators": {
+    "name": "Col·laboradors",
+    "description": "Les persones col·laboradores són aquelles que cooperen activament amb la Junta Directiva per al desenvolupament de les seues tasques."
+  },
+
+  "geographicalWorkGroup": {
+    "name": "Grups de treball geogràfics",
+    "description": "Un grup de treball geogràfic desenvolupa els fins de l'associació mitjançant tasques específiques en la seua àrea d'àmbit i està format per un o més socis.",
+    "alacant": "Alacant"
+  }
+}
