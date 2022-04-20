@@ -1,0 +1,461 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+@import "../../styles/buttons";
+
+header.main {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    @include responsive-min-width(500px);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 50vw;
+  }
+
+  .introduction {
+    background-color: $primary;
+    color: white;
+
+    justify-content: flex-start;
+
+    .wrapper {
+      height: 100vh;
+      @include responsive-padding(60px, 30px);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &.fixed {
+        position: fixed;
+        width: 50vw;
+      }
+
+      > * {
+        @include vertical-margin(15px);
+      }
+    }
+
+    .imagotype {
+      width: 250px;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+
+      @media (max-width: 500px) {
+        font-size: 38px;
+      }
+    }
+
+    .subtitle {
+      padding-left: 25px;
+      font-size: 20px;
+      border-left: 1.5px solid white;
+    }
+
+    .buttons {
+      @include vertical-margin(8px);
+    }
+
+    button,
+    a.button {
+      @include vertical-margin(7px);
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .purposes {
+    @include responsive-padding(60px, 30px);
+    justify-content: center;
+
+    .purpose {
+      width: 75%;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 4px 4px 15px 0 rgba(36, 37, 38, 0.08);
+      overflow: hidden;
+
+      display: flex;
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(even) {
+        align-self: flex-end;
+      }
+
+      .icon {
+        padding: 0 20px;
+
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 500px) {
+          padding: 10px;
+        }
+
+        img {
+          height: 50px;
+        }
+      }
+
+      &:nth-of-type(1) .icon {
+        background-color: $sunflower-2;
+      }
+
+      &:nth-of-type(2) .icon {
+        background-color: $chewinggum-2;
+      }
+
+      &:nth-of-type(3) .icon {
+        background-color: $grapefruit-2;
+      }
+
+      &:nth-of-type(4) .icon {
+        background-color: $bluejeans-2;
+      }
+
+      &:nth-of-type(5) .icon {
+        background-color: $grass-2;
+      }
+
+      &:nth-of-type(6) .icon {
+        background-color: $lavender-2;
+      }
+
+      &:nth-of-type(7) .icon {
+        background-color: $orange-light;
+      }
+
+      .text {
+        padding: 20px;
+
+        .title {
+          margin-bottom: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          color: $secondary;
+        }
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+section {
+  &.context {
+    background-color: $grey-lighter;
+
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (max-width: 1120px) {
+        flex-direction: column;
+      }
+
+      > * {
+        min-height: calc(100vh - 150px);
+        @include responsive-padding(40px, 30px);
+        display: flex;
+        flex-basis: calc(100vw / 8);
+      }
+
+      .grid {
+        background-color: $grey-lighter;
+        font-size: 15px;
+        font-weight: lighter;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 3;
+
+        .item {
+          width: 170px;
+          color: $secondary;
+          text-align: center;
+
+          flex-basis: 50%;
+          flex-grow: 1;
+
+          .number {
+            font-size: 40px;
+            font-weight: 500;
+
+            .multiplier {
+              font-size: 30px;
+            }
+          }
+
+          .icon {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 12px;
+
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            @each $type in bicycle, bus, metro, train, tram, trolleybus, walking
+            {
+              &.#{$type} {
+                background-image: url("../../images/transportation/#{$type}.svg");
+              }
+            }
+          }
+        }
+      }
+
+      .community-kingdom-of-the-valencian-country {
+        flex-grow: 2;
+
+        background-image: url("../../images/map.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+      }
+    }
+
+    .photos {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .photo {
+        @include responsive-min-width(175px);
+        height: 150px;
+        flex-grow: 1;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      @for $i from 1 through 6 {
+        .photo:nth-of-type(#{$i}) {
+          background-image: url("../../images/photos/#{$i}.jpg");
+        }
+      }
+    }
+  }
+
+  &.claims {
+    @include responsive-padding(80px 60px, 40px 30px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      @include vertical-margin(12px);
+    }
+
+    .introduction {
+      max-width: 850px;
+      text-align: center;
+
+      .title {
+        width: fit-content;
+        margin: 0 auto 30px auto;
+        padding: 10px 14px;
+        background-color: $primary;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      .subtitle {
+        margin-bottom: 15px;
+        font-size: 35px;
+        font-weight: bold;
+        color: $secondary;
+      }
+
+      .description {
+        margin-bottom: 40px;
+        font-size: 20px;
+      }
+    }
+
+    .cards {
+      max-width: 1000px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      .column {
+        @include responsive-min-width(400px);
+        margin-top: 40px;
+
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 50%;
+
+        .claim {
+          @include responsive-padding(25px 30px, 25px 0);
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+
+          > .title {
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            color: $secondary;
+          }
+
+          > .description {
+            font-size: 18px;
+          }
+
+          .info {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            color: $grey-light;
+
+            > .title {
+              margin-bottom: 10px;
+              font-size: 18px;
+              font-weight: bold;
+            }
+
+            > .description {
+              font-size: 16px;
+            }
+
+            > .chart {
+              height: 260px;
+              margin-bottom: 10px;
+            }
+
+            > .source {
+              font-size: 13px;
+              text-align: center;
+
+              > .title {
+                font-weight: 500;
+              }
+
+              a:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          > .tags {
+            margin-top: 10px;
+            font-size: 12px;
+
+            span {
+              margin: 10px 10px 0 0;
+              padding: 5px 8px;
+              border-radius: 5px;
+              display: inline-block;
+              color: white;
+
+              &:before {
+                padding-right: 5px;
+                content: "@";
+              }
+
+              &.reverse {
+                border: 1px solid $dark-grey-1;
+                color: $dark-grey-1;
+              }
+
+              &.adif {
+                background-color: $grass-2;
+              }
+
+              &.atmv {
+                background-color: $bluejeans-3;
+              }
+
+              &.city-councils {
+                background-color: $aqua-2;
+              }
+
+              &.congreso {
+                background-color: $chewinggum-2;
+              }
+
+              &.fgv {
+                background-color: $sunflower-1;
+                color: $dark-grey-3;
+              }
+
+              &.generalitat {
+                background-color: $bittersweet-3;
+              }
+
+              &.spanish-government {
+                background-color: $sunflower-3;
+              }
+
+              &.renfe {
+                background-color: $lavender-2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.join {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    > * {
+      @include responsive-min-width(500px);
+      min-height: 100vh;
+      padding: 10vh 6vw;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      flex-basis: 50vw;
+    }
+  }
+}

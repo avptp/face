@@ -1,14 +1,26 @@
-# Operating system files
-.DS_Store
-
-# IDEs
-/.idea
-
-# Project
-/build
+# dependencies
 /node_modules
-/.env
 
-# Logs
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+.idea
+*.pem
+
+# debug
 npm-debug.log*
-*.log
+
+# local env files
+.env
+
+# vercel
+.vercel

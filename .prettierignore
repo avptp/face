@@ -1,0 +1,4 @@
+build
+deployments/templates
+.next
+node_modules

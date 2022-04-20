@@ -1,0 +1,13 @@
+{
+  "title": "¡Vaya! Algo ha ido mal",
+  "notFound": {
+    "viewTitle": "no encontrado",
+    "description": "No hemos podido encontrar lo que estás buscando. Comprueba la barra de direcciones por si te has equivocado o te han pasado mal el enlace.",
+    "actions": {
+      "primary": {
+        "text": "Volver al inicio",
+        "link": "/"
+      }
+    }
+  }
+}
