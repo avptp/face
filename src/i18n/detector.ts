@@ -26,6 +26,16 @@ export default class ServerDetector implements LanguageDetectorModule {
   }
 
   detect(): string | readonly string[] | undefined {
+    // Query string
+    if (this.request.url) {
+      const queryObject = url.parse(this.request.url, true).query;
+      const { hl: query } = queryObject;
+
+      if (query) {
+        return query;
+      }
+    }
+
     // Cookie
     const { language: cookie } = this.request.cookies;
 
@@ -38,16 +48,6 @@ export default class ServerDetector implements LanguageDetectorModule {
 
     if (header) {
       return accept.languages(header);
-    }
-
-    // Query string
-    if (this.request.url) {
-      const queryObject = url.parse(this.request.url, true).query;
-      const { hl: query } = queryObject;
-
-      if (query) {
-        return query;
-      }
     }
 
     return undefined;
