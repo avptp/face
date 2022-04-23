@@ -30,8 +30,8 @@ const options: InitOptions = {
     caches: ["cookie"],
     cookieOptions: {
       path: "/",
-      secure: true,
       maxAge: 365 * 24 * 60 * 60,
+      secure: true,
     },
   },
 };

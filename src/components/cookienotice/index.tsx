@@ -14,8 +14,8 @@ export default function CookieNotice(props: Props) {
   useEffect(() => {
     setCookie("cookies", accepted, {
       path: "/",
-      secure: true,
       maxAge: 365 * 24 * 60 * 60,
+      secure: true,
     });
   }, [setCookie, accepted]);
 
