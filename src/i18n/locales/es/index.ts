@@ -1,12 +1,12 @@
-import common from "./common";
-import cookies from "./cookies";
-import errors from "./errors";
-import footer from "./footer";
-import languages from "./languages";
-import main from "./main";
+import common from "./common.json";
+import cookies from "./cookies.json";
+import errors from "./errors.json";
+import footer from "./footer.json";
+import languages from "./languages.json";
+import main from "./main.json";
 import regulations from "./regulations";
 import statutes from "./statutes";
-import team from "./team";
+import team from "./team.json";
 
 // eslint-disable-next-line
 export default {
