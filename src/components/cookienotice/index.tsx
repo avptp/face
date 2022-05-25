@@ -16,6 +16,7 @@ export default function CookieNotice(props: Props) {
       path: "/",
       maxAge: 365 * 24 * 60 * 60,
       secure: true,
+      sameSite: "strict",
     });
   }, [setCookie, accepted]);
 

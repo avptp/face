@@ -66,7 +66,7 @@ task run -- npm ci
 
 ## Usage
 
-You can run commands inside the virtual environment by prefixim them with a shortcut command (`task run -- <command>`) or by running a shell in the container (`task shell`).
+You can run commands inside the virtual environment by prefixing them with a shortcut command (`task run -- <command>`) or by running a shell in the container (`task shell`).
 
 ### Running the development server
 

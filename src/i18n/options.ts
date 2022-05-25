@@ -32,6 +32,7 @@ const options: InitOptions = {
       path: "/",
       maxAge: 365 * 24 * 60 * 60,
       secure: true,
+      sameSite: "strict",
     },
   },
 };
