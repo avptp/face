@@ -28,6 +28,7 @@
   "geographicalWorkGroup": {
     "name": "Grupos de trabajo geográficos",
     "description": "Un grupo de trabajo geográfico desarrolla los fines de la asociación mediante tareas específicas en su área de ámbito y está formado por uno o más socios.",
-    "alacant": "Alicante"
+    "alacant": "Alicante",
+    "valencia": "Valencia"
   }
 }

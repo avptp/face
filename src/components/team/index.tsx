@@ -295,9 +295,6 @@ export default function Team() {
                   alt=""
                 />
                 <div className="name">Marcos Salomón Uroz</div>
-                <div className="position">
-                  {t("representativeBody.positions.delegateInAlacant")}
-                </div>
                 <div className="social">
                   <a
                     href="https://twitter.com/enros___"
@@ -326,6 +323,28 @@ export default function Team() {
                       src={linkedinLogo.src}
                       alt="LinkedIn"
                     />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="subcategory">
+            <div className="title">{t("geographicalWorkGroup.valencia")}</div>
+            <div className="persons">
+              <div className="person">
+                <img
+                  className="avatar"
+                  src="https://secure.gravatar.com/avatar/cee59ae100615da15fe32f2436ee20a4?d=retro&s=300"
+                  alt=""
+                />
+                <div className="name">Adrián García Terrádez</div>
+                <div className="social">
+                  <a
+                    href="https://twitter.com/Terradez_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img className="icon" src={twitterLogo.src} alt="Twitter" />
                   </a>
                 </div>
               </div>
