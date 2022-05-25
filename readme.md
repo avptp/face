@@ -12,7 +12,7 @@ It is made with [Next.js](https://nextjs.org) —a [React](https://reactjs.org) 
 
 The project follows the default Next.js application structure with the following additions:
 
-- `deployments`, `.dockerignore`, `.env.example`, `docker-compose.yml` and `Dockerfile` contain the configuration and manifests that define the development and runtime environments with [Docker](https://www.docker.com), [Docker Compose](https://docs.docker.com/compose), [Kubernetes](https://kubernetes.io) and [Helm](https://helm.sh).
+- `deployments`, `.dockerignore`, `.env.example`, `docker-compose.yml` and `Dockerfile` contain the configuration and manifests that define the development and runtime environments with [Docker](https://www.docker.com) and [Docker Compose](https://docs.docker.com/compose).
 - `.github` holds the [GitHub Actions](https://github.com/features/actions) CI/CD pipelines.
 
 ### License
@@ -80,7 +80,7 @@ task run -- npm run dev
 
 ## Deployment
 
-The deployment process is automated with [GitHub Actions](https://github.com/features/actions) and [Kubernetes](https://kubernetes.io). When changes are incorporated into production (`master` branch) or staging (`develop` branch), an automatic deployment is made to the corresponding environment.
+The deployment process is automated with [GitHub Actions](https://github.com/features/actions). When changes are incorporated into production (`master` branch) or staging (`develop` branch), an automatic deployment is made to the corresponding environment.
 
 ## Troubleshooting
 
