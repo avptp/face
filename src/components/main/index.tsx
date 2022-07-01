@@ -326,6 +326,10 @@ class Main extends React.Component<Props, State> {
                               x: 2020,
                               y: 8.8722,
                             },
+                            {
+                              x: 2021,
+                              y: 10.7062,
+                            },
                           ],
                         },
                       ]}
