@@ -57,7 +57,7 @@ export default class ServerDetector implements LanguageDetectorModule {
     const { language: cookie } = this.request.cookies;
 
     if (cookie !== lng) {
-      this.response.setHeader("set-cookie", `language=${lng}; Path=/; Max-Age=31536000; Secure; SameSite=Strict`);
+      this.response.setHeader("set-cookie", `language=${lng}; Path=/; Max-Age=31536000; Secure; SameSite=Lax`);
     }
   }
 }
