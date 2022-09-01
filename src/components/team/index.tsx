@@ -51,7 +51,7 @@ export default function Team() {
               />
               <div className="name">Víctor Díaz Marco</div>
               <div className="position">
-                {t("representativeBody.positions.vicePresidentAndSpokesperson")}
+                {t("representativeBody.positions.vicePresident")}
               </div>
               <div className="co-founder">
                 {t("representativeBody.co-founder")}
@@ -154,12 +154,6 @@ export default function Team() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="category">
-          <div className="title">{t("collaborators.name")}</div>
-          <div className="description">{t("collaborators.description")}</div>
-          <div className="persons">
             <div className="person">
               <img
                 className="avatar"
@@ -167,6 +161,9 @@ export default function Team() {
                 alt=""
               />
               <div className="name">Martín Montón Sanchis</div>
+              <div className="position">
+                {t("representativeBody.positions.spokesperson")}
+              </div>
               <div className="co-founder">
                 {t("representativeBody.co-founder")}
               </div>
@@ -180,6 +177,12 @@ export default function Team() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="category">
+          <div className="title">{t("collaborators.name")}</div>
+          <div className="description">{t("collaborators.description")}</div>
+          <div className="persons">
             <div className="person">
               <img
                 className="avatar"

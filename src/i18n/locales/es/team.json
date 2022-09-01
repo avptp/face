@@ -4,15 +4,16 @@
 
   "representativeBody": {
     "name": "Junta Directiva",
-    "mandate": "Primer mandato",
-    "period": "10 de mayo de 2018 — actualidad",
+    "mandate": "Segundo mandato",
+    "period": "3 de junio de 2022 — actualidad",
     "description": "La Junta Directiva es el órgano de representación de la Asociación y se encarga de regirla, administrarla y representarla. Cualquier persona asociada puede ser elegida como miembro por la Asamblea General por sufragio universal, libre, directo y secreto.",
 
     "positions": {
       "president": "Presidente",
-      "vicePresidentAndSpokesperson": "Vicepresidente y portavoz",
+      "vicePresident": "Vicepresidente",
       "secretary": "Secretario",
       "treasurer": "Tesorero",
+      "spokesperson": "Portavoz",
       "delegateInAlacant": "Representante en Alicante",
       "audiovisualContentCreator": "Creador de contenido audiovisual"
     },

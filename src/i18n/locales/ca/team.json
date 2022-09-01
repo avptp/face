@@ -4,15 +4,16 @@
 
   "representativeBody": {
     "name": "Junta Directiva",
-    "mandate": "Primer mandat",
-    "period": "10 de maig de 2018 — actualitat",
+    "mandate": "Segon mandat",
+    "period": "3 de juny de 2022 — actualitat",
     "description": "La Junta Directiva és l'òrgan de representació de l'Associació i s'encarrega de regir-la, administrar-la i representar-la. Qualsevol persona associada pot ser elegida com a membre per l'Assemblea General per sufragi universal, lliure, directe i secret.",
 
     "positions": {
       "president": "President",
-      "vicePresidentAndSpokesperson": "Vicepresident i portaveu",
+      "vicePresident": "Vicepresident",
       "secretary": "Secretari",
       "treasurer": "Tresorer",
+      "spokesperson": "Portaveu",
       "delegateInAlacant": "Representant a Alacant",
       "audiovisualContentCreator": "Creador de contingut audiovisual"
     },
