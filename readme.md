@@ -12,7 +12,7 @@ It is made with [Next.js](https://nextjs.org) —a [React](https://reactjs.org) 
 
 The project follows the default Next.js application structure with the following additions:
 
-- `deployments`, `.dockerignore`, `.env.example`, `docker-compose.yml` and `Dockerfile` contain the configuration and manifests that define the development and runtime environments with [Docker](https://www.docker.com) and [Docker Compose](https://docs.docker.com/compose).
+- `.dockerignore`, `.env.example`, `docker-compose.yml`, `Dockerfile` and `Makefile` contain the configuration and manifests that define the development and runtime environments with [Docker](https://www.docker.com) and [Docker Compose](https://docs.docker.com/compose).
 - `.github` holds the [GitHub Actions](https://github.com/features/actions) CI/CD pipelines.
 
 ### License
@@ -21,62 +21,59 @@ This software is distributed under the MIT license. Please read [the software li
 
 ## Getting started
 
-This project comes with a virtualized environment that has everything necessary to develop on any platform.
+This project comes with a containerized environment that has everything necessary to work on any platform without having to install dependencies on the developers' machines.
 
 **TL;TR**
 
 ```Shell
-./install
-task
+make
 ```
 
 ### Requirements
 
-Before starting using the project, make sure that the following software is installed on your machine:
+Before starting using the project, make sure that the following dependencies are installed on the machine:
 
-- [Taskfile](https://taskfile.dev/#/installation), a task runner that makes the project much easier to use.
-- [Docker](https://docs.docker.com/engine/install), a virtualization software that allows to create lightweight virtual environments.
-- [Docker Compose](https://docs.docker.com/compose/install/), a tool for defining and running multi-container Docker applications.
+- [Git](https://git-scm.com).
+- An [OCI runtime](https://opencontainers.org), like [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Podman Desktop](https://podman.io) or [OrbStack](https://orbstack.dev).
+- [Docker Compose](https://docs.docker.com/compose/install/).
 
-It is necessary to install the latest versions before continuing. You may follow the previous links to read the installation instructions or simply run the following command.
-
-```Shell
-./install
-```
+It is necessary to install the latest versions before continuing. You may follow the previous links to read the installation instructions.
 
 ### Initializing
 
 First, initialize the project and run the environment.
 
 ```Shell
-task
+make
 ```
 
-You can stop the environment by running the following command.
+Then, download third-party dependencies.
 
 ```Shell
-task down
+make deps
 ```
 
-Finally, install NPM dependencies.
+You may stop the environment by running the following command.
 
 ```Shell
-task run -- npm ci
+make down
 ```
 
 ## Usage
 
-You can run commands inside the virtual environment by prefixing them with a shortcut command (`task run -- <command>`) or by running a shell in the container (`task shell`).
+Commands must be run inside the containerized environment by starting a shell in the main container (`make shell`).
 
 ### Running the development server
 
 Run the following command to start the development server:
 
 ```Shell
-task run -- npm run dev
+make run
 ```
 
-> Note that Git is not available in the container, so you should use it from the host machine. It is strongly recommended to use a desktop client like [Fork](https://git-fork.com) or [GitKraken](https://www.gitkraken.com).
+It may be consumed from http://localhost.
+
+> Note that Git is not available in the container, so you should use it from the host machine. It is strongly recommended to use a Git GUI (like [VS Code's](https://code.visualstudio.com/docs/editor/versioncontrol) or [Fork](https://git-fork.com)) instead of the command-line interface.
 
 ## Deployment
 
@@ -91,7 +88,8 @@ There are several common problems that can be easily solved. Here are their caus
 The Docker environment should work properly. Otherwise, it is possible to rebuild it by running the following command.
 
 ```Shell
-task rebuild
+docker compose down
+docker compose build --no-cache node
 ```
 
 To start from scratch, you can remove all containers, images and volumes of your computer by running the following commands.
