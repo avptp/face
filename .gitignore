@@ -1,26 +1,10 @@
-# dependencies
-/node_modules
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+#### Common
 .DS_Store
-.idea
-*.pem
+/.env
+/.idea
+/.vscode
+Thumbs.db
 
-# debug
-npm-debug.log*
-
-# local env files
-.env
-
-# vercel
-.vercel
+#### Project
+/.next
+/node_modules

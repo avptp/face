@@ -1,12 +1,16 @@
-.dockerignore
+# Common
 .DS_Store
-.editorconfig
-.env.example
-.git
 .gitignore
-.idea
-docker-compose.yml
-Dockerfile
-license.md
-node_modules
-readme.md
+/.dockerignore
+/.env
+/.env.example
+/.git
+/Dockerfile
+/license.md
+/Makefile
+/docker-compose.yml
+/readme.md
+
+# Project
+/.github
+/node_modules

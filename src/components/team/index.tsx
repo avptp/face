@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
+import blueskyLogo from "../../images/social/bluesky.svg";
 import githubLogo from "../../images/social/github.svg";
 import linkedinLogo from "../../images/social/linkedin.svg";
-import twitterLogo from "../../images/social/twitter.svg";
+import xLogo from "../../images/social/x.svg";
 import webLogo from "../../images/social/web.svg";
 
 export default function Team() {
@@ -58,25 +59,11 @@ export default function Team() {
               </div>
               <div className="social">
                 <a
-                  href="https://v0ctor.me"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="icon" src={webLogo.src} alt="Web" />
-                </a>
-                <a
                   href="https://linkedin.com/in/v0ctor"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img className="icon" src={linkedinLogo.src} alt="LinkedIn" />
-                </a>
-                <a
-                  href="https://twitter.com/v0ctor"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="icon" src={twitterLogo.src} alt="Twitter" />
                 </a>
                 <a
                   href="https://github.com/v0ctor"
@@ -116,11 +103,11 @@ export default function Team() {
                   <img className="icon" src={linkedinLogo.src} alt="LinkedIn" />
                 </a>
                 <a
-                  href="https://twitter.com/frantorreg"
+                  href="https://x.com/frantorreg"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                  <img className="icon" src={xLogo.src} alt="X" />
                 </a>
                 <a
                   href="https://github.com/frantorreg"
@@ -169,11 +156,11 @@ export default function Team() {
               </div>
               <div className="social">
                 <a
-                  href="https://twitter.com/martnmontn"
+                  href="https://x.com/martnmontn"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                  <img className="icon" src={xLogo.src} alt="X" />
                 </a>
               </div>
             </div>
@@ -202,11 +189,11 @@ export default function Team() {
                   <img className="icon" src={linkedinLogo.src} alt="LinkedIn" />
                 </a>
                 <a
-                  href="https://twitter.com/Domirole"
+                  href="https://x.com/Domirole"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                  <img className="icon" src={xLogo.src} alt="X" />
                 </a>
               </div>
             </div>
@@ -222,11 +209,11 @@ export default function Team() {
               </div>
               <div className="social">
                 <a
-                  href="https://twitter.com/yrubenx"
+                  href="https://x.com/yrubenx"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                  <img className="icon" src={xLogo.src} alt="X" />
                 </a>
               </div>
             </div>
@@ -249,11 +236,11 @@ export default function Team() {
                   <img className="icon" src={linkedinLogo.src} alt="LinkedIn" />
                 </a>
                 <a
-                  href="https://twitter.com/EloySanchis"
+                  href="https://x.com/EloySanchis"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                  <img className="icon" src={xLogo.src} alt="X" />
                 </a>
               </div>
             </div>
@@ -273,11 +260,11 @@ export default function Team() {
                   <img className="icon" src={linkedinLogo.src} alt="LinkedIn" />
                 </a>
                 <a
-                  href="https://twitter.com/miguemito"
+                  href="https://x.com/miguemito"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                  <img className="icon" src={xLogo.src} alt="X" />
                 </a>
               </div>
             </div>
@@ -300,11 +287,11 @@ export default function Team() {
                 <div className="name">Marcos Salomón Uroz</div>
                 <div className="social">
                   <a
-                    href="https://twitter.com/enros___"
+                    href="https://x.com/enros___"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                    <img className="icon" src={xLogo.src} alt="X" />
                   </a>
                 </div>
               </div>
@@ -343,11 +330,11 @@ export default function Team() {
                 <div className="name">Adrián García Terrádez</div>
                 <div className="social">
                   <a
-                    href="https://twitter.com/Terradez_"
+                    href="https://x.com/Terradez_"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img className="icon" src={twitterLogo.src} alt="Twitter" />
+                    <img className="icon" src={xLogo.src} alt="X" />
                   </a>
                 </div>
               </div>

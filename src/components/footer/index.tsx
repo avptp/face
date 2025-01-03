@@ -1,12 +1,13 @@
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import imagotype from "../../images/imagotype.svg";
+import blueskyLogo from "../../images/social/bluesky.svg";
 import facebookLogo from "../../images/social/facebook.svg";
 import githubLogo from "../../images/social/github.svg";
 import instagramLogo from "../../images/social/instagram.svg";
 import linkedinLogo from "../../images/social/linkedin.svg";
 import telegramLogo from "../../images/social/telegram.svg";
-import twitterLogo from "../../images/social/twitter.svg";
+import xLogo from "../../images/social/x.svg";
 import youtubeLogo from "../../images/social/youtube.svg";
 
 export default function Footer() {
@@ -40,11 +41,18 @@ export default function Footer() {
         <div className="social">
           <div className="title">{t("followUs")}</div>
           <a
-            href="https://twitter.com/avptp"
+            href="https://bsky.app/profile/avptp.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="icon" src={twitterLogo.src} alt="Twitter" />
+            <img className="icon" src={blueskyLogo.src} alt="Bluesky" />
+          </a>
+          <a
+            href="https://x.com/avptp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="icon" src={xLogo.src} alt="X" />
           </a>
           <a
             href="https://www.facebook.com/avptp.org"
