@@ -28,7 +28,7 @@ All logos and trademarks in this directory are property of their respective trad
 - [GitHub Logos and Usage](https://github.com/logos).
 - [Instagram Brand Resources](https://instagram-brand.com).
 - [LinkedIn Brand Guidelines](https://brand.linkedin.com).
-- [Twitter Brand Resources](https://about.twitter.com/company/brand-resources.html).
+- [X Brand Resources](https://about.x.com/en/who-we-are/brand-toolkit).
 - [YouTube Brand Resources](https://www.youtube.com/yt/about/brand-resources).
 
 ## Everything else
