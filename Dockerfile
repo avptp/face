@@ -55,7 +55,7 @@ RUN npm run build
 FROM base AS runtime
 
 COPY --from=builder --chown=node:node /usr/src/app/.next ./.next
-COPY --from=builder --chown=node:node /usr/src/app/next.config.mjs ./next.config.mjs
+COPY --from=builder --chown=node:node /usr/src/app/next.config.js ./next.config.js
 COPY --from=builder --chown=node:node /usr/src/app/node_modules ./node_modules
 COPY --from=builder --chown=node:node /usr/src/app/package.json ./package.json
 COPY --from=builder --chown=node:node /usr/src/app/public ./public
