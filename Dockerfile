@@ -1,54 +1,67 @@
-## Base image
-FROM node:16.14.2-alpine3.15 AS base
+ARG NODE_VERSION=22.12.0-bookworm-slim
 
-ENV NEXT_TELEMETRY_DISABLED 1
+
+#### Base image ####
+FROM node:${NODE_VERSION} AS base
 
 WORKDIR /usr/src/app
 
-
-## Development image
-FROM base AS development
+ENV PATH="${PATH}:/usr/src/app/node_modules/.bin"
+ENV NEXT_TELEMETRY_DISABLED=1
 
 ARG USER_ID=1000
+ARG USER_NAME=node
 
-ENV PATH="${PATH}:/usr/src/app/node_modules/.bin"
-
-RUN if [ $USER_ID -ne 1000 ]; then \
-        apk add --no-cache -t volatile \
-            shadow \
-     && groupmod -g $USER_ID node \
-     && usermod -u $USER_ID -g $USER_ID node \
-     && apk del --purge volatile; \
-    fi
+RUN chown -R ${USER_NAME}: /usr/src/app
 
 
-## Builder image
-FROM base AS builder
+#### Development image ####
+FROM base AS development
+
+ENV PROMPT="%B%F{cyan}%n%f@%m:%F{yellow}%~%f %F{%(?.green.red[%?] )}>%f %b"
+
+RUN apt update -q \
+ && apt install -y --no-install-recommends \
+        zsh \
+ && apt clean
+
+RUN if [ ${USER_ID} -ne 1000 ]; then \
+       groupmod -g ${USER_ID} ${USER_NAME} \
+ &&    usermod -u ${USER_ID} -g ${USER_ID} ${USER_NAME}; \
+    fi \
+ && chown -R ${USER_NAME}: .
+
+USER ${USER_NAME}
+
+RUN touch /home/${USER_NAME}/.zshrc
+
+
+#### Installer image ####
+FROM base AS installer
 
 COPY package.json package-lock.json ./
-
 RUN npm ci
-
-ENV NODE_ENV production
 
 COPY . .
 
 RUN npx prettier --check .
 
+ENV NODE_ENV=production
+
 RUN npm run build
 
 
-## Runtime image
+#### Runtime image ####
 FROM base AS runtime
 
-ENV NODE_ENV production
-
-COPY --from=builder --chown=node:node /usr/src/app/next.config.js ./next.config.js
-COPY --from=builder --chown=node:node /usr/src/app/public ./public
 COPY --from=builder --chown=node:node /usr/src/app/.next ./.next
+COPY --from=builder --chown=node:node /usr/src/app/next.config.mjs ./next.config.mjs
 COPY --from=builder --chown=node:node /usr/src/app/node_modules ./node_modules
 COPY --from=builder --chown=node:node /usr/src/app/package.json ./package.json
+COPY --from=builder --chown=node:node /usr/src/app/public ./public
 
-USER node
+USER ${USER_NAME}
+
+ENV NODE_ENV=production
 
 CMD ["npm", "run", "start"]
