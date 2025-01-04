@@ -330,6 +330,14 @@ class Main extends React.Component<Props, State> {
                               x: 2021,
                               y: 10.7062,
                             },
+                            {
+                              x: 2022,
+                              y: 14.6025,
+                            },
+                            {
+                              x: 2023,
+                              y: 19.9772,
+                            },
                           ],
                         },
                       ]}
@@ -371,7 +379,7 @@ class Main extends React.Component<Props, State> {
                       pointBorderColor="#5fc1c8"
                       enablePointLabel={true}
                       pointLabel={(point: Point['data']) =>
-                        Number(Number(point.y).toFixed(1)).toLocaleString()
+                        Math.round(Number(point.y))
                       }
                       pointLabelYOffset={-14}
                       useMesh={true}
