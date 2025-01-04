@@ -378,8 +378,8 @@ class Main extends React.Component<Props, State> {
                       pointBorderWidth={2}
                       pointBorderColor="#5fc1c8"
                       enablePointLabel={true}
-                      pointLabel={(point: Point['data']) =>
-                        Math.round(Number(point.y))
+                      pointLabel={(point: Point["data"]) =>
+                        Math.round(Number(point.y)).toLocaleString()
                       }
                       pointLabelYOffset={-14}
                       useMesh={true}
