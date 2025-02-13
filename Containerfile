@@ -1,4 +1,4 @@
-ARG NODE_VERSION=22.12.0-bookworm-slim
+ARG NODE_VERSION=22.14.0-bookworm-slim
 
 
 #### Base image ####
