@@ -2,6 +2,7 @@ services:
   node:
     build:
       context: .
+      dockerfile: Containerfile
       target: development
       args:
         USER_ID: ${USER_ID:-1000}

@@ -46,8 +46,6 @@ COPY . .
 
 RUN npx prettier --check .
 
-ENV NODE_ENV=production
-
 RUN npm run build
 
 
@@ -61,7 +59,5 @@ COPY --from=builder --chown=node:node /usr/src/app/package.json ./package.json
 COPY --from=builder --chown=node:node /usr/src/app/public ./public
 
 USER ${USER_NAME}
-
-ENV NODE_ENV=production
 
 CMD ["npm", "run", "start"]
