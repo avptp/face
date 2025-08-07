@@ -82,8 +82,7 @@ section.team {
         }
 
         .avatar,
-        .social,
-        .co-founder {
+        .social {
           @include vertical-margin(12px);
         }
 
@@ -101,14 +100,6 @@ section.team {
         .name,
         .position {
           text-align: center;
-        }
-
-        .co-founder {
-          padding: 5px 8px;
-          background-color: $primary;
-          border-radius: 8px;
-          font-size: 12px;
-          color: white;
         }
 
         .social {
