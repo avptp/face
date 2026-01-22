@@ -1,8 +1,8 @@
-ARG NODE_VERSION=22.14.0-bookworm-slim
+ARG NODE_VERSION=24.13.0-trixie-slim
 
 
 #### Base image ####
-FROM node:${NODE_VERSION} AS base
+FROM docker.io/node:${NODE_VERSION} AS base
 
 WORKDIR /usr/src/app
 
