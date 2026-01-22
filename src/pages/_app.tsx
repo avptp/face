@@ -11,9 +11,7 @@ import Head from "next/head";
 import { generateDefaultSeo } from "next-seo/pages";
 import { LanguageAlternate } from "../types/language";
 import Footer from "../components/footer";
-import CookieNotice from "../components/cookienotice";
 import "../components/_app/styles.scss";
-import "../components/cookienotice/styles.scss";
 import "../components/error/styles.scss";
 import "../components/footer/styles.scss";
 import "../components/legal/styles.scss";
@@ -22,11 +20,7 @@ import "../components/main/joinbox/styles.scss";
 import "../components/navigation/styles.scss";
 import "../components/team/styles.scss";
 
-type Props = AppProps & {
-  acceptedCookies: boolean;
-};
-
-function CustomApp({ Component, pageProps, acceptedCookies }: Props) {
+function CustomApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   const baseUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${router.pathname}`;
@@ -102,7 +96,6 @@ function CustomApp({ Component, pageProps, acceptedCookies }: Props) {
         <I18nextProvider i18n={i18n}>
           <Component {...pageProps} />
           <Footer />
-          <CookieNotice hidden={acceptedCookies} />
         </I18nextProvider>
       </CookiesProvider>
     </>
@@ -114,12 +107,8 @@ function CustomApp({ Component, pageProps, acceptedCookies }: Props) {
 CustomApp.getInitialProps = async (
   ctx: AppContext & { ctx: NextPageContext & { req: Request } }
 ) => {
-  const { req } = ctx.ctx;
-
   return {
     ...(await App.getInitialProps(ctx)),
-    acceptedCookies:
-      req && req.cookies.cookies ? req.cookies.cookies === "true" : false,
   };
 };
 
