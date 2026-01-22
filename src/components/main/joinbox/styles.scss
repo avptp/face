@@ -1,19 +1,19 @@
-@import "../../../styles/colors";
-@import "../../../styles/mixins";
+@use "../../../styles/colors";
+@use "../../../styles/mixins";
 
 .join-box {
   &.support {
-    color: $secondary;
-    background-color: $grey-lighter;
+    color: colors.$secondary;
+    background-color: colors.$grey-lighter;
 
     .box .icon {
-      background-color: $grapefruit-1;
+      background-color: colors.$grapefruit-1;
     }
   }
 
   &.associate {
     color: white;
-    background-color: $secondary;
+    background-color: colors.$secondary;
 
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
       border-color: white;
 
       .icon {
-        background-color: $aqua-1;
+        background-color: colors.$aqua-1;
       }
 
       hr {
@@ -31,7 +31,7 @@
       }
 
       .button {
-        color: $secondary;
+        color: colors.$secondary;
         background-color: white;
       }
     }
@@ -40,7 +40,7 @@
   .box {
     max-width: 400px;
     padding: 1rem;
-    border: 1px solid $secondary;
+    border: 1px solid colors.$secondary;
     border-radius: 8px;
     font-size: 18px;
     //hyphens: auto;
@@ -50,7 +50,7 @@
     align-items: center;
 
     > * {
-      @include vertical-margin(10px);
+      @include mixins.vertical-margin(10px);
     }
 
     .title {
@@ -95,7 +95,7 @@
       padding: 0 0 0 1.5rem;
 
       li {
-        @include vertical-margin(8px);
+        @include mixins.vertical-margin(8px);
         font-size: 16px;
       }
     }

@@ -20,13 +20,11 @@ export default function Footer() {
     <footer>
       <div className="legal">
         <Link href="/">
-          <a>
-            <img
-              className="imagotype"
-              src={imagotype.src}
-              alt={t("common:appName")}
-            />
-          </a>
+          <img
+            className="imagotype"
+            src={imagotype.src}
+            alt={t("common:appName")}
+          />
         </Link>
         <p>{t("registration", { number: "CV-01-058990-V" })}</p>
         <p>{t("taxNumber", { number: "G98998719" })}</p>

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { NextSeo } from "next-seo";
-import Link from "next/link";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import Error from "../components/error";
 
 export default function NotFound() {
@@ -9,12 +9,14 @@ export default function NotFound() {
 
   return (
     <>
-      <NextSeo
-        title={t(`${type}.viewTitle`)}
-        description={t("title")}
-        noindex={true}
-        nofollow={true}
-      />
+      <Head>
+        {generateNextSeo({
+          title: t(`${type}.viewTitle`),
+          description: t("title"),
+          noindex: true,
+          nofollow: true,
+        })}
+      </Head>
       <Error type={type} />
     </>
   );

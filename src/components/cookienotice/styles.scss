@@ -1,5 +1,5 @@
-@import "../../styles/colors";
-@import "../../styles/mixins";
+@use "../../styles/colors";
+@use "../../styles/mixins";
 
 .cookie-notice {
   display: flex;
@@ -13,7 +13,7 @@
 
   box-shadow: 0 0 15px 0 rgba(36, 37, 38, 0.1);
   border-radius: 8px;
-  background-color: $secondary;
+  background-color: colors.$secondary;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -28,7 +28,7 @@
 
   > * {
     width: 100%;
-    @include vertical-margin(10px);
+    @include mixins.vertical-margin(10px);
   }
 
   .text {
@@ -55,7 +55,7 @@
     }
 
     button {
-      background-color: $primary;
+      background-color: colors.$primary;
       color: white;
     }
   }

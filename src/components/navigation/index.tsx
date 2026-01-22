@@ -15,16 +15,12 @@ export default function Navigation(props: Props) {
       <div className="control">
         {!props.disableControls && (
           <Link href="/">
-            <a>
-              <img src={arrowLeft.src} alt="" />
-            </a>
+            <img src={arrowLeft.src} alt="" />
           </Link>
         )}
       </div>
-      <Link href="/">
-        <a className="imagotype">
-          <img src={imagotypeWhite.src} alt={t("appName")} />
-        </a>
+      <Link href="/" className="imagotype">
+        <img src={imagotypeWhite.src} alt={t("appName")} />
       </Link>
       <div className="actions" />
     </nav>

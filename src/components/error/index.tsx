@@ -21,8 +21,8 @@ export default function Error({ type }: Props) {
           <div className="title">{t("title")}</div>
           <div className="subtitle">{t(`${type}.description`)}</div>
           <div className="actions">
-            <Link href={t(`${type}.actions.primary.link`)}>
-              <a className="button">{t(`${type}.actions.primary.text`)}</a>
+            <Link href={t(`${type}.actions.primary.link`)} className="button">
+              {t(`${type}.actions.primary.text`)}
             </Link>
           </div>
         </div>

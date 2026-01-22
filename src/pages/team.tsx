@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import Navigation from "../components/navigation";
 import Team from "../components/team";
 
@@ -8,7 +9,11 @@ export default function TeamView() {
 
   return (
     <>
-      <NextSeo title={t("viewTitle")} />
+      <Head>
+        {generateNextSeo({
+          title: t("viewTitle"),
+        })}
+      </Head>
       <Navigation />
       <Team />
     </>

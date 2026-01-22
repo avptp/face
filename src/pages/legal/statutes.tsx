@@ -1,16 +1,22 @@
 import { useTranslation } from "react-i18next";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import Legal from "../../components/legal";
 import Markdown from "react-markdown";
+import rehypeExternalLinks from 'rehype-external-links'
 
 export default function Statutes() {
   const { t, i18n } = useTranslation("statutes");
 
   return (
     <>
-      <NextSeo title={t("viewTitle")} />
+      <Head>
+        {generateNextSeo({
+          title: t("viewTitle"),
+        })}
+      </Head>
       <Legal>
-        <Markdown linkTarget="_blank">{t("markdown")}</Markdown>
+        <Markdown rehypePlugins={[[rehypeExternalLinks, {target: "_blank"}]]}>{t("markdown")}</Markdown>
         <div className="document" />
       </Legal>
       <section className="download">

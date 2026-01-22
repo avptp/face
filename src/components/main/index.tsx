@@ -1,8 +1,8 @@
 import React from "react";
-import { TFunction, TFunctionKeys } from "i18next";
+import { TFunction } from "i18next";
 import { withTranslation } from "react-i18next";
 import Link from "next/link";
-import { Point, ResponsiveLine } from "@nivo/line";
+import { ResponsiveLine } from "@nivo/line";
 import JoinBox from "./joinbox";
 import generalInterestIcon from "../../images/icons/general-interest.svg";
 import integrationIcon from "../../images/icons/integration.svg";
@@ -22,9 +22,9 @@ type State = {};
 class Main extends React.Component<Props, State> {
   fixed: boolean = false;
 
-  introRef: React.RefObject<HTMLDivElement> = React.createRef();
-  wrapperRef: React.RefObject<HTMLDivElement> = React.createRef();
-  joinRef: React.RefObject<HTMLDivElement> = React.createRef();
+  introRef: React.RefObject<HTMLDivElement | null> = React.createRef();
+  wrapperRef: React.RefObject<HTMLDivElement | null> = React.createRef();
+  joinRef: React.RefObject<HTMLDivElement | null> = React.createRef();
 
   constructor(props: Props) {
     super(props);
@@ -87,11 +87,11 @@ class Main extends React.Component<Props, State> {
               <p className="title">{t("main:introduction.title")}</p>
               <p className="subtitle">{t("main:introduction.subtitle")}</p>
               <div className="buttons">
-                <Link href="/legal/statutes">
-                  <a className="button light">{t("common:statutes")}</a>
+                <Link href="/legal/statutes" className="button light">
+                  {t("common:statutes")}
                 </Link>
-                <Link href="/legal/regulations">
-                  <a className="button light">{t("common:regulations")}</a>
+                <Link href="/legal/regulations" className="button light">
+                  {t("common:regulations")}
                 </Link>
                 <button
                   className="button light reverse"
@@ -141,7 +141,6 @@ class Main extends React.Component<Props, State> {
             })()}
           </div>
         </header>
-
         <section className="context">
           <div className="container">
             <div className="grid">
@@ -222,7 +221,6 @@ class Main extends React.Component<Props, State> {
             <div className="photo" />
           </div>
         </section>
-
         <section className="claims">
           <div className="introduction">
             <div className="title">{t("main:claims.title")}</div>
@@ -382,8 +380,8 @@ class Main extends React.Component<Props, State> {
                       pointBorderWidth={2}
                       pointBorderColor="#5fc1c8"
                       enablePointLabel={true}
-                      pointLabel={(point: Point["data"]) =>
-                        Math.round(Number(point.y)).toLocaleString()
+                      pointLabel={e =>
+                        Math.round(Number(e.data.y)).toLocaleString()
                       }
                       pointLabelYOffset={-14}
                       useMesh={true}
@@ -426,9 +424,7 @@ class Main extends React.Component<Props, State> {
                   <div className="title">{t("main:claims.didYouKnow")}</div>
                   <div className="description">
                     {Object.entries(
-                      t<string, TFunctionKeys>(
-                        "main:claims.paymentSystem.extra"
-                      )
+                      t("main:claims.paymentSystem.extra", { returnObjects: true }) as Record<string, string>
                     ).map((item: [string, string]) => (
                       <p key={item[0]}>{item[1]}</p>
                     ))}
@@ -517,9 +513,7 @@ class Main extends React.Component<Props, State> {
                 </div>
                 <div className="description">
                   {Object.entries(
-                    t<string, TFunctionKeys>(
-                      "main:claims.information.description"
-                    )
+                    t("main:claims.information.description", { returnObjects: true }) as Record<string, string>
                   ).map((item: [string, string]) => (
                     <p key={item[0]}>{item[1]}</p>
                   ))}
@@ -547,7 +541,7 @@ class Main extends React.Component<Props, State> {
                 <div className="title">{t("main:claims.branding.title")}</div>
                 <div className="description">
                   {Object.entries(
-                    t<string, TFunctionKeys>("main:claims.branding.description")
+                    t("main:claims.branding.description", { returnObjects: true }) as Record<string, string>
                   ).map((item: [string, string]) => (
                     <p key={item[0]}>{item[1]}</p>
                   ))}
@@ -615,9 +609,7 @@ class Main extends React.Component<Props, State> {
                 </div>
                 <div className="description">
                   {Object.entries(
-                    t<string, TFunctionKeys>(
-                      "main:claims.accessibility.description"
-                    )
+                    t("main:claims.accessibility.description", { returnObjects: true }) as Record<string, string>
                   ).map((item: [string, string]) => (
                     <p key={item[0]}>{item[1]}</p>
                   ))}
@@ -626,9 +618,7 @@ class Main extends React.Component<Props, State> {
                   <div className="title">{t("main:claims.didYouKnow")}</div>
                   <div className="description">
                     {Object.entries(
-                      t<string, TFunctionKeys>(
-                        "main:claims.accessibility.extra"
-                      )
+                      t("main:claims.accessibility.extra", { returnObjects: true }) as Record<string, string>
                     ).map((item: [string, string]) => (
                       <p key={item[0]}>{item[1]}</p>
                     ))}
@@ -676,7 +666,6 @@ class Main extends React.Component<Props, State> {
             </div>
           </div>
         </section>
-
         <section className="join" ref={this.joinRef}>
           <JoinBox type="support" />
           <JoinBox type="associate" />

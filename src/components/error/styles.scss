@@ -1,14 +1,14 @@
-@import "../../styles/colors";
-@import "../../styles/mixins";
-@import "../../styles/buttons";
+@use "../../styles/colors";
+@use "../../styles/mixins";
+@use "../../styles/buttons";
 
 section.error {
   display: flex;
   flex-wrap: wrap;
-  background-color: $grey-lighter;
+  background-color: colors.$grey-lighter;
 
   > * {
-    @include responsive-min-width(500px);
+    @include mixins.responsive-min-width(500px);
     min-height: calc(100vh - 80px);
     padding: 10vh;
 
@@ -27,16 +27,16 @@ section.error {
     }
 
     .subtitle {
-      @include vertical-margin(20px);
+      @include mixins.vertical-margin(20px);
       font-size: 22px;
-      color: $grey-light;
+      color: colors.$grey-light;
     }
 
     .actions {
-      @include vertical-margin(15px);
+      @include mixins.vertical-margin(15px);
 
       .button {
-        @include horizontal-margin(6px);
+        @include mixins.horizontal-margin(6px);
         font-size: 18px !important;
       }
     }

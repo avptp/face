@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import Main from "../components/main";
 
 export default function MainView() {
@@ -7,7 +8,11 @@ export default function MainView() {
 
   return (
     <>
-      <NextSeo description={t("description")} />
+      <Head>
+        {generateNextSeo({
+          description: t("description"),
+        })}
+      </Head>
       <Main />
     </>
   );

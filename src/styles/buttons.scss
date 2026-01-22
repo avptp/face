@@ -1,4 +1,4 @@
-@import "./colors";
+@use "colors";
 
 /** Buttons **/
 button {
@@ -9,7 +9,7 @@ button {
 
 .button {
   background: transparent;
-  border: 1px solid $secondary;
+  border: 1px solid colors.$secondary;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-size: 20px !important;
@@ -18,7 +18,7 @@ button {
   cursor: pointer;
 
   &.reverse {
-    background-color: $secondary;
+    background-color: colors.$secondary;
     color: white;
   }
 
