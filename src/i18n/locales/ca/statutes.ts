@@ -2,13 +2,11 @@
 export default {
   viewTitle: "estatuts",
   markdown: `
-# Estatuts
-
 ## Capítol 1: denominació, domicili, àmbit, fins i activitats
 
 ### Article 1: denominació
 
-Es constituïx l'associació denominada **Associació Valenciana pel Transport Públic** que s'acull al que disposa la [Llei Orgànica 1/2002, de 22 de març, reguladora del dret d'associació](https://www.boe.es/buscar/act.php?id=BOE-A-2002-5852) i a la [Llei 14/2008, de 18 de novembre, d'associacions de la Comunitat Valenciana](http://www.dogv.gva.es/datos/2008/11/25/pdf/2008_13709.pdf), i a l'empara del que disposa l'[article 22 de la Constitució espanyola](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&tn=1&p=20110927#a22), i esta no té ànim de lucre.
+Es constituïx l'associació denominada Associació Valenciana pel Transport Públic, que s'acull al que disposa la [Llei Orgànica 1/2002, de 22 de març, reguladora del dret d'associació](https://www.boe.es/buscar/act.php?id=BOE-A-2002-5852) i a la [Llei 14/2008, de 18 de novembre, d'associacions de la Comunitat Valenciana](http://www.dogv.gva.es/datos/2008/11/25/pdf/2008_13709.pdf), i a l'empara del que disposa l'[article 22 de la Constitució espanyola](https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&tn=1&p=20110927#a22), i esta no té ànim de lucre.
 
 ### Article 2: personalitat jurídica
 
@@ -18,8 +16,8 @@ L'Associació té personalitat jurídica pròpia i capacitat plena d'obrar per a
 
 El domicili de l'Associació s'establix a la següent adreça:
 
-Carretera dels Mauros, 38  
-46026 València
+C/ Borrasca, 19 - 216  
+46014 València
 
 L'Associació realitzarà principalment les seues activitats a l'àmbit territorial de la Comunitat Valenciana, sense perjuí que puga estendre puntualment la seua activitat a altres territoris.
 
@@ -30,13 +28,22 @@ Constituïxen els fins de l'Associació:
 - Fer del transport públic un dret fonamental garantit.
 - La possibilitat de realitzar qualsevol desplaçament amb transport públic sense la necessitat de disposar de vehicle en propietat, vertebrant així el territori.
 - La millora del transport públic en tot l'àmbit d'actuació, incloent-hi:
-    - Equitat i senzillesa perquè estiga a l'abast de totes les persones.
-    - Eficiència i planificació racional respectuosa amb l'entorn.
-    - Integració i intermodalitat entre diferents mitjans de transport. 
+  - Equitat i senzillesa perquè estiga a l'abast de totes les persones.
+  - Eficiència i planificació racional respectuosa amb l'entorn.
+  - Integració i intermodalitat entre diferents mitjans de transport.
 - El foment de l'ús de mètodes de transport públic i sostenible en detriment d'aquells que no ho són, per a minimitzar l'impacte mediambiental i urbanístic de la necessitat de transport.
 - La defensa dels interessos generals i de les persones usuàries del transport públic i sostenible.
 
-## Capítol 2: persones associades
+Per al compliment d'estes finalitats, l'Associació durà a terme les activitats següents:
+
+- Divulgar els avantatges de la mobilitat sostenible, així com promoure'n i facilitar-ne l'ús.
+- Impulsar activitats relacionades amb la mobilitat sostenible i col·laborar en el seu desenvolupament.
+- Vetlar perquè la mobilitat sostenible siga l'eix central del planejament territorial, i assumir un paper actiu en l'anàlisi i la proposta de millora de les xarxes i infraestructures de transport públic.
+- Exercir la interlocució amb els organismes i els poders públics que sol·liciten la presència d'entitats de mobilitat sostenible, incloent-hi la representació en òrgans consultius.
+- Establir relacions de col·laboració amb altres entitats amb fins semblants.
+- Desenvolupar qualsevol altra funció o activitat que contribuïsca a complir els fins de l'Associació.
+
+## Capítol 2: les persones associades
 
 ### Article 5: capacitat
 
@@ -88,7 +95,7 @@ La separació de l'Associació de les persones associades, per motiu de sanció,
 
 Per a la imposició de la sanció de separació per part de l'òrgan de govern, caldrà la tramitació d'un expedient disciplinari, instruït per un òrgan diferent del competent per a resoldre'l, que garantisca els drets de les persones associades a ser informades de l'acusació i a formular al·legacions davant d'esta, així com a la notificació de l'Assemblea General. La decisió sancionadora serà motivada.
 
-El termini de prescripció de les infraccions i sancions serà regulat pel Reglament de Règim Intern.
+El desenvolupament del règim sancionador, amb els fets que suposen infraccions, la classificació de les infraccions, les possibles sancions i el procediment sancionador, així com el termini de prescripció de les infraccions i sancions serà establit pel Reglament de Règim Intern.
 
 ## Capítol 3: l'òrgan de govern
 
@@ -96,29 +103,29 @@ El termini de prescripció de les infraccions i sancions serà regulat pel Regla
 
 L'Assemblea General és l'òrgan suprem de govern de l'Associació, integrat per totes les persones associades per dret propi irrenunciable i en igualtat absoluta, que adopta els seus acords pel principi majoritari o de democràcia interna.
 
-Tots els membres quedaran subjectes als acords de l'Assemblea General, fins i tot els absents, els dissidents i els qui, encara estant presents, s'hagen abstingut de votar.
+Tots els seus membres quedaran subjectes als acords de l'Assemblea General, fins i tot els absents, els dissidents i els qui, encara estant presents, s'hagen abstingut de votar.
 
 ### Article 11: reunions de l'Assemblea
 
-L'Assemblea General es reunirà en sessió ordinària, com a mínim, una vegada a l'any, en el quart trimestre.
+L'Assemblea General es reunirà en sessió ordinària, com a mínim, una vegada a l'any, en el primer trimestre.
 
 L'Assemblea General es reunirà, amb caràcter extraordinari, sempre que calga, a requeriment de l'òrgan de representació o d'un nombre de persones associades que represente, com a mínim, un deu per cent de la totalitat. En este últim cas serà necessària una petició formal signada per tots els sol·licitants.
 
 ### Article 12: convocatòria de les assemblees
 
-Les convocatòries de les assemblees generals, tant ordinàries com extraordinàries, es faran per escrit. Els anuncis de la convocatòria s'enviaran individualment a tots els membres i es faran públics als llocs de costum, amb una antelació mínima de quinze dies en cas de ser ordinària o la màxima possible en cas de ser extraordinària. La convocatòria expressarà el dia, l'hora i el lloc de la reunió, com també l'orde del dia.
+Les convocatòries de les assemblees generals, tant ordinàries com extraordinàries, es faran per escrit. Els anuncis de la convocatòria s'enviaran individualment a tots els membres i es faran públics als llocs de costum, amb una antelació mínima de catorze dies en cas de ser ordinària o la màxima possible en cas de ser extraordinària. La convocatòria expressarà el dia, l'hora i el lloc de la reunió, com també l'orde del dia.
 
-Correspon a la presidència de l'Associació la confecció de l'ordre del dia a proposta de l'òrgan de representació. A més, tots aquells temes proposats formalment amb una antelació mínima de quaranta-vuit hores i per un mínim del deu per cent dels membres de l'Associació, hauran de ser inclosos obligatòriament en l'ordre del dia.
+Correspon a la presidència de l'Associació la confecció de l'ordre del dia a proposta de l'òrgan de representació. A més, tots aquells temes proposats formalment amb una antelació mínima de quaranta-huit hores i per un mínim del deu per cent de les persones associades, hauran de ser inclosos obligatòriament en l'ordre del dia. En les assemblees només es poden adoptar acords respecte als punts inclosos en l'ordre del dia, excepte si s'han constituït amb caràcter universal o els acords són relatius a la convocatòria d'una nova assemblea general.
 
-La mesa de l'Assemblea estarà formada per la persona que ostente la presidència de l'Associació i un mínim de dos membres més de l'òrgan de representació, un/a com a secretari/ària i altre/a com a vocal.
+La mesa de l'Assemblea estarà formada per la persona que ostente la presidència de l'Associació i un mínim de dos membres més de l'òrgan de representació, un/a com a secretari/ària i altre/a com a vocal. En absència de la persona que ostente la presidència, la substituirà, successivament, qui ostente la vicepresidència o la persona present de més edat de l'òrgan de representació.
 
-El/la secretari/ària redactarà l'acta de cada reunió, la qual reflectirà un extracte de les deliberacions, el text dels acords que s'hagen adoptat i el resultat numèric de les votacions. Al començament de cada reunió de l'Assemblea General es votarà l'aprovació de l'acta de la reunió anterior. Dita acta haurà d'estar disponible als mitjans habituals amb suficient antelació per a la seua lectura.
+La secretaria redactarà l'acta de cada reunió, la qual reflectirà un extracte de les deliberacions, el text dels acords que s'hagen adoptat i el resultat numèric de les votacions. Al començament de cada reunió de l'Assemblea General es votarà l'aprovació de l'acta de la reunió anterior. Dita acta haurà d'estar disponible als mitjans habituals amb suficient antelació per a la seua lectura.
 
 ### Article 13: competències i validesa dels acords
 
 L'Assemblea quedarà constituïda vàlidament, en primera convocatòria, amb l'assistència d'un mínim d'un terç de les persones associades (presents o representades), i, en segona convocatòria, siga quin siga el nombre d'estes; la qual s'haurà de celebrar deu minuts després de la primera i en el mateix lloc.
 
-En les reunions de l'Assemblea General correspon un vot a cada membre de l'Associació.
+En les reunions de l'Assemblea General correspon un vot a cada persona associada.
 
 Són competència de l'Assemblea General:
 
@@ -128,15 +135,15 @@ Són competència de l'Assemblea General:
 - Disposar totes les mesures encaminades a garantir el funcionament democràtic de l'Associació.
 - Fixar les quotes ordinàries o extraordinàries.
 - Elegir i separar els membres de l'òrgan de representació.
+- Conéixer les altes, baixes i sol·licituds presentades per ser persona associada, així com ratificar-les si escau.
 - Adoptar els acords referents a:
-    - Ratificar les altes d'associats o associades, acordades per l'òrgan de representació, i acordar amb caràcter definitiu les baixes d'estes.
-    - Acordar la unió d'associacions, la integració en federacions o confederacions, la separació d'estes, així com la creació i participació en coordinadores o altres organitzacions específiques.
-    - Sol·licitud de la declaració d'utilitat pública o d'interés públic de la Comunitat Valenciana.
-    - Modificació dels Estatuts.
-    - Disposició i alienació de béns.
-    - Aprovar el Reglament de Règim Intern de l'Associació.
-    - Acordar la dissolució de l'Associació.
-    - Qualsevol altra que no corresponga a un altre òrgan de l'Associació.
+  - Acordar la unió d'associacions, la integració en federacions o confederacions, la separació d'estes, així com la creació i participació en coordinadores o altres organitzacions específiques.
+  - Sol·licitud de la declaració d'utilitat pública o d'interés públic de la Comunitat Valenciana.
+  - Modificació dels Estatuts.
+  - Disposició i alienació de béns.
+  - Aprovar el Reglament de Règim Intern de l'Associació i les seues modificacions.
+  - Acordar la dissolució de l'Associació.
+  - Qualsevol altra que no corresponga a un altre òrgan de l'Associació.
 
 Els acords es prendran per majoria simple de les persones presents o representades, quan els vots afirmatius superen els negatius. No obstant això, requeriran majoria qualificada de les persones presents o representades, que resultarà quan els vots afirmatius superen les tres cinquenes parts, els acords relatius a la dissolució de l'Associació, modificació dels Estatuts i disposició o alienació de béns, sempre que s'haja convocat, específicament i amb tal objecte, l'assemblea corresponent.
 
@@ -146,11 +153,13 @@ El Reglament de Règim Intern establirà el procediment per a la delegació de v
 
 ### Article 14: composició de l'òrgan de representació
 
-L'Associació la regirà, administrarà i representarà l'òrgan de representació —denominat Junta Directiva— format pels càrrecs de president/a, vicepresident/a, secretari/ària, tresorer/a i portaveu.
+L'Associació la regirà, administrarà i representarà l'òrgan de representació -denominat Junta Directiva- format per la presidència, la vicepresidència, la secretaria i la tresoreria. Així mateix, podran formar-ne part diverses vocalies, el nombre i les funcions de les quals seran de lliure elecció.
 
-L'elecció dels membres de l'òrgan de representació es farà per sufragi universal, lliure, directe i secret dels membres de l'Assemblea General. Les candidatures seran obertes, és a dir, qualsevol membre podrà presentar-se; hi seran requisits imprescindibles: ser major d'edat, estar en ple ús dels drets civils, no ostentar cap càrrec públic electe ni càrrec polític d'especial rellevància i no estar incurs en els motius d'incompatibilitat establits en la legislació vigent.
+L'elecció dels membres de l'òrgan de representació es durà a terme per sufragi universal, lliure, directe i secret dels membres de l'Assemblea General. Les candidatures hauran de presentar-se com a llistes tancades, amb un mínim de cinc persones associades, i hi haurà d'especificar-se el càrrec que ocuparà cada integrant en cas de resultar elegida, així com les vocalies proposades.
 
-Els càrrecs de president/a, secretari/ària i tresorer/a han de recaure en persones diferents. A més, els càrrecs de president/a i vicepresident/a són incompatibles. Es realitzarà una votació diferent per a cada càrrec, amb candidatures independents.
+Seran requisits imprescindibles: ser major d'edat, estar en ple ús dels drets civils, no ostentar cap càrrec públic electe ni càrrec polític d'especial rellevància, no estar incurs en els motius d'incompatibilitat establits en la legislació vigent.
+
+Els càrrecs de presidència, vicepresidència, secretaria i tresoreria han de recaure en persones diferents. En cas que algun d'estos càrrecs ocupe també una vocalia, només tindrà un vot en el si de l'òrgan de representació.
 
 L'exercici dels càrrecs serà gratuït.
 
@@ -158,16 +167,21 @@ El Reglament de Règim Intern establirà el procediment electoral.
 
 ### Article 15: durada del mandat en l'òrgan de representació
 
-Els membres de l'òrgan de representació exerciran el càrrec durant un període màxim de quatre anys, i podran ser reelegits indefinidament.
+Els membres de l'òrgan de representació exerciran el càrrec durant un període màxim de dos anys, i podran ser reelegits indefinidament.
 
 El cessament en el càrrec, abans d'extingir-se el termini reglamentari, podrà ser per:
 
 - Dimissió voluntària, presentada mitjançant un escrit en què es raonen els motius.
 - Malaltia que incapacite per a l'exercici del càrrec.
-- Causar baixa com a membre de l'Associació.
+- Causar baixa com a persona associada.
 - Sanció imposada per una falta comesa en l'exercici del càrrec.
+- Acord de l'Assemblea General, amb el vot favorable de més de tres cinquenes parts de les persones presents o representades.
 
-Les vacants que es produïsquen en l'òrgan de representació es cobriran en la primera Assemblea General que se celebre. No obstant això, l'òrgan de representació podrà comptar, provisionalment, fins a la pròxima Assemblea General, amb un membre de l'Associació per al càrrec vacant.
+Les vacants que es produïsquen en l'òrgan de representació seran cobertes provisionalment a proposta d'este mateix òrgan, fins a la seua ratificació en la següent Assemblea General, que haurà de tindre lloc en un màxim de tres mesos. Les vacants en una vocalia podran quedar desertes fins al final del mandat a decisió de l'òrgan de representació.
+
+Les persones no ratificades o cessades per sanció o acord de l'Assemblea General no podran tornar a ser proposades per al mateix càrrec durant el mandat vigent.
+
+En cas de dimissió de la presidència o d'almenys la meitat més un dels membres de l'òrgan de representació, els membres restants quedaran limitats a les actuacions necessàries per a posar en marxa el procés electoral, el qual haurà d'iniciar-se en un termini màxim de catorze dies hàbils. Si, a conseqüència d'aquestes dimissions, la Junta Directiva quedara amb menys de tres membres, els càrrecs dimissionaris hauran de romandre en funcions fins a la presa de possessió del nou òrgan de representació.
 
 ### Article 16: competències de l'òrgan de representació
 
@@ -188,43 +202,43 @@ L'òrgan de representació posseïx les facultats següents:
 
 ### Article 17: reunions de l'òrgan de representació
 
-L'òrgan de representació, convocat prèviament pel/per la president/a o per la persona que el/la substituïsca, es reunirà en sessió ordinària amb la periodicitat que els seus membres decidisquen que, en tot cas, no podrà ser superior a dos mesos. I es reunirà en sessió extraordinària si ho sol·licita un terç dels seus components.
+L'òrgan de representació, convocat prèviament per la presidència o per la persona que la substituïsca, es reunirà en sessió ordinària amb la periodicitat que els seus membres decidisquen que, en tot cas, no podrà ser superior a dos mesos. I es reunirà en sessió extraordinària si ho sol·licita un terç dels seus components.
 
 L'òrgan de representació quedarà vàlidament constituït amb convocatòria prèvia i un quòrum de la meitat més un dels seus membres.
 
-Els membres de l'òrgan de representació estan obligats a assistir a totes les reunions que es convoquen, i podran excusar la seua assistència per causes justificades. En tot cas, caldrà l'assistència del/de la president/a i del/de la secretari/ària o de les persones que els substituïsquen.
+Els membres de l'òrgan de representació estan obligats a assistir a totes les reunions que es convoquen, i podran excusar la seua assistència per causes justificades. En tot cas, caldrà l'assistència de la presidència i la secretaria o de les persones que les substituïsquen.
 
 En l'òrgan de representació es prendran els acords per majoria simple de vots dels assistents. En cas d'empat, el vot del/de la president/a serà de qualitat.
 
 Els acords de l'òrgan de representació es faran constar en el llibre d'actes. En iniciar-se cada reunió es votarà l'aprovació de l'acta de la sessió anterior.
 
-### Article 18: el/la president/a
+### Article 18: la presidència
 
-El/la president/a de l'Associació també serà president/a de l'òrgan de representació.
+La presidència de l'Associació també exercirà la presidència de l'òrgan de representació.
 
-Són pròpies del/de la president/a les funcions següents:
+Són pròpies de la presidència les funcions següents:
 
 - Les de direcció i representació legal de l'Associació, per delegació de l'Assemblea General i de l'òrgan de representació.
 - La presidència i la direcció dels debats, dels òrgans de govern i de representació.
 - Signar les convocatòries de les reunions de l'Assemblea General i de l'òrgan de representació.
-- Visar les actes i els certificats confeccionats per/per la secretari/ària de l'Associació.
+- Visar les actes i els certificats confeccionats per la secretaria de l'Associació.
 - Les atribucions restants, pròpies del càrrec i les que li delegue l'Assemblea General o l'òrgan de representació.
 
-### Article 19: el/la vicepresident/a
+### Article 19: la vicepresidència
 
-El/la vicepresident/a substituirà al/a la president/a en cas d'absència, malaltia o delegació.
+La vicepresidència substituirà la presidència en cas d'absència, malaltia o delegació.
 
-### Article 20: el/la secretari/ària
+### Article 20: la secretaria
 
-El/la secretari/ària ha de custodiar la documentació de l'Associació, redactar i signar les actes de les reunions dels òrgans de govern i representació, redactar i autoritzar els certificats que calga lliurar, així com tindre actualitzada la relació dels associats.
+La secretaria ha de custodiar la documentació de l'Associació, redactar i signar les actes de les reunions dels òrgans de govern i representació, redactar i autoritzar els certificats que calga lliurar, tindre actualitzada la relació dels associats.
 
-### Article 21: el/la tresorer/a
+### Article 21: la tresoreria
 
-El/la tresorer/a tindrà com a funció la custòdia i el control dels recursos de l'Associació, així com l'elaboració del pressupost, el balanç i la liquidació de comptes, per tal de sotmetre'ls a l'òrgan de representació, tal com es determina en l'article 16 d'estos Estatuts. Signarà els rebuts, quotes i altres documents de tresoreria. Pagarà les factures aprovades per l'òrgan de representació, les quals hauran de ser visades prèviament pel/per la president/a.
+La tresoreria tindrà com a funció la custòdia i el control dels recursos de l'Associació, així com l'elaboració del pressupost, el balanç i la liquidació de comptes, per tal de sotmetre'ls a l'òrgan de representació, tal com es determina en l'article 16 d'estos Estatuts. Signarà els rebuts, quotes i altres documents de tresoreria. Pagarà les factures aprovades per l'òrgan de representació, les quals hauran de ser visades prèviament per la presidència.
 
-### Article 22: el/la portaveu
+### Article 22: les vocalies
 
-El/la portaveu haurà de coordinar les comunicacions exteriors de l'Associació i representar-la públicament, especialment davant institucions oficials, altres associacions o federacions, mitjans de comunicació i la societat en general.
+Les persones que ocupen una vocalia assumiran les funcions que es determinen per part de l'òrgan de representació.
 
 ## Capítol 5: el règim econòmic
 
@@ -237,7 +251,7 @@ L'exercici econòmic coincidirà amb l'any natural. El pressupost anual serà ap
 Els recursos econòmics de l'Associació es nodriran:
 
 - De les quotes ordinàries que fixe l'Assemblea General als seus membres.
-- De les aportacions extraordinàries que, de forma voluntària, efectuen els seus socis.
+- De les aportacions extraordinàries que, de forma voluntària, efectuen els seus membres.
 - De les subvencions oficials o particulars.
 - De donacions, herències i/o llegats.
 - Dels rendiments que generen les seues activitats.
@@ -249,15 +263,15 @@ Els beneficis obtinguts, derivats de l'exercici d'activitats econòmiques, inclo
 
 ### Article 25: quotes
 
-Tots els membres de l'Associació tenen obligació de sostindre-la econòmicament, mitjançant quotes o derrames, de la manera i en la proporció que determine l'Assemblea General, a proposta de l'òrgan de representació.
+Totes les persones associades a l'Associació tenen obligació de sostindre-la econòmicament, mitjançant quotes o derrames, de la manera i en la proporció que determine l'Assemblea General, a proposta de l'òrgan de representació.
 
 L'Assemblea General podrà establir quotes d'ingrés, quotes periòdiques i quotes extraordinàries.
 
 ### Article 26: disposició de fons
 
-En els comptes corrents, o d'estalvi, oberts en entitats financeres, hi ha de figurar la signatura del/de la president/a, del/de la tresorer/a i del/de la secretari/ària.
+En els comptes corrents, o d'estalvi, oberts en entitats financeres, hi ha de figurar la signatura de la presidència, de la tresoreria i de la secretaria.
 
-Per a poder disposar de fons, seran suficients dues firmes, de les quals una serà, necessàriament, la del tresorer/a o bé la del/de la president/a.
+Per a poder disposar de fons, seran suficients dues firmes.
 
 ## Capítol 6: dissolució de l'Associació
 
@@ -297,5 +311,6 @@ Els membres o titulars dels òrgans de govern i representació, i les altres per
 
 ### Article 29: resolució extrajudicial de conflictes
 
-Les qüestions litigioses que puguen sorgir amb motiu de les actuacions desenrotllades o de les decisions adoptades en el si de l'Associació, seran resoltes per mitjà d'arbitratge, a través d'un procediment ajustat d'acord amb el que disposa la [Llei 60/2003, de 23 de desembre, d'arbitratge](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23646), i amb subjecció, en tot cas, als principis essencials d'audiència, contradicció i igualtat entre les parts o voluntàriament per mediació, d'acord amb el que establix la [Llei 5/2012, de 6 de juliol, de mediació en assumptes civils i mercantils](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9112).`,
+Les qüestions litigioses que puguen sorgir amb motiu de les actuacions desenrotllades o de les decisions adoptades en el si de l'Associació, seran resoltes per mitjà d'arbitratge, a través d'un procediment ajustat d'acord amb el que disposa la [Llei 60/2003, de 23 de desembre, d'arbitratge](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23646), i amb subjecció, en tot cas, als principis essencials d'audiència, contradicció i igualtat entre les parts o voluntàriament per mediació, d'acord amb el que establix la [Llei 5/2012, de 6 de juliol, de mediació en assumptes civils i mercantils](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9112).
+`,
 };
