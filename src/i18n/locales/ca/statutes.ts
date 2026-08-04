@@ -16,7 +16,7 @@ L'Associació té personalitat jurídica pròpia i capacitat plena d'obrar per a
 
 El domicili de l'Associació s'establix a la següent adreça:
 
-C/ Borrasca, 19 - 216  
+Carrer de la Borrasca, 19 - 216  
 46014 València
 
 L'Associació realitzarà principalment les seues activitats a l'àmbit territorial de la Comunitat Valenciana, sense perjuí que puga estendre puntualment la seua activitat a altres territoris.
