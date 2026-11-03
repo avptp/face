@@ -13,9 +13,11 @@
       "vicePresident": "Vicepresidente",
       "secretary": "Secretario",
       "treasurer": "Tesorero",
-      "spokesperson": "Portavoz",
-      "delegateInAlacant": "Representante en Alicante",
-      "audiovisualContentCreator": "Creador de contenido audiovisual"
+      "boardMember1": "Vocal 1",
+      "boardMember2": "Vocal 2",
+      "boardMember3": "Vocal 3",
+      "boardMember4": "Vocal 4",
+      "boardMember5": "Vocal 5"
     }
   },
 
