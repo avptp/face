@@ -13,9 +13,11 @@
       "vicePresident": "Vicepresident",
       "secretary": "Secretari",
       "treasurer": "Tresorer",
-      "spokesperson": "Portaveu",
-      "delegateInAlacant": "Representant a Alacant",
-      "audiovisualContentCreator": "Creador de contingut audiovisual"
+      "boardMember1": "Vocal 1",
+      "boardMember2": "Vocal 2",
+      "boardMember3": "Vocal 3",
+      "boardMember4": "Vocal 4",
+      "boardMember5": "Vocal 5"
     }
   },
 
